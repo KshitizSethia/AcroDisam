@@ -1,3 +1,19 @@
+#eclipse files
+.metadata*
+RemoteSystemsTempFiles*
+
+#python compiled stuff
+*.pyc
+
+#project specific
+MSHCorpus_proprietary
+log.txt
+outputs
+uploads
+output
+acronymdb.pickle
+articledb.pickle
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

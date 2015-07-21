@@ -1,0 +1,20 @@
+ACM,,Association for Computing Machinery
+ARIS,,Architecture of Integrated Information Systems
+BPEL,Text,Business Process Execution Language
+BPMN,Text,Business Process Modelling Notation
+BWW,Text,Bunge Wand Weber
+et. al.,,
+FTS,Text,Finite Time Stability
+GPM,Text,Generic Process Models
+IDEF,Text,Integrated Definition
+IEEE,,Institute of Electrical and Electronics Engineers
+ISAD,Text,Information Systems Analysis and Design
+KSA,,Kingdom of Saudi Arabia
+LaTeX,,
+PhD,,Doctor of Philosophy
+PO,,Post Office
+SSPM,Text,Stochastic System and Process Modelling Framework
+TM,,Trademark
+TR,Text, Theory of Reliability
+UEML,Text,Unified Enterprise Modelling Language
+UML,Text,Unified Modelling Language

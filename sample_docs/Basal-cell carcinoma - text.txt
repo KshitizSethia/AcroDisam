@@ -1,0 +1,242 @@
+
+Basal-cell carcinoma
+From Wikipedia, the free encyclopedia
+Basal-cell carcinoma
+Basal cell carcinoma2.JPG
+A basal-cell carcinoma
+Classification and external resources
+Specialty	Oncology
+ICD-10	C44 (ILDS C44.L21)
+ICD-9	173
+ICD-O	M8090/3-8093/3
+OMIM	605462
+DiseasesDB	1264
+MedlinePlus	000824
+eMedicine	med/214
+Patient UK	Basal-cell carcinoma
+MeSH	D002280
+Basal-cell carcinoma or basal cell cancer (BCC), a skin cancer, is one of the most common cancers in the United States.[1] It rarely metastasizes or kills. However, because it can cause significant destruction and disfigurement by invading surrounding tissues, it is still considered malignant.[2][3]
+
+Statistically, in the United States approximately 3 out of 10 Caucasians may develop a basal-cell cancer within their lifetime.[4] In 80 percent of all cases, basal-cell cancers are found on the head and neck.[4] There appears to be an increase in the incidence of basal-cell cancer of the trunk in recent years.[4]
+
+Contents
+
+1 Classification
+1.1 Appearance
+1.2 Histological
+2 Signs and symptoms
+3 Diagnosis
+4 Pathophysiology
+5 Prevention
+6 Treatment
+6.1 Standard surgical excision
+6.2 Mohs surgery
+6.3 Chemotherapy
+6.4 Immunotherapy
+6.5 Radiation
+6.6 Photodynamic therapy
+6.7 Cryosurgery
+6.8 Electrodesiccation and curettage
+6.9 Vismodegib
+7 Prognosis
+8 Epidemiology
+9 References
+10 External links
+Classification
+
+Appearance
+
+For simplicity, one can also divide basal-cell carcinoma into 3 groups, based on location and difficulty of therapy:
+
+Superficial basal-cell carcinoma, or some might consider to be equivalent to "in-situ". Very responsive to topical chemotherapy such as Aldara (Imiquimod), or Fluorouracil. It is the only type of basal-cell cancer that can be effectively treated with topical chemotherapy.
+Infiltrative basal-cell carcinoma, which often encompasses morpheaform and micronodular basal-cell cancer. More difficult to treat with conservative treatment methods such as electrodessiccation and curettage, or with curettage alone.
+Nodular basal-cell carcinoma, which essentially includes most of the remaining categories of basal-cell cancer. It is not unusual to encounter morphologic features of several variants of basal-cell cancer in the same tumor.
+Histological
+
+Basal-cell carcinomas may be divided into the following types:[5][6]:646–650
+
+Nodular basal-cell carcinoma (also known as "classic basal-cell carcinoma") most commonly occurs on the sun-exposed areas of the head and neck.[5]:748[6]:646
+Cystic basal-cell carcinoma is characterized by dome-shaped, blue-gray cystic nodules.[6]:647
+Cicatricial basal-cell carcinoma (also known as "morpheaform basal-cell carcinoma," and "morphoeic basal-cell carcinoma") is an aggressive variant with a distinct clinical and histologic appearance.[5]:748[6]:647
+Infiltrative basal-cell carcinoma is an aggressive type characterized by deep infiltration.[6]:647
+Micronodular basal-cell carcinoma is characterized by a micronodular growth pattern.[6]:647
+Superficial basal-cell carcinoma (also known as "superficial multicentric basal-cell carcinoma") occurs most commonly on the trunk and appears as an erythematous patch.[5]:748[6]:647
+Pigmented basal-cell carcinoma exhibits increased melanization.[5]:748[6]:647 About 80% of all basal cell carcinoma in Chinese are pigmented while this subtype is uncommon in white people.
+Rodent ulcer (also known as a "Jacob's ulcer") is a large skin lesion of nodular basal cell carcinoma with central necrosis.[5]:748[6]:647 Almost all cancers can metastasize except glioma (maligancy of the central nervous system) and the rodent ulcer.
+Fibroepithelioma of Pinkus most commonly occurs on the lower back.[5]:748[6]:648
+Polypoid basal-cell carcinoma is characterized by exophytic nodules (polyp-like structures) on the head and neck.[6]:648
+Pore-like basal-cell carcinoma resembles an enlarged pore or stellate pit.[6]:648
+Aberrant basal-cell carcinoma is characterized by the formation of basal-cell carcinoma in the absence of any apparent carcinogenic factor, occurring in odd sites such as the scrotum, vulva, perineum, nipple, and axilla.[6]:648
+See also:
+
+Nevoid basal-cell carcinoma syndrome
+
+Cystic basal-cell carcinoma
+
+ 
+
+Micronodular basal cell carcinoma
+
+ 
+
+Superficial basal cell carcinoma
+
+ 
+
+Micrograph of a fibroepithelioma of Pinkus. H&E stain
+
+Signs and symptoms
+
+Individuals with a basal-cell carcinoma typically present with a shiny, pearly skin nodule. However, superficial basal-cell cancer can present as a red patch similar to eczema. Infiltrative or morpheaform basal-cell cancers can present as a skin thickening or scar tissue – making diagnosis difficult without using tactile sensation and a skin biopsy. It is often difficult to visually distinguish basal-cell cancer from acne scar, actinic elastosis, and recent cryodestruction inflammation.
+
+Basal cell carcinoma.jpg
+ 
+Basalioma.jpg
+ 
+BCC-mini.jpg
+ 
+
+Basal cell carcinoma, nodular type
+
+ 
+
+Rodent ulcer
+
+About two thirds of basal-cell carcinomas occur on sun-exposed areas of the body. One-third occur on areas of the body that are not exposed to sunlight, emphasizing the genetic susceptibility of basal-cell cancer patients.
+
+Diagnosis
+
+To diagnose basal-cell carcinomas, a skin biopsy is taken for pathological study. The most common method is a shave biopsy under local anesthesia. Most nodular basal-cell cancers can be diagnosed clinically; however, other variants can be very difficult to distinguish from benign lesions such as intradermal naevus, sebaceomas, fibrous papules, early acne scars, and hypertrophic scarring.[7]
+
+Pathophysiology
+
+
+Micrograph of a basal-cell carcinoma, showing the characteristic histomorphologic features (peripheral palisading, myxoid stroma, artefactual clefting). H&E stain
+Basal-cell carcinomas are differentiated toward the folliculo-sebaceous-apocrine germ, also known as the trichoblast. The differential diagnosis with trichoblastic carcinoma, a rare malignant trichoblastoma, is often difficult to make.[8] Alternatively, one argument is that basal call carcinoma is trichoblastic carcinoma.[9] Overexposure to sun leads to the formation of thymine dimers, a form of DNA damage. While DNA repair removes most UV-induced damage, not all crosslinks are excised. There is, therefore, cumulative DNA damage leading to mutations. Apart from the mutagenesis, overexposure to sunlight depresses the local immune system, possibly decreasing immune surveillance for new tumor cells.
+
+Basal-cell carcinoma also develops as a result of Basal-Cell Nevus Syndrome, or Gorlin Syndrome, which is also characterized by keratocystic odontogenic tumors of the jaw, palmar or plantar (sole of the foot) pits, calcification of the falx cerebri (in the center line of the brain) and rib abnormalities. The cause of the syndrome is a mutation in the PTCH1 tumor-suppressor gene at chromosome 9q22.3, which inhibits the hedgehog signaling pathway. A mutation in the SMO gene, which is also on the hedgehog pathway, also causes basal-cell carcinoma.[10]
+
+Prevention
+
+Basal-cell carcinoma is a common skin cancer and occurs mainly in fair-skinned patients with a family history of this cancer. Sunlight is a factor in about two-thirds of these cancers; therefore, doctors recommend sunscreens with at least SPF 30. One-third occur in non-sun-exposed areas; thus, the pathogenesis is more complex than UV exposure as the cause.
+The use of a chemotherapeutic agent such as 5-Fluorouracil or Aldara (Imiquimod), can prevent development of skin cancer. It is usually recommended to individuals with extensive sun damage, history of multiple skin cancers, or rudimentary forms of cancer (i.e., solar keratosis). It is often repeated every 2 to 3 years to further decrease the risk of skin cancer.
+Treatment
+
+The following methods are employed in the treatment of basal-cell carcinoma (BCC):
+
+Standard surgical excision
+
+This can be with either frozen section histology, or paraffin-embedded fixed-tissue pathology. It is the preferred method for removal of most BCCs. A dermatoscope can help an experienced surgeon accurately identify the visible tumour that the naked eye can not see.[11][12]
+
+The cure rate for this method, whether performed by an General Surgeon, Otolaryngologist, Head & Neck Surgeon, Plastic Surgeon, Maxillofacial Surgeon or dermatologist is totally dependent on the surgical margin. The narrower the free surgical margin (skin removed that is free of visible tumor) the higher the recurrence rate.[13][14][15][16] If a 4 mm free surgical margin is obtained around a small tumor (less than 6mm), or a wider 6 mm free surgical margin is obtained around a larger tumor (greater than 6mm), the cure rate is very high—95% or better.[17][18][19][20][21][22] However, for cosmetic reasons, many doctors take only very small surgical margins 1–2 mm,[23] especially when operating on the face. In such a case, a pathology report indicating the margins are free of residual tumour is often inaccurate, and a recurrence rates are much higher (up to 38%).[19][23][24][25]
+
+A weakness with standard surgical excision is the high recurrence rate of basal-cell cancers of the face, especially around eyelids,[24] nose, and facial structures.[26] A diagram on page 38 of the National Comprehensive Cancer Network publication demonstrate the area of high risk of recurrence as most the face with the exception of the central cheek and upper forehead.[17][27] On the face, or on recurrent basal-cell cancer after previous surgery, special surgical margin controlled processing (CCPDMA—complete circumferential peripheral and deep margin assessment[27][28])[29] using frozen section histology (Mohs surgery is one of the methods) is required.[30][31]
+
+With surgical margin controlled frozen section histology, a surgeon can achieve a high cure rate and low recurrence rate on the same day of the excision.[32] However, most standard excisions done in a plastic surgeon or dermatologist's office are sent to an outside laboratory for standard bread loafing method of processing.[33] With this method, it is likely that less than 5% of the surgical margin is examined, as each slice of tissue is only 6 micrometres thick, about 3 to 4 serial slices are obtained per section, and only about 3 to 4 sections are obtained per specimen (see figure 2 of reference[34]).
+
+When in doubt, a patient should demand that either Mohs surgery or frozen section histology with either margin control (ccpdma) or thin serial bread-loafing is utilized when dealing with a tumour on the face.[17] The pathologist processing the frozen section specimen should cut multiple sections through the block to minimize the false negative error rate. Or one should simply process the tissue utilizing a method approximating the Mohs method (described in most basic histopathology text books or described in this reference [30]) during frozen section processing. Unfortunately, these methods are difficult when applied to frozen sections; and is very tedious to process. When not utilizing frozen section, the surgeon might have to wait a week or more, before informing the patient if more tumour is left, or if the surgical margin is too narrow.[35] And a second surgery must be performed to remove the residual or potential residual tumour once the surgeon informs the patient of the positive or narrow surgical margin on the surgical pathology report.
+
+A 2008 meta-study of the literature around management of BCCs suggested that excision is a good treatment for primary tumors.[36]
+
+Mohs surgery
+
+Mohs surgery (or Mohs micrographic surgery) is an outpatient procedure, which was developed by Frederic E. Mohs in the 1940s,[36] in which the tumor is surgically excised and then immediately examined under a microscope. It is a form of pathology processing called CCPDMA. The base and edges are microscopically examined to verify sufficient margins before the surgical repair of the site. If the margins are insufficient, more is removed from the patient until the margins are sufficient. It is also used for squamous-cell carcinoma; however, the cure rate is not as high as Mohs surgery for basal-cell carcinoma. The 2008 study found MMS to be a good option for both primary and high-risk recurrent BCCs.[36]
+
+Chemotherapy
+
+Some superficial cancers respond to local therapy with 5-fluorouracil, a chemotherapy agent. Topical treatment with 5% Imiquimod cream, with five applications per week for six weeks has a reported 70–90% success rate at reducing, even removing, the BCC [basal-cell carcinoma]. Both Imiquimod and 5-fluorouracil have received FDA approval, and topical IMQ is approved by the European Medicines Agency for treatment of small superficial basal-cell carcinoma.[36] Off label use of imiquimod on invasive basal-cell carcinoma has been reported. Imiquimod may be used prior to surgery in order to reduce the size of the carcinoma. One can expect a great deal of inflammation with this treatment.[37] Chemotherapy often follows Mohs surgery to eliminate the residual superficial basal-cell carcinoma after the invasive portion is removed. Some advocate the use of imiquimod prior to Mohs surgery to remove the superficial component of the cancer.[38] Removing the residual superficial tumor with surgery alone can result in large and difficult to repair surgical defects. One often waits a month or more after surgery before starting the Imiquimod or 5-fluorouracil to make sure the surgical wound has adequately healed. Some individuals advocate the use of curettage (see EDC below) first, then followed by chemotherapy. These experimental procedures are not standard care. The 2008 study reported that topical IMQ appears effective in the treatment of primary small superficial BCCs, but only 'may possibly' have a role in the treatment of primary nodular BCC.[36]
+
+Immunotherapy
+
+Immunotherapy research suggests that treatment using Euphorbia peplus, a common garden weed, may be effective.[39] Australian biopharmaceutical company Peplin[40] is developing this as topical treatment for BCC. Imiquimod is an immunotherapy but is listed here under chemotherapy.
+
+Radiation
+
+Radiation therapy can be delivered either as external beam radiotherapy or as brachytherapy (internal radiotherapy). Although radiotherapy is generally used in older patients who are not candidates for surgery, it is also used in cases where surgical excision will be disfiguring or difficult to reconstruct (especially on the tip of the nose, and the nostril rims). Radiation treatment often takes as few as 5 visits to as many as 25 visits. Usually, the more visits scheduled for therapy, the less complication or damage is done to the normal tissue supporting the tumor. Radiotherapy can also be useful if surgical excision has been done incompletely or if the pathology report following surgery suggests a high risk of recurrence, for example if nerve involvement has been demonstrated. Cure rate can be as high as 95% for small tumor, or as low as 80% for large tumors. Usually, recurrent tumors after radiation are treated with surgery, and not with radiation. Further radiation treatment will further damage normal tissue, and the tumor might be resistant to further radiation. Radiation therapy may be contraindicated for treatment of nevoid basal cell carcinoma syndrome. The 2008 study reported that radiation therapy is a good treatment for primary BCCs and recurrent BCCs, but not for BCCs that have recurred following previous radiation treatment.[36]
+
+Photodynamic therapy
+
+Photodynamic therapy (PDT) is a new modality for treatment of basal-cell carcinoma, which is administrated by application of photosensitizers to the target area. When these molecules are activated by light, they become toxic, therefore destroy the target cells. Methyl aminolevulinate is approved by EU as a photosensitizer since 2001. This therapy is also used in other skin cancer types.[41] The 2008 study reported that PDT was a good treatment option for primary superficial BCCs, reasonable for primary low-risk nodular BCCs, but a 'relatively poor' option for high-risk lesions.[36]
+
+Cryosurgery
+
+Cryosurgery is an old modality for the treatment of many skin cancers. When accurately utilized with a temperature probe and cryotherapy instruments, it can result in very good cure rate. Disadvantages include lack of margin control, tissue necrosis, over or under treatment of the tumor, and long recovery time. Overall, there are sufficient data to consider cryosurgery as a reasonable treatment for BCC. There are no good studies, however, comparing cryosurgery with other modalities, particularly with Mohs surgery, excision, or electrodesiccation and curettage so that no conclusion can be made whether cryosurgery is as efficacious as other methods. Also, there is no evidence on whether curetting the lesions before cryosurgery affects the efficacy of treatment.[42] Several textbooks are published on the therapy, and a few physicians still apply the treatment to selected patients.[43]
+
+Electrodesiccation and curettage
+
+Electrodesiccation and curettage (EDC, also known as curettage and cautery, simply curettage)[36] is accomplished by using a round knife, or curette, to scrape away the soft cancer. The skin is then burned with an electric current. This further softens the skin, allowing for the knife to cut more deeply with the next layer of curettage. The cycle is repeated, with a safety margin of curettage of normal skin around the visible tumor. This cycle is repeated 3 to 5 times, and the free skin margin treated is usually 4 to 6 mm. Cure rate is very much user-dependent and depends also on the size and type of tumor. Infiltrative or morpheaform BCCs can be difficult to eradicate with EDC. Generally, this method is used on cosmetically unimportant areas like the trunk (torso). Some physicians believe that it is acceptable to utilize EDC on the face of elderly patients over the age of 70. However, with increasing life expectancy, such an objective criterion cannot be supported. The cure rate can vary, depending on the aggressiveness of the EDC and the free margin treated. Some advocate curettage alone without electrodesiccation, and with the same cure rate.[44]
+
+Treating surgeons will recommend one of these modalities as appropriate treatment depending on the tumour size, location, patient age, and other variables.
+
+Vismodegib
+
+Approved in 2012, vismodegib (trade name Erivedge) is a new drug approved for the treatment of an advanced form of basal cell carcinoma.[45]
+
+Prognosis
+
+Prognosis is excellent if the appropriate method of treatment is used in early primary basal-cell cancers. Recurrent cancers are much harder to cure, with a higher recurrent rate with any methods of treatment. Although basal-cell carcinoma rarely metastasizes, it grows locally with invasion and destruction of local tissues. The cancer can impinge on vital structures like nerves and result in loss of sensation or loss of function or rarely death. The vast majority of cases can be successfully treated before serious complications occur. The recurrence rate for the above treatment options ranges from 50 percent to 1 percent or less.
+
+Epidemiology
+
+Basal-cell cancer is a very common skin cancer. It is much more common in fair-skinned individuals with a family history of basal-cell cancer and increases in incidence closer to the equator or at higher altitude. According to Skin Cancer Foundation, there are approximately 800,000[46] new cases yearly in the United States alone. Up to 30% of Caucasians develop basal-cell carcinomas in their lifetime.[4] In Canada, the most common skin cancer is basal cell carcinoma (as much as one third of all cancer diagnoses), affecting 1 in 7 individuals over a lifetime.[47][48]
+
+Most sporadic BCC arises in small numbers on sun-exposed skin of people over age 50, although younger people may also be affected. The development of multiple basal-cell cancer at an early age could be indicative of Nevoid basal-cell carcinoma syndrome, also known as Gorlin's Syndrome.[49]
+
+References
+
+Jump up ^ Basal cell carcinoma
+Jump up ^ MedlinePlus Encyclopedia Basal cell carcinoma
+Jump up ^ "Basal Cell Carcinoma - Symptoms, Treatment and Prevention".
+^ Jump up to: a b c d Wong CS, Strange RC, Lear JT (October 2003). "Basal cell carcinoma". BMJ 327 (7418): 794–8. doi:10.1136/bmj.327.7418.794. PMC 214105. PMID 14525881.
+^ Jump up to: a b c d e f g Freedberg, et al. (2003). Fitzpatrick's Dermatology in General Medicine. (6th ed.). McGraw-Hill. ISBN 0-07-138076-0.
+^ Jump up to: a b c d e f g h i j k l m James, William D.; Berger, Timothy G. et al. (2006). Andrews' Diseases of the Skin: clinical Dermatology. Saunders Elsevier. ISBN 0-7216-2921-0.
+Jump up ^ http://www.skincancerguide.ca/basal/what_is_basal_cell_cancer.html
+Jump up ^ Laffay L, Depaepe L, d'Hombres A, Balme B, Thomas L, De Bari B (2012). "Histological features and treatment approach of trichoblastic carcinomas: from a case report to a review of the literature.". Tumori 98 (2): 46e–49e. doi:10.1700/1088.11948. PMID 22678003.
+Jump up ^ http://www.derm101.com/clinical-atlas/basal-cell-carcinoma/integration-unifying-concept/
+Jump up ^ Epstein EH, Shepard JA, Flotte TJ (Jan 2008). "Case records of the Massachusetts General Hospital. Case 3-2008. An 80-year-old woman with cutaneous basal-cell carcinomas and cysts of the jaws". N Engl J Med 358 (4): 393–401. doi:10.1056/NEJMcpc0707893. PMID 18216361.
+Jump up ^ Scalvenzi M, Lembo S, Francia MG, Balato A (October 2008). "Dermoscopic patterns of superficial basal cell carcinoma". Int. J. Dermatol. 47 (10): 1015–8. doi:10.1111/j.1365-4632.2008.03731.x. PMID 18986346.
+Jump up ^ Cuellar F, Vilalta A, Puig S, Palou J, Zaballos P, Malvehy J (September 2008). "Dermoscopy of early recurrent basal cell carcinoma". Arch Dermatol 144 (9): 1254. doi:10.1001/archderm.144.9.1254. PMID 18794487.
+Jump up ^ Maloney ME et al. (1999). Surgical Dermatopathology. Cambridge, MA: Blackwell Publishers. p. 110. ISBN 0-86542-299-0.
+Jump up ^ Kimyai-Asadi A, Katz T, Goldberg LH et al. (December 2007). "Margin involvement after the excision of melanoma in situ: the need for complete en face examination of the surgical margins". Dermatol Surg 33 (12): 1434–9; discussion 1439–41. doi:10.1111/j.1524-4725.2007.33313.x. PMID 18076608.
+Jump up ^ Mosterd K, Krekels GA, Nieman FH et al. (December 2008). "Surgical excision versus Mohs' micrographic surgery for primary and recurrent basal-cell carcinoma of the face: a prospective randomised controlled trial with 5-years' follow-up". Lancet Oncol. 9 (12): 1149–56. doi:10.1016/S1470-2045(08)70260-2. PMID 19010733.
+Jump up ^ Kimyai-Asadi A, Goldberg LH, Jih MH (September 2005). "Accuracy of serial transverse cross-sections in detecting residual basal cell carcinoma at the surgical margins of an elliptical excision specimen". J. Am. Acad. Dermatol. 53 (3): 469–74. doi:10.1016/j.jaad.2005.02.049. PMID 16112355.
+^ Jump up to: a b c http://www.nccn.org/professionals/physician_gls/PDF/nmsc.pdf
+Jump up ^ Silverman MK, Kopf AW, Bart RS, Grin CM, Levenstein MS (June 1992). "Recurrence rates of treated basal cell carcinomas. Part 3: Surgical excision". J Dermatol Surg Oncol 18 (6): 471–6. doi:10.1111/j.1524-4725.1992.tb03307.x. PMID 1592998.
+^ Jump up to: a b Wolf DJ, Zitelli JA (March 1987). "Surgical margins for basal cell carcinoma". Arch Dermatol 123 (3): 340–4. doi:10.1001/archderm.123.3.340. PMID 3813602.
+Jump up ^ Skin Malignancies, Squamous Cell Carcinoma at eMedicine
+Jump up ^ Staub G, Revol M, May P, Bayol JC, Verola O, Servant JM (October 2008). "[Excision skin margin and recurrence rate of skin cancer: a prospective study of 844 cases]". Ann Chir Plast Esthet (in French) 53 (5): 389–98. doi:10.1016/j.anplas.2007.07.015. PMID 17961898.
+Jump up ^ http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Skin/NonMelanoma/ManagementPolicies/start.htm
+^ Jump up to: a b Griffiths RW, Suvarna SK, Stone J (2007). "Basal cell carcinoma histological clearance margins: an analysis of 1539 conventionally excised tumours. Wider still and deeper?". J Plast Reconst Aesthet Surg 60 (1): 41–7. doi:10.1016/j.bjps.2006.06.009. PMID 17126265.
+^ Jump up to: a b Sigurdsson H, Agnarsson BA (August 1998). "Basal cell carcinoma of the eyelid. Risk of recurrence according to adequacy of surgical margins". Acta Ophthalmol Scand 76 (4): 477–80. doi:10.1034/j.1600-0420.1998.760416.x. PMID 9716337.
+Jump up ^ Hauben DJ, Zirkin H, Mahler D, Sacks M (January 1982). "The biologic behavior of basal cell carcinoma: analysis of recurrence in excised basal cell carcinoma: Part II". Plast. Reconstr. Surg. 69 (1): 110–6. doi:10.1097/00006534-198269010-00018. PMID 7053498.
+Jump up ^ Farhi D, Dupin N, Palangié A, Carlotti A, Avril MF (October 2007). "Incomplete excision of basal cell carcinoma: rate and associated factors among 362 consecutive cases". Dermatol Surg 33 (10): 1207–14. doi:10.1111/j.1524-4725.2007.33255.x. PMID 17903153.
+^ Jump up to: a b http://www.ncri.ie/atlas/Non-melanoma%20skin%20cancer.pdf
+Jump up ^ http://www.nccn.org/professionals/physician_gls/PDF/nmsc.pdf pages 6 and 7
+Jump up ^ Dhingra N, Gajdasty A, Neal JW, Mukherjee AN, Lane CM (June 2007). "Confident complete excision of lid-margin BCCs using a marginal strip: an alternative to Mohs' surgery". Br J Ophthalmol 91 (6): 794–6. doi:10.1136/bjo.2006.109892. PMC 1955612. PMID 17229804.
+^ Jump up to: a b Bentkover SH, Grande DM, Soto H, Kozlicak BA, Guillaume D, Girouard S (2002). "Excision of head and neck basal cell carcinoma with a rapid, cross-sectional, frozen-section technique". Arch Facial Plast Surg 4 (2): 114–9. doi:10.1001/archfaci.4.2.114. PMID 12020207.
+Jump up ^ Minton TJ (August 2008). "Contemporary Mohs surgery applications". Current Opinion in Otolaryngology & Head and Neck Surgery 16 (4): 376–80. doi:10.1097/MOO.0b013e3283079cac. PMID 18626258.
+Jump up ^ Nagore E, Grau C, Molinero J, Fortea JM (March 2003). "Positive margins in basal cell carcinoma: relationship to clinical features and recurrence risk. A retrospective study of 248 patients". J Eur Acad Dermatol Venereol 17 (2): 167–70. doi:10.1046/j.1468-3083.2003.00535.x. PMID 12705745.
+Jump up ^ Lane JE, Kent DE (2005). "Surgical margins in the treatment of nonmelanoma skin cancer and mohs micrographic surgery". Curr Surg 62 (5): 518–26. doi:10.1016/j.cursur.2005.01.003. PMID 16125611.
+Jump up ^ Maloney ME et al. (1999). "Determining Cancer at Surgical margin". Surgical Dermatopathology. Cambridge, MA: Blackwell Publishers. p. 113. ISBN 0-86542-299-0.
+Jump up ^ http://gateway.nlm.nih.gov/MeetingAbstracts/ma?f=102272107.html
+^ Jump up to: a b c d e f g h Telfer, N R, Colver, G B and Morton, C A (2008). "Guidelines for the management of basal cell carcinoma". British Journal of Dermatology, 159 pp. 35-48.
+Jump up ^ [1]
+Jump up ^ Butler DF, Parekh PK, Lenis A (January 2009). "Imiquimod 5% cream as adjunctive therapy for primary, solitary, nodular nasal basal-cell carcinomas before Mohs micrographic surgery: a randomized, double blind, vehicle-controlled study". Dermatol Surg 35 (1): 24–9. doi:10.1111/j.1524-4725.2008.34378.x. PMID 19018814.
+Jump up ^ "Peplin's skin cancer gel trial a success". The Age (Melbourne). 1 May 2006.
+Jump up ^ Peplin
+Jump up ^ Peng Q, Juzeniene A, Chen J et al. (2008). "Lasers in Medicine". Rep. Prog. Phys. 71 (56701): 056701. doi:10.1088/0034-4885/71/5/056701.
+Jump up ^ Kokoszka A, Scheinfeld N (June 2003). "Evidence-based review of the use of cryosurgery in treatment of basal cell carcinoma". Dermatol Surg 29 (6): 566–71. doi:10.1046/j.1524-4725.2003.291511.x. PMID 12786697.
+Jump up ^ http://www.webmd.com/cancer/cryosurgery-for-nonmelanoma-skin-cancer
+Jump up ^ Barlow JO, Zalla MJ, Kyle A, DiCaudo DJ, Lim KK, Yiannias JA (June 2006). "Treatment of basal cell carcinoma with curettage alone". J. Am. Acad. Dermatol. 54 (6): 1039–45. doi:10.1016/j.jaad.2006.01.041. PMID 16713459.
+Jump up ^ "Vismodegib, First Hedgehog Inhibitor, Approved for BCC Patients".
+Jump up ^ Skin Cancer Foundation: Basal Cell Carcinoma
+Jump up ^ http://www.bccancer.bc.ca/HPI/CE/skincancer/skincancercourses/readings/preventionreadings/Epidemiology.htm
+Jump up ^ http://www.cancercare.on.ca/cms/one.aspx?pageId=9684
+Jump up ^ Gorlin, R J, (2004) "Nevoid basal cell carcinoma (Gorlin) Syndrome", Genetic Medicine 6: pp. 530-539.
+External links
+
+The Skin Cancer Foundation
+Retrieved from "http://en.wikipedia.org/w/index.php?title=Basal-cell_carcinoma&oldid=659844844"
+Categories: Epidermal nevi, neoplasms, cystsHistopathologyCarcinoma
+This page was last modified on 29 April 2015, at 10:04.
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
