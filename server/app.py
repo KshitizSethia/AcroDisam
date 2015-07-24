@@ -39,19 +39,19 @@ def upload():
     if controlr.supportsFile(file.filename):
         # Make the filename safe, remove unsupported chars
         safe_filename = secure_filename(file.filename)
-        server_file_path = os.path.join(string_constants.folder_upload, safe_filename)
+        server_file_path = os.path.join(
+            string_constants.folder_upload, safe_filename)
         
         # Move the file form the temp folder to the upload folder
         file.save(server_file_path)
         
         expanded_acronyms = controlr.processFile(safe_filename)
         
-        output_file_path = os.path.join(string_constants.folder_output
-                                        , controlr.getOutputFilename(safe_filename))
+        output_file_path = os.path.join(
+            string_constants.folder_output, controlr.getOutputFilename(safe_filename))
         controlr.writeOutputToFile(expanded_acronyms, output_file_path)
         
-        return redirect(url_for('output_file'
-                                , filename=controlr.getOutputFilename(safe_filename)))
+        return redirect(url_for('output_file', filename=controlr.getOutputFilename(safe_filename)))
 
 # This route is expecting a parameter containing the name
 # of a file. Then it will locate that file on the upload

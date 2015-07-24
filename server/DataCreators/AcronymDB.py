@@ -1,6 +1,9 @@
 """
 collection of functions used to manipulate the acronymdb dictionary
-acronymdb is a dictionary in the format (acronym: [acronym_expansion, article_id, article_title])
+acronymdb is a dictionary in the format 
+(acronym: [array of [acronym_expansion, article_id]])
+
+OLD FORMAT:(acronym: [array of [acronym_expansion, article_id, article_title]])
 """
 import cPickle as pickle
 import csv
@@ -11,7 +14,7 @@ import string_constants
 import numpy
 
 
-def createFromScrapedAcronyms():
+def createFromScrapedDefinitions():
     logger.info("Creating AcronymDB")
     csv.field_size_limit(sys.maxint)
     
@@ -25,8 +28,8 @@ def createFromScrapedAcronyms():
             acronymDB[row["acronym"]] = []
         acronymDB[row["acronym"]].append([row["acronym_expansion"]
                                           .strip().lower().replace('-', ' ')
-                                          , row["article_id"]
-                                          , row["article_title"]])
+                                          , row["article_id"]])
+                                          # , row["article_title"]]) # title was part of old format
         loaded_acronyms += 1
         if(loaded_acronyms % 10000 == 0):
             logger.debug("loaded %d acronyms", loaded_acronyms)
@@ -42,7 +45,8 @@ def createFromScrapedAcronyms():
         def_count = 0
         inst_count = 0
         expansion_of_last_acronym = values_for_this_acronym[0][0]
-        for index, [acronym_expansion, article_id, article_title]\
+        #, article_title]\ # title was part of old format in the line below
+        for index, [acronym_expansion, article_id]\
                             in enumerate(values_for_this_acronym):
             if is_same_expansion(acronym_expansion, expansion_of_last_acronym):
                 inst_count += 1
@@ -82,4 +86,4 @@ def load():
 # def addAcronyms(acronymDB, acronyms):#todo: add acronyms and articles
 
 if __name__ == "__main__":
-    createFromScrapedAcronyms()
+    createFromScrapedDefinitions()
