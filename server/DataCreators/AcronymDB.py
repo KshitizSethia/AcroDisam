@@ -1,6 +1,6 @@
 """
 collection of functions used to manipulate the acronymdb dictionary
-acronymdb is a dictionary in the format 
+acronymdb is a dictionary in the format:
 (acronym: [array of [acronym_expansion, article_id]])
 
 OLD FORMAT:(acronym: [array of [acronym_expansion, article_id, article_title]])

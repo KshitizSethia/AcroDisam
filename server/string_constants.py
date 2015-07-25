@@ -16,6 +16,7 @@ folder_data = folder_root + "storage" + sep + "data" + sep
 
 file_acronymdb = folder_data + "acronymdb.pickle"
 file_article_infodb = folder_data +"article_infodb.pickle"
+file_articleIDToLDA = folder_data +"articleIDToLDA.pickle"
 file_articledb = folder_data + "articledb.pickle"
 file_english_words = folder_data + "wordsEn.txt"
 file_errorpage = "500.html"

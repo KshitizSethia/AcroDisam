@@ -11,7 +11,8 @@ log.txt
 outputs
 uploads
 output
-acronymdb.pickle
+*.pickle
+*.csv
 articledb.pickle
 
 # Windows image file caches

@@ -1,5 +1,75 @@
 """
+
+"""
+
+
+"""
+**************************************************************************************************
+Handle missing article aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvU2h1amFheg== in articleDB
+"""
+"""
+import csv
+import sys
+
+from DataCreators import ArticleDB
+from string_constants import file_scraped_articles
+
+
+articleDB = ArticleDB.load()
+csv.field_size_limit(sys.maxint)
+file = csv.DictReader(open(file_scraped_articles,"rb"), delimiter=",")
+
+changeSuccessful = False
+
+for line in file:
+    if(line["article_id"] == "aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvU2h1amFheg=="):
+        articleDB[line["article_id"]] = line["article_text"]
+        changeSuccessful = True
+
+if changeSuccessful:
+    ArticleDB.dump(articleDB)
+else:
+    print "badluck!"
+"""
+
+"""
+**************************************************************************************************
+Check if duplication in scraped_articles is creating article_id: article_text pairs where the acronym is not present
+"""
+"""
+from __future__ import division
+from DataCreators import AcronymDB, ArticleDB
+acronymDB = AcronymDB.load()
+articleDB = ArticleDB.load()
+
+errors = []
+missing_articles=[]
+numSuccesses = 0
+
+for acronym in acronymDB.keys():
+    for expansion, article_id, def_count in acronymDB[acronym]:
+        if(article_id in articleDB):
+            article = articleDB[article_id].lower()
+            expansion = expansion.lower()
+            if(acronym.lower() not in article):# or expansion not in article):
+                errors.append([acronym, expansion, article_id])
+            else:
+                numSuccesses+=1
+        else:
+            missing_articles.append(article_id)
+
+print "errors:", len(errors), "successes: ", numSuccesses, "%age error: ", len(errors)*100/(len(errors)+numSuccesses)
+print errors[:10]
+
+missing_articles = set(missing_articles)
+print "missing articles: " +str(len(missing_articles))
+print missing_articles
+"""
+
+"""
+**************************************************************************************************
 Test TextTools.getCleanedWords() by visual inspection
+"""
 """
 from DataCreators import ArticleDB
 import TextTools
@@ -12,15 +82,6 @@ print article
 
 words = TextTools.getCleanedWords(article)
 print words
-
-"""
-**************************************************************************************************
-Check if duplication in scraped_articles is creating article_id: article_text pairs where the acronym is not present
-"""
-"""
-from DataCreators import AcronymDB, ArticleDB
-acronymdb = AcronymDB.load()
-articledb = ArticleDB.load()#todo:
 """
 
 """

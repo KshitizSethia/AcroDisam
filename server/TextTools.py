@@ -21,7 +21,7 @@ def removePunctuations(text):
 
 def getCleanedWords(text):
     cleaned_text = removePunctuations(text)
-    words = word_tokenize(cleaned_text, language='english')
+    words = word_tokenize(cleaned_text)
 
     # WordNetLemmatizer()#LancasterStemmer()#PorterStemmer()#SnowballStemmer("english")
     stemmer = LancasterStemmer()

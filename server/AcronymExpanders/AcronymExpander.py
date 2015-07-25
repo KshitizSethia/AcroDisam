@@ -1,8 +1,10 @@
+import numpy
 
-
+from AcronymExpanders import AcronymExpanderEnum, acronymDB, articleDB
 from Logger import logger
 import string_constants
-from AcronymExpanders import AcronymExpanderEnum
+from helper import ExpansionChoice
+
 class AcronymExpander:
     
     def __init__(self):
@@ -26,6 +28,18 @@ class AcronymExpander:
             logger.error(string_constants.string_error_document_parse)  # todo print file name here
         return expanded_acronyms, all_acronyms_expanded
     
+    def getChoices(self, acronym):
+        """returns array of ExpansionChoice"""
+        results = []
+        if(acronym in acronymDB):
+            results += acronymDB[acronym]
+        if(acronym[-1] == "s" and acronym[:-1] in acronymDB):
+            results += acronymDB[acronym[:-1]]
+        choices = []
+        for definition, articleid, def_count in results:
+            text = articleDB[articleid]
+            choices.append(ExpansionChoice(definition, articleid, text))
+        return choices
     def expand(self, acronym, acronymExpansion, text):
         """
         expand one acronym, to be implemented by subclass

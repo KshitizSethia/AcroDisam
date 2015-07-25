@@ -1,9 +1,9 @@
 import re
 
-from AcronymExtractors.AcronymExtractor import AcronymExtractor
-import string_constants
-from helper import AcronymExpansion
 from AcronymExpanders import AcronymExpanderEnum
+from AcronymExtractors.AcronymExtractor import AcronymExtractor
+from helper import AcronymExpansion
+import string_constants
 
 
 class AcronymExtractor_v1(AcronymExtractor):

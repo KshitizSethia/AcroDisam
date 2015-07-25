@@ -18,16 +18,17 @@ class Expander_SVC(AcronymExpander):
         logger.info("TFIDF vectorizer loaded")
 
     def expand(self, acronym, acronymExpansion, text):
-        choices = self.db_lookup(acronym)
+        choices = self.getChoices(acronym)
 
         if(len(choices) == 0):
             logger.warning("No expansion for %s in\n{%s}", acronym, text)
             return acronymExpansion
         elif not self.distinct_results(choices):
-            acronymExpansion.expansion = choices[0][0]
+            acronymExpansion.expansion = choices[0].expansion
             acronymExpansion.expander = AcronymExpanderEnum.SVC
         else:
-            definitions, articles = choices[:, 0], choices[:, 1]
+            definitions = [choice.expansion for choice in choices]
+            articles = [choice.article_text for choice in choices]
             X = self.vectorizer.transform(articles)
             Y = definitions
 
@@ -40,33 +41,15 @@ class Expander_SVC(AcronymExpander):
 
         return acronymExpansion
 
-    # returns numpy array of [definition, article]
-    def db_lookup(self, acronym):
-        # get relevant expansions from acronymdb
-        results = []
-        # add singular expansions
-        if(acronym in acronymDB):
-            results += acronymDB[acronym]
-        # add plural expansions
-        if(acronym[-1] == "s" and acronym[:-1] in acronymDB):
-            results += acronymDB[acronym[:-1]]
-
-        # make choices from expansions
-        choices = []
-        for definition, articleid, def_count in results:
-            text = articleDB[articleid]
-            choices.append([definition, text])
-        return numpy.array(choices)
-
-    # doubt: should this be done when generating the db?
+    # todo: this should be done when generating the db?
     def distinct_results(self, choices):
         count = len(choices)
         if(count <= 1):
             return False
         else:
-            res1 = choices[0][0].strip().lower().replace('-', ' ')
+            res1 = choices[0].expansion.strip().lower().replace('-', ' ')
             res1 = ' '.join([w[:4] for w in res1.split()])
-            res2 = choices[-1][0].strip().lower().replace('-', ' ')
+            res2 = choices[-1].expansion.strip().lower().replace('-', ' ')
             res2 = ' '.join([w[:4] for w in res2.split()])
             if res1 != res2:
                 return True
