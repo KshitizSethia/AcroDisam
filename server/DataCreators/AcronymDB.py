@@ -12,27 +12,29 @@ import sys
 from Logger import logger
 import string_constants
 import numpy
+from string_constants import file_list_scraped_definitions
 
 
 def createFromScrapedDefinitions():
     logger.info("Creating AcronymDB")
     csv.field_size_limit(sys.maxint)
     
-    # open as csv file with headers
-    acronym_csv = csv.DictReader(open(string_constants.file_scraped_definitions, "rb")
-                                 , delimiter=",")
     acronymDB = {}
     loaded_acronyms = 0
-    for row in acronym_csv:
-        if(row["acronym"] not in acronymDB):
-            acronymDB[row["acronym"]] = []
-        acronymDB[row["acronym"]].append([row["acronym_expansion"]
-                                          .strip().lower().replace('-', ' ')
-                                          , row["article_id"]])
-                                          # , row["article_title"]]) # title was part of old format
-        loaded_acronyms += 1
-        if(loaded_acronyms % 10000 == 0):
-            logger.debug("loaded %d acronyms", loaded_acronyms)
+    for definition_file in file_list_scraped_definitions:
+        # open as csv file with headers
+        acronym_csv = csv.DictReader(open(definition_file, "rb"), delimiter=",")
+    
+        for row in acronym_csv:
+            if(row["acronym"] not in acronymDB):
+                acronymDB[row["acronym"]] = []
+            acronymDB[row["acronym"]].append([row["acronym_expansion"]
+                                              .strip().lower().replace('-', ' ')
+                                              , row["article_id"]])
+                                              # , row["article_title"]]) # title was part of old format
+            loaded_acronyms += 1
+            if(loaded_acronyms % 10000 == 0):
+                logger.debug("loaded %d acronyms", loaded_acronyms)
         
     logger.info("adding def_count values to acronymDB")
     defs_per_acronym = [0] * 1000

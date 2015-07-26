@@ -8,22 +8,24 @@ import sys
 
 from Logger import logger
 import string_constants
+from string_constants import file_list_scraped_articles
 
 
 def createFromScrapedArticles():
     logger.info("Creating ArticleDB")
     csv.field_size_limit(sys.maxint)
     
-    # open as csv file with headers
-    article_csv = csv.DictReader(open(string_constants.file_scraped_articles, "rb")
-                                 , delimiter=",")
     articleDB = {}
     loaded_articles = 0
-    for row in article_csv:
-        articleDB[row["article_id"]] = row["article_text"]
-        loaded_articles += 1
-        if(loaded_articles % 10000==0):
-            logger.debug("loaded %d articles", loaded_articles)
+    for article_file in file_list_scraped_articles:
+        # open as csv file with headers
+        article_csv = csv.DictReader(open(article_file, "rb"), delimiter=",")
+    
+        for row in article_csv:
+            articleDB[row["article_id"]] = row["article_text"]
+            loaded_articles += 1
+            if(loaded_articles % 10000==0):
+                logger.debug("loaded %d articles", loaded_articles)
     
     dump(articleDB)
     logger.info("Dumped ArticleDB successfully")

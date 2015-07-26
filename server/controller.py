@@ -1,5 +1,6 @@
 import os
 
+from AcronymExpanders.Expander_LDA import Expander_LDA
 from AcronymExpanders.Expander_SVC import Expander_SVC
 from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
 from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1

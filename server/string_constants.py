@@ -23,11 +23,13 @@ file_errorpage = "500.html"
 file_homepage = "index.html"
 file_logs = folder_root + "log.txt"
 file_scraped_article_info = folder_data +"scraped_article_info.csv"
-file_scraped_articles = folder_data + "scraped_articles.csv"
-file_scraped_definitions = folder_data + "scraped_definitions.csv"
 file_vectorizer = folder_data + "vectorizer"
 file_lda_model = folder_data +"lda_model.bin"
 file_gensim_dictionary = folder_data +"gensim_dictionary.bin"
+file_temp_word_corpus = folder_data +"temp_word_corpus.bin"
+
+file_list_scraped_articles = [folder_data + "scraped_articles.csv"]
+file_list_scraped_definitions = [folder_data + "scraped_definitions.csv"]
 
 """Miscellaneous"""
 name_logger = "acronym_disambiguator"
