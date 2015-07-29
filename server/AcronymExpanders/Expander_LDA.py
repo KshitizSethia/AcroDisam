@@ -9,6 +9,7 @@ from TextTools import getCleanedWords
 import cPickle as pickle
 from string_constants import file_lda_model, file_gensim_dictionary, file_articleIDToLDA
 from DataCreators import LDAModel
+from gensim.matutils import cossim
 
 
 class Expander_LDA(AcronymExpander):
@@ -28,14 +29,14 @@ class Expander_LDA(AcronymExpander):
         bow = self.dictionary.doc2bow(cleaned_words)
         target_lda = self.ldamodel[bow]
 
-        min_cos_dist = sys.maxint
+        max_cos_sim = -1.0
         chosen_expansion = ""
         for choice in choices:
             choice_lda = self.articleIDToLDADict[choice.article_id]
-            cos_dist = cosine(target_lda, choice_lda)
-            if(cos_dist < min_cos_dist):
+            cos_sim = cossim(target_lda, choice_lda)
+            if(cos_sim > max_cos_sim):
                 chosen_expansion = choice.expansion
-                min_cos_dist = cos_dist
+                max_cos_sim = cos_sim
         if(chosen_expansion != ""):
             acronymExpansion.expansion = chosen_expansion
             acronymExpansion.expander = AcronymExpanderEnum.LDA
