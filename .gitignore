@@ -13,7 +13,7 @@ uploads
 output
 *.pickle
 *.bin
-*.csv
+server/storage/data_all/*.csv
 articledb.pickle
 
 # Windows image file caches
