@@ -1,6 +1,72 @@
 """
-
+Create a smaller DBs for debugging/testing scripts
+Steps:
+- Copy the following files to a new_folder:
+        scraped_article_info.csv
+        scraped_articles.csv
+        scraped_definitions.csv
+        vectorizer
+        vectorizer_01.npy
+        vectorizer_02.npy
+        wordsEn.txt
+- Keep relevant articles from scraped_articles in scraped_articles.csv
+- Change data folder in string_constants to point to new_folder
+- Run the script below
 """
+import csv
+import os
+
+from DataCreators import ArticleDB, AcronymDB, ArticleInfoDB
+from string_constants import file_scraped_articles_list,\
+    file_scraped_definitions_list, file_scraped_article_info
+import sys
+
+csv.field_size_limit(sys.maxint)
+
+## Get articleIDs which are needed in each DB
+articleIds = []
+for file in file_scraped_articles_list:
+    for line in csv.DictReader(open(file,"rb"), delimiter=","):
+        articleIds.append(line["article_id"])
+
+## Save smaller version of scraped definitions csv
+file_path = file_scraped_definitions_list[0]    
+small_path = file_path+".csv"
+with open(file_path, "rb") as infile, open(small_path, "wb") as outfile:
+    source_csv = csv.DictReader(infile, delimiter=",")
+    
+    headers = ["acronym","acronym_expansion","article_id"]
+    small_csv = csv.DictWriter(outfile, fieldnames=headers)
+    small_csv.writeheader()
+    
+    for line in source_csv:
+        if(line["article_id"] in articleIds):
+            small_csv.writerow(line)
+
+os.remove(file_path)
+os.rename(small_path, file_path)
+
+## Save smaller version of scraped article info csv
+file_path = file_scraped_article_info    
+small_path = file_path+".small"
+with open(file_path, "rb") as infile, open(small_path, "wb") as outfile:
+    source_csv = csv.DictReader(infile, delimiter=",")
+    
+    headers = ["article_id","article_title","article_source"]
+    small_csv = csv.DictWriter(outfile, fieldnames=headers)
+    small_csv.writeheader()
+    
+    for line in source_csv:
+        if(line["article_id"] in articleIds):
+            small_csv.writerow(line)
+    
+os.remove(file_path)
+os.rename(small_path, file_path)
+
+## Make new DB files
+ArticleDB.createFromScrapedArticles()
+AcronymDB.createFromScrapedDefinitions()
+ArticleInfoDB.dump(ArticleInfoDB.fromCSV())
 
 
 """

@@ -12,24 +12,23 @@ sep = os.path.sep
 folder_root = os.path.dirname(os.path.realpath(__file__)) + sep
 folder_output = folder_root + "storage" + sep + "outputs" + sep
 folder_upload = folder_root + "storage" + sep + "uploads" + sep
-folder_data = folder_root + "storage" + sep + "data" + sep
+folder_data = folder_root + "storage" + sep + "data_small" + sep
 
 file_acronymdb = folder_data + "acronymdb.pickle"
-file_article_infodb = folder_data +"article_infodb.pickle"
 file_articleIDToLDA = folder_data +"articleIDToLDA.pickle"
+file_article_infodb = folder_data +"article_infodb.pickle"
 file_articledb = folder_data + "articledb.pickle"
 file_english_words = folder_data + "wordsEn.txt"
 file_errorpage = "500.html"
+file_gensim_dictionary = folder_data +"gensim_dictionary.bin"
 file_homepage = "index.html"
+file_lda_model = folder_data +"lda_model.bin"
 file_logs = folder_root + "log.txt"
 file_scraped_article_info = folder_data +"scraped_article_info.csv"
+file_scraped_articles_list = [folder_data + "scraped_articles.csv"]
+file_scraped_definitions_list = [folder_data + "scraped_definitions.csv"]
+file_word_corpus = folder_data +"temp_word_corpus.bin"
 file_vectorizer = folder_data + "vectorizer"
-file_lda_model = folder_data +"lda_model.bin"
-file_gensim_dictionary = folder_data +"gensim_dictionary.bin"
-file_temp_word_corpus = folder_data +"temp_word_corpus.bin"
-
-file_list_scraped_articles = [folder_data + "scraped_articles.csv"]
-file_list_scraped_definitions = [folder_data + "scraped_definitions.csv"]
 
 """Miscellaneous"""
 name_logger = "acronym_disambiguator"
