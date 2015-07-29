@@ -12,6 +12,7 @@ outputs
 uploads
 output
 *.pickle
+*.bin
 *.csv
 articledb.pickle
 
