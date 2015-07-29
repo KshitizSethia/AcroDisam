@@ -1,8 +1,5 @@
 import os
 
-from AcronymExpanders.Expander_LDA import Expander_LDA
-from AcronymExpanders.Expander_SVC import Expander_SVC
-from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
 from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
 from Logger import logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
@@ -11,23 +8,17 @@ import string_constants
 
 class Controller():  # todo: find better name
 
-    def __init__(self):
-        logger.info("Initializing Controller")
-        self.acronymExpanders = [Expander_fromText_v2(), Expander_SVC()]
-        logger.info("AcronymExpanders loaded")
-        self.textExtractor = Extract_PdfMiner()
-        logger.info("TextExtractor loaded")
-        self.acronymExtractor = AcronymExtractor_v1()
-        logger.info("AcronymExtractor loaded")
+    def __init__(self, text_extractor, acronym_extractor, expanders):
+        self.acronymExpanders = expanders
+        self.textExtractor = text_extractor
+        self.acronymExtractor = acronym_extractor
 
     def supportsFile(self, filename):
         extension = filename.rsplit(".", 1)[1]
         return extension in string_constants.allowed_extensions
 
-    def processFile(self, filename):
+    def processFile(self, file_text):
         # expand the acronyms
-        file_path = os.path.join(string_constants.folder_upload, filename)
-        file_text = self.textExtractor.get_text(file_path)
         expanded_acronyms = self.acronymExtractor.get_acronyms(file_text)
         for expander in self.acronymExpanders:
             expanded_acronyms, allDone = expander.try_to_expand_acronyms(
@@ -36,6 +27,11 @@ class Controller():  # todo: find better name
                 break
 
         return expanded_acronyms
+
+    def extractText(self, filename):
+        file_path = os.path.join(string_constants.folder_upload, filename)
+        file_text = self.textExtractor.get_text(file_path)
+        return file_text
 
     def writeOutputToFile(self, expanded_acronyms, file_path):
         output_file = open(file_path, "w")

@@ -9,14 +9,23 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask.helpers import send_from_directory
 from werkzeug.utils import secure_filename
 
+from AcronymExpanders.Expander_SVC import Expander_SVC
+from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
+from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
 from Logger import logger
+from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 from controller import Controller
 import string_constants
 
 
 logger.info("Starting server")
 app = Flask(__name__)
-controlr = Controller()
+
+
+logger.info("Initializing Controller")
+controlr = Controller(text_extractor=Extract_PdfMiner(),
+                      acronym_extractor=AcronymExtractor_v1,
+                      expanders=[Expander_fromText_v2(), Expander_SVC()])
 
 # This route will show a form to perform an AJAX request
 # jQuery is loaded to execute the request and update the
@@ -49,14 +58,15 @@ def upload():
         # save filename as guid, helps parallel sessions and accessing info for
         # error analysis
         extension = file.filename.rsplit(".", 1)[1]
-        safe_filename = str(uuid4())+"."+extension
+        safe_filename = str(uuid4()) + "." + extension
         server_file_path = os.path.join(
             string_constants.folder_upload, safe_filename)
 
         # Move the file form the temp folder to the upload folder
         file.save(server_file_path)
 
-        expanded_acronyms = controlr.processFile(safe_filename)
+        text = controlr.extractText(safe_filename)
+        expanded_acronyms = controlr.processFile(text)
 
         output_file_path = os.path.join(
             string_constants.folder_output, controlr.getOutputFilename(safe_filename))
