@@ -9,10 +9,11 @@ from pdfminer.pdfpage import PDFPage
 
 from TextExtractors.TextExtractor import TextExtractor
 import numpy as np
+from TextTools import toUnicode
 
 
 class Extract_PdfMiner(TextExtractor):
-    
+
     def get_text(self, file_path):
         if file_path[-4:] == '.txt':
             return open(file_path).read()
@@ -21,7 +22,7 @@ class Extract_PdfMiner(TextExtractor):
             txt_path = file_path[:-4] + '.txt'
         elif file_path[-4:] != '.txt':
             txt_path = file_path + '.txt'
-        
+
     #    if (os.file_path.isfile(txt_path)):
     #        return open(txt_path).read()
         if file_path[-4:] != '.pdf':
@@ -41,13 +42,11 @@ class Extract_PdfMiner(TextExtractor):
             interpreter.process_page(page)
         fp.close()
         device.close()
-        str = retstr.getvalue()
+        str = toUnicode(retstr.getvalue())
         retstr.close()
-        
-        #    write_text(txt_path, str)
-    
+
         return str
-    
+
     def get_font_filtered_text(self, path):
         txt_path = path
         if path[-4:] == '.txt':
@@ -58,7 +57,8 @@ class Extract_PdfMiner(TextExtractor):
             txt_path = path + '.txt'
     #    if (os.path.isfile(txt_path)):
     #        return open(txt_path).read()
-        htmltext = self.get_html(path)  # TODO: This needs to be optimized eventually
+        # TODO: This needs to be optimized eventually
+        htmltext = self.get_html(path)
         return self.html_to_text(htmltext, path, fontfilter=True)
 
     def get_html(self, path):  # Pulls html from PDF instead of plain text
@@ -82,7 +82,7 @@ class Extract_PdfMiner(TextExtractor):
         str = retstr.getvalue()
         retstr.close()
         return str
-    
+
     def html_to_text(self, htmltext, path, fontfilter=True):
         def repl_fs(m):  # Munging to create font size tags
             size = m.group(3)
@@ -104,12 +104,12 @@ class Extract_PdfMiner(TextExtractor):
             for w in txt.split():
                 if w[:11] == "[fontsize__":
                     fs = int(re.search("\d+", w).group(0))
-                elif np.abs(fs - main_font) < 2:  # Keep 2 font sizes near main font
+                # Keep 2 font sizes near main font
+                elif np.abs(fs - main_font) < 2:
                     filtered_text.append(w)
             txt = ' '.join(filtered_text)
     #        write_text(path+".txt", txt)
         return txt
-
 
     def write_text(self, path, text):
         file = open(path, "w")

@@ -16,6 +16,7 @@ class Expander_SVC(AcronymExpander):
     def __init__(self):
         self.vectorizer = joblib.load(string_constants.file_vectorizer)
         logger.info("TFIDF vectorizer loaded")
+        logger.info("Expander_SVC loaded")
 
     def expand(self, acronym, acronymExpansion, text):
         choices = self.getChoices(acronym)
@@ -34,8 +35,11 @@ class Expander_SVC(AcronymExpander):
 
             classifier = LinearSVC(C=1., loss="l1")
             classifier.fit(X, Y)
+            
+            #unicode transform works differently, see http://stackoverflow.com/a/11693937/681311
+            remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
             s = self.vectorizer.transform(
-                [text.translate(string.maketrans("", ""), string.punctuation)])  # todo:
+                [text.translate(remove_punctuation_map)])  # todo:
             acronymExpansion.expansion = classifier.predict(s)[0]
             acronymExpansion.expander = AcronymExpanderEnum.SVC
 

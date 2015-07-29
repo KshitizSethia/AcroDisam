@@ -12,44 +12,48 @@ import sys
 from Logger import logger
 import string_constants
 import numpy
-from string_constants import file_list_scraped_definitions
+from string_constants import file_scraped_definitions_list
+from TextTools import toUnicode
 
 
 def createFromScrapedDefinitions():
     logger.info("Creating AcronymDB")
     csv.field_size_limit(sys.maxint)
-    
+
     acronymDB = {}
     loaded_acronyms = 0
-    for definition_file in file_list_scraped_definitions:
+    for definition_file in file_scraped_definitions_list:
         # open as csv file with headers
-        acronym_csv = csv.DictReader(open(definition_file, "rb"), delimiter=",")
-    
+        acronym_csv = csv.DictReader(
+            open(definition_file, "rb"), delimiter=",")
+
         for row in acronym_csv:
-            if(row["acronym"] not in acronymDB):
-                acronymDB[row["acronym"]] = []
-            acronymDB[row["acronym"]].append([row["acronym_expansion"]
-                                              .strip().lower().replace('-', ' ')
-                                              , row["article_id"]])
-                                              # , row["article_title"]]) # title was part of old format
+            acronym = toUnicode(row["acronym"])
+            acronym_expansion = toUnicode(row["acronym_expansion"])
+            article_id = toUnicode(row["article_id"])
+            if(acronym not in acronymDB):
+                acronymDB[acronym] = []
+            acronymDB[acronym].append([acronym_expansion
+                                       .strip().lower().replace('-', ' '), article_id])
+            # , row["article_title"]]) # title was part of old format
             loaded_acronyms += 1
             if(loaded_acronyms % 10000 == 0):
                 logger.debug("loaded %d acronyms", loaded_acronyms)
-        
+
     logger.info("adding def_count values to acronymDB")
     defs_per_acronym = [0] * 1000
     insts_per_def = [0] * 1000
-    num_acronyms = len(acronymDB)    
+    num_acronyms = len(acronymDB)
     for acronym, values_for_this_acronym in acronymDB.items():
-        values_for_this_acronym = sorted(values_for_this_acronym
-                                         , key=lambda x:x[0])
-        
+        values_for_this_acronym = sorted(
+            values_for_this_acronym, key=lambda x: x[0])
+
         def_count = 0
         inst_count = 0
         expansion_of_last_acronym = values_for_this_acronym[0][0]
         #, article_title]\ # title was part of old format in the line below
         for index, [acronym_expansion, article_id]\
-                            in enumerate(values_for_this_acronym):
+                in enumerate(values_for_this_acronym):
             if is_same_expansion(acronym_expansion, expansion_of_last_acronym):
                 inst_count += 1
                 values_for_this_acronym[index].append(def_count)
@@ -62,10 +66,11 @@ def createFromScrapedDefinitions():
                 values_for_this_acronym[index].append(def_count)
         defs_per_acronym[min(def_count, len(defs_per_acronym) - 1)] += 1
         acronymDB[acronym] = numpy.array(values_for_this_acronym)
-                
+
     dump(acronymDB)
     logger.info("Dumped AcronymDB successfully")
-    
+
+
 def is_same_expansion(true_exp, pred_exp):
     true_exp = true_exp.strip().lower().replace("-", " ")
     pred_exp = " ".join([word[:4] for word in pred_exp.split()])
@@ -77,10 +82,11 @@ def is_same_expansion(true_exp, pred_exp):
     #        return True
     return False
 
+
 def dump(acronymDB):
-    pickle.dump(acronymDB
-                 , open(string_constants.file_acronymdb, "wb")
-                 , protocol=2)
+    pickle.dump(
+        acronymDB, open(string_constants.file_acronymdb, "wb"), protocol=2)
+
 
 def load():
     return pickle.load(open(string_constants.file_acronymdb, "rb"))
