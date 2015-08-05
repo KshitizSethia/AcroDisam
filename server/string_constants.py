@@ -10,14 +10,22 @@ import os
 """Paths for folders and files"""
 sep = os.path.sep
 folder_root = os.path.dirname(os.path.realpath(__file__)) + sep
+
 folder_output = folder_root + "storage" + sep + "outputs" + sep
 folder_upload = folder_root + "storage" + sep + "uploads" + sep
 folder_data = folder_root + "storage" + sep + "data_small" + sep
+
 folder_lda = folder_data + "lda" + sep
+
 folder_msh_corpus = folder_data + "MSHCorpus" + sep
 folder_msh_arff = folder_msh_corpus + "arff" + sep
 
-for folder in [folder_output, folder_data, folder_upload, folder_lda]:
+folder_scienceWise = folder_data + "ScienceWISE" + sep
+folder_scienceWise_pdfs = folder_scienceWise + "pdfs" + sep
+
+for folder in [folder_output, folder_data, folder_upload, folder_lda
+               , folder_msh_corpus, folder_msh_arff, folder_scienceWise
+               , folder_scienceWise_pdfs]:
     if(not os.path.exists(folder)):
         os.makedirs(folder)
 
@@ -27,15 +35,22 @@ file_articledb = folder_data + "articledb.pickle"
 file_english_words = folder_data + "wordsEn.txt"
 file_errorpage = "500.html"
 file_homepage = "index.html"
+
 file_lda_articleIDToLDA = folder_lda + "articleIDToLDA.pickle"
 file_lda_bow_corpus = folder_lda + "bow_corpus.bin"
 file_lda_gensim_dictionary = folder_lda + "gensim_dictionary.bin"
 file_lda_model = folder_lda + "lda_model.bin"
 file_lda_word_corpus = folder_lda + "temp_word_corpus.bin"
-file_logs = folder_root + "log.txt"
-file_msh_articleDB = folder_msh_corpus+"articledb.pickle"
-file_msh_acronymDB = folder_msh_corpus+"acronymdb.pickle"
-file_msh_articleIDToAcronymExpansions = folder_msh_corpus + "articleIDToAcronymExpansions.pickle"
+
+file_logs = folder_root +"logs" +sep + "log.txt"
+
+file_msh_articleDB = folder_msh_corpus + "articledb.pickle"
+file_msh_acronymDB = folder_msh_corpus + "acronymdb.pickle"
+file_msh_articleIDToAcronymExpansions = folder_msh_corpus + \
+    "articleIDToAcronymExpansions.pickle"
+
+file_ScienceWise_index_train = folder_scienceWise + "sw_train_abstracts.txt"
+
 file_scraped_article_info = folder_data + "scraped_article_info.csv"
 file_scraped_articles_list = [folder_data + "scraped_articles.csv"]
 file_scraped_definitions_list = [folder_data + "scraped_definitions.csv"]
