@@ -1,7 +1,7 @@
 import os
 
 from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
-from Logger import logger
+from Logger import common_logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 import string_constants
 

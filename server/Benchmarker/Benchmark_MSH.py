@@ -14,7 +14,7 @@ class Benchmarker_MSH(Benchmarker):
         self.articleDBPath = file_msh_articleDB
         self.acronymDBPath = file_msh_acronymDB
         self.expandersToUse = [
-            AcronymExpanderEnum.fromText, AcronymExpanderEnum.SVC]
+            AcronymExpanderEnum.fromText, AcronymExpanderEnum.LDA]
         self.articleIDToAcronymExpansions = cPickle.load(open(file_msh_articleIDToAcronymExpansions, "rb"))
         
     def _getActualExpansions(self, articleID, article):

@@ -13,17 +13,17 @@ from AcronymExpanders.Expander_SVC import Expander_SVC
 from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
 from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
 from DataCreators import ArticleDB, AcronymDB
-from Logger import logger
+from Logger import common_logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 from controller import Controller
 import string_constants
 
 
-logger.info("Starting server")
+common_logger.info("Starting server")
 app = Flask(__name__)
 
 
-logger.info("Initializing Controller")
+common_logger.info("Initializing Controller")
 articleDB = ArticleDB.load()
 acronymDB = AcronymDB.load()
 controlr = Controller(text_extractor=Extract_PdfMiner(),
@@ -42,7 +42,7 @@ def index():
 
 @app.errorhandler(500)
 def internal_server_error(e):
-    logger.error(e)
+    common_logger.error(e)
 
     return render_template(string_constants.file_errorpage), 500
 
@@ -90,13 +90,13 @@ def uploaded_file(filename):
 
 @app.route("/output/<filename>")
 def output_file(filename):
-    logger.info(string_constants.folder_output + filename)
+    common_logger.info(string_constants.folder_output + filename)
 
     return send_from_directory(string_constants.folder_output, filename)
 
 
 def main():
     app.run(debug=False, host='0.0.0.0', port=80)
-    logger.info("Server is ready")
+    common_logger.info("Server is ready")
 if __name__ == "__main__":
     main()

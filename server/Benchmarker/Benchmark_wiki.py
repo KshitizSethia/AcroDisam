@@ -6,7 +6,7 @@ from AcronymExpanders import AcronymExpanderEnum
 from AcronymExpanders.Expander_fromText import Expander_fromText
 from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
 from Benchmarker.Benchmark import Benchmarker
-from Logger import logger
+from Logger import common_logger
 from string_constants import file_articledb, file_acronymdb
 
 
@@ -54,13 +54,13 @@ class Benchmarker_wiki(Benchmarker):
                 if(len(pattern.findall(article_for_testing)) > 0):
                     errorString = "Verification of text expansion removal failed:\nAcronym: " +\
                         acronym + "\nText:\n" + article_for_testing
-                    logger.error(errorString)
+                    common_logger.error(errorString)
                     raise RuntimeError(errorString)
 
             if acronym not in article_for_testing:
                 errorMessage = "Acronym removed from text while cleaning:\nAcronym: " +\
                     acronym + "\nText:\n" + article_for_testing
-                logger.error(errorMessage)
+                common_logger.error(errorMessage)
                 raise RuntimeError(errorMessage)
 
 
@@ -68,16 +68,16 @@ def _proxyFunction(benchmarker, testArticles):
     return benchmarker.getScores(testArticles)
 
 if __name__ == "__main__":
-    logger.info("Starting Benchmarking")
+    common_logger.info("Starting Benchmarking")
 
     benchmarker = Benchmarker_wiki()
 
-    logger.info("making partitions")
+    common_logger.info("making partitions")
     partitions = benchmarker.getPartitions()
     gc.collect()
 
     pool = Pool(processes=benchmarker.numProcesses, maxtasksperchild=1)
-    logger.info("delegating work to pools")
+    common_logger.info("delegating work to pools")
 
     partialFunc = functools.partial(_proxyFunction, benchmarker)
 

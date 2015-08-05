@@ -3,7 +3,7 @@ from gensim.matutils import cossim
 from AcronymExpanders import AcronymExpanderEnum
 from AcronymExpanders.AcronymExpander import AcronymExpander
 from DataCreators import LDAModel
-from Logger import logger
+from Logger import common_logger
 from TextTools import getCleanedWords
 
 
@@ -14,7 +14,7 @@ class Expander_LDA(AcronymExpander):
     """
 
     def __init__(self, articleDB, acronymDB):
-        logger.info("Loading LDA model and dictionary")
+        common_logger.info("Loading LDA model and dictionary")
         AcronymExpander.__init__(self, articleDB, acronymDB)
         self.ldamodel, self.dictionary, self.articleIDToLDADict = LDAModel.load()
 

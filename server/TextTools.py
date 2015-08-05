@@ -2,7 +2,7 @@ import re
 
 from nltk.stem.lancaster import LancasterStemmer
 from nltk.tokenize import word_tokenize
-from Logger import logger
+from Logger import common_logger
 
 
 #from nltk.stem.snowball import SnowballStemmer

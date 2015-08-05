@@ -4,7 +4,7 @@ from string_constants import file_ScienceWise_index_train,\
 import urllib2
 import time
 
-from Logger import logger
+from Logger import common_logger
 
 def downloadPdfs():
     with open(file_ScienceWise_index_train, "r") as file:
@@ -14,10 +14,10 @@ def downloadPdfs():
             pdfID = pdfID.replace("/", "_").replace("\\","_")
             try:
                 _downloadPdf(pdfID)
-                logger.debug("successfully downloaded " +pdfID)
+                common_logger.debug("successfully downloaded " +pdfID)
                 time.sleep(15*60)
             except:
-                logger.exception("Error in file " +pdfID)
+                common_logger.exception("Error in file " +pdfID)
             
 def _downloadPdf(pdfID):
     filename = pdfID +".pdf"

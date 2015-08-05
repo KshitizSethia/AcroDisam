@@ -6,7 +6,7 @@ article_source may be
     a list of entries, each seperated by a comma 
         (this is for backward compatibility only, do not use in new code)
 """
-from Logger import logger
+from Logger import common_logger
 import csv
 import sys
 import cPickle as pickle
@@ -21,7 +21,7 @@ class ArticleInfo:
 
 
 def fromCSV():
-    logger.info("Creating ArticleInfoDB")
+    common_logger.info("Creating ArticleInfoDB")
     csv.field_size_limit(sys.maxint)
 
     article_info_csv = csv.DictReader(
@@ -38,9 +38,9 @@ def fromCSV():
 
         counter += 1
         if(counter % 1000 == 0):
-            logger.debug("done with %d rows", counter)
+            common_logger.debug("done with %d rows", counter)
 
-    logger.info("Done creating ArticleInfoDB")
+    common_logger.info("Done creating ArticleInfoDB")
     return article_info_db
 
 
@@ -64,7 +64,7 @@ def toCSV(article_info_db):
         csv_writer.writerow(rowdict)
         counter += 1
         if(counter % 1000 == 0):
-            logger.debug("done with %d article ids", counter)
+            common_logger.debug("done with %d article ids", counter)
 
 
 def dump(article_info_db):

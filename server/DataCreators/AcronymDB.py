@@ -9,14 +9,14 @@ import cPickle as pickle
 import csv
 import sys
 
-from Logger import logger
+from Logger import common_logger
 import numpy
 from string_constants import file_scraped_definitions_list, file_acronymdb
 from TextTools import toUnicode
 
 
 def createFromScrapedDefinitions():
-    logger.info("Creating AcronymDB")
+    common_logger.info("Creating AcronymDB")
     csv.field_size_limit(sys.maxint)
 
     acronymDB = {}
@@ -37,9 +37,9 @@ def createFromScrapedDefinitions():
             # , row["article_title"]]) # title was part of old format
             loaded_acronyms += 1
             if(loaded_acronyms % 10000 == 0):
-                logger.debug("loaded %d acronyms", loaded_acronyms)
+                common_logger.debug("loaded %d acronyms", loaded_acronyms)
 
-    logger.info("adding def_count values to acronymDB")
+    common_logger.info("adding def_count values to acronymDB")
     defs_per_acronym = [0] * 1000
     insts_per_def = [0] * 1000
     num_acronyms = len(acronymDB)
@@ -67,7 +67,7 @@ def createFromScrapedDefinitions():
         acronymDB[acronym] = numpy.array(values_for_this_acronym)
 
     dump(acronymDB)
-    logger.info("Dumped AcronymDB successfully")
+    common_logger.info("Dumped AcronymDB successfully")
 
 
 def is_same_expansion(true_exp, pred_exp):

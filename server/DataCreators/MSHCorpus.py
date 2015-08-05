@@ -9,7 +9,7 @@ import arff
 
 from AcronymExpanders import AcronymExpanderEnum
 from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
-from Logger import logger
+from Logger import common_logger
 import cPickle as pickle
 from helper import AcronymExpansion
 from string_constants import folder_msh_arff, file_msh_articleDB,\
@@ -63,7 +63,7 @@ def makeDBs():
             cuid_and_pmid.append([cuid, pmid])
 
         if(acronym in acronymDB):
-            logger.error("acronym already present in acronymDB")
+            common_logger.error("acronym already present in acronymDB")
         else:
             acronymDB[acronym] = []
 
@@ -71,7 +71,7 @@ def makeDBs():
             if( cuid in CUID_to_expansion):
                 acronymDB[acronym].append([CUID_to_expansion[cuid], pmid,0])
             else:
-                logger.error("Expansion not found for CUID %s of %s" %(cuid, acronym))
+                common_logger.error("Expansion not found for CUID %s of %s" %(cuid, acronym))
                 acronymDB[acronym].append([cuid, pmid,0])
 
     articleIDToAcronymExpansions = {}

@@ -2,7 +2,7 @@ import re
 
 from AcronymExpanders import AcronymExpanderEnum
 from AcronymExpanders.AcronymExpander import AcronymExpander
-from Logger import logger
+from Logger import common_logger
 import string_constants
 
 
@@ -20,7 +20,7 @@ class Expander_fromText_v2(AcronymExpander):
     def expand(self, acronym, acronymExpansion, text):
         patterns = self.definition_patterns(acronym)
         
-        #logger.debug("Text:\n%s", text)
+        #common_logger.debug("Text:\n%s", text)
         
         for pattern in patterns:
             pattern_result = re.findall(pattern, text)
@@ -52,9 +52,9 @@ class Expander_fromText_v2(AcronymExpander):
         patterns = patterns + ["(" + def_pattern + ")" + between_def_and_acronym + acronym,
                                acronym + between_def_and_acronym + "(" + def_pattern + ")"]
         # log the patterns
-        #logger.debug("Acronym: %s, Patterns:", acronym)
+        #common_logger.debug("Acronym: %s, Patterns:", acronym)
         #for pattern in patterns:
-        #    logger.debug(pattern)        
+        #    common_logger.debug(pattern)        
         
         patterns = [re.compile(pattern, re.MULTILINE | re.IGNORECASE) for pattern in patterns]
         return patterns

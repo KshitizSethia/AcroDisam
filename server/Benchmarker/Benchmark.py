@@ -9,7 +9,7 @@ from AcronymExpanders.Expander_fromText import Expander_fromText
 from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
 from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
 from DataCreators import AcronymDB, ArticleDB
-from Logger import logger
+from Logger import common_logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 from controller import Controller
 from nltk.metrics.distance import edit_distance
@@ -74,14 +74,14 @@ class Benchmarker:
         if(actual_expansion == predicted_expansion):
             return True
         elif AcronymDB.is_same_expansion(actual_expansion, predicted_expansion):
-            logger.debug("Expansion matching succeeded: " +
+            common_logger.debug("Expansion matching succeeded: " +
                          actual_expansion + ", " + predicted_expansion)
             return True
         elif(edit_distance(actual_expansion, predicted_expansion)<=2):#max(numActualWords, numPredictedWords)):
-            logger.debug("Expansion matching succeeded: " +
+            common_logger.debug("Expansion matching succeeded: " +
                          actual_expansion + ", " + predicted_expansion)
             return True
-        logger.debug(
+        common_logger.debug(
             "Expansion matching failed: " + actual_expansion + ", " + predicted_expansion)
         return False
 
@@ -102,24 +102,24 @@ class Benchmarker:
 
     def getScores(self, testArticles):
 
-        logger.info("filtering articles with None")
+        common_logger.info("filtering articles with None")
         testArticles = dict(
             [article for article in testArticles if article != None])
 
         articleDB = ArticleDB.load(path=self.articleDBPath)
 
-        logger.info("removing test articles from articleDB")
+        common_logger.info("removing test articles from articleDB")
         for articleID in testArticles.keys():
             del articleDB[articleID]
 
-        logger.info("correcting acronymDB")
+        common_logger.info("correcting acronymDB")
         acronymDB = self.__getRealignedAcronymDb(testArticles.keys())
 
-        logger.info("verifying training dataset")
+        common_logger.info("verifying training dataset")
         if self.__verifyTrainSet(articleDB, acronymDB, testArticles.keys()):
             controller = self.__createController(articleDB, acronymDB)
 
-            logger.info("evaluating test performance")
+            common_logger.info("evaluating test performance")
             results = {"correct_expansions": 0.0, "incorrect_expansions": 0.0}
             totalExpansions = 0.0
             articlesWithErrors = []
@@ -141,11 +141,11 @@ class Benchmarker:
                     results["correct_expansions"] += correct
                     results["incorrect_expansions"] += incorrect
                 except:
-                    logger.exception(
+                    common_logger.exception(
                         "skipping articleID: %s, error details:" % (articleID))
                     articlesWithErrors.append(articleID)
 
-            logger.error("Total articles: %d, skipped: %d" %
+            common_logger.error("Total articles: %d, skipped: %d" %
                          (len(testArticles.keys()), len(articlesWithErrors)))
 
             if(totalExpansions > 0):
@@ -157,7 +157,7 @@ class Benchmarker:
             return results
 
         else:
-            logger.error("verification of train datasets failed for articleIDs %s" % str(
+            common_logger.error("verification of train datasets failed for articleIDs %s" % str(
                 testArticles.keys()))
             return None
 
@@ -192,7 +192,7 @@ class Benchmarker:
 
         mean_val = mean(validSuccesses)
         std_dev = std(validSuccesses)
-        logger.critical("Processed %d rounds out of %d" %
+        common_logger.critical("Processed %d rounds out of %d" %
                         (len(validSuccesses), len(results)))
-        logger.critical("Mean %f, Standard Deviation: %f" %
+        common_logger.critical("Mean %f, Standard Deviation: %f" %
                         (mean_val, std_dev))

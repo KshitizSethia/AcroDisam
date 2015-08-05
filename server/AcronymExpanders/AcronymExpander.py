@@ -1,7 +1,7 @@
 import numpy
 
 from AcronymExpanders import AcronymExpanderEnum
-from Logger import logger
+from Logger import common_logger
 import string_constants
 from helper import ExpansionChoice
 
@@ -30,7 +30,7 @@ class AcronymExpander:
                 expanded_acronyms[acronym] = expansion
         except IndexError:
             # todo print file name here
-            logger.error(string_constants.string_error_document_parse)
+            common_logger.error(string_constants.string_error_document_parse)
         return expanded_acronyms, all_acronyms_expanded
 
     def getChoices(self, acronym):

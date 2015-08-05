@@ -6,13 +6,13 @@ import cPickle as pickle
 import csv
 import sys
 
-from Logger import logger
+from Logger import common_logger
 from string_constants import file_scraped_articles_list, file_articledb
 from TextTools import toUnicode
 
 
 def createFromScrapedArticles():
-    logger.info("Creating ArticleDB")
+    common_logger.info("Creating ArticleDB")
     csv.field_size_limit(sys.maxint)
 
     articleDB = {}
@@ -26,10 +26,10 @@ def createFromScrapedArticles():
             articleDB[article_id] = toUnicode(row["article_text"])
             loaded_articles += 1
             if(loaded_articles % 10000 == 0):
-                logger.debug("loaded %d articles", loaded_articles)
+                common_logger.debug("loaded %d articles", loaded_articles)
 
     dump(articleDB)
-    logger.info("Dumped ArticleDB successfully")
+    common_logger.info("Dumped ArticleDB successfully")
 
 
 def dump(articleDB):

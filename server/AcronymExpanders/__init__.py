@@ -3,7 +3,7 @@ These are classes which expand acronyms.
 All classes here have to inherit AcronymExpander class.
 List all the expanders in the enum below
 """
-from Logger import logger
+from Logger import common_logger
 class AcronymExpanderEnum():
     none = "None"
     fromText = "Text"

@@ -7,7 +7,7 @@ from sklearn.svm.classes import LinearSVC
 from AcronymExpanders import AcronymExpanderEnum
 from AcronymExpanders.AcronymExpander import AcronymExpander
 
-from Logger import logger
+from Logger import common_logger
 import string_constants
 
 
@@ -17,15 +17,15 @@ class Expander_SVC(AcronymExpander):
         self.vectorizer = joblib.load(string_constants.file_vectorizer)
         AcronymExpander.__init__(self, articleDB, acronymDB)
         #super(Expander_SVC, self).__init__(articleDB, acronymDB)
-        logger.info("TFIDF vectorizer loaded")
-        logger.info("Expander_SVC loaded")
+        common_logger.info("TFIDF vectorizer loaded")
+        common_logger.info("Expander_SVC loaded")
 
     def expand(self, acronym, acronymExpansion, text):
         choices = self.getChoices(acronym)
 
         if(len(choices) == 0):
             #todo: uncomment below line
-            #logger.warning("No expansion for %s in\n{%s}", acronym, text)
+            #common_logger.warning("No expansion for %s in\n{%s}", acronym, text)
             return acronymExpansion
         elif not self.distinct_results(choices):
             acronymExpansion.expansion = choices[0].expansion
