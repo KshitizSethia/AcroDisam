@@ -3,7 +3,7 @@ import logging
 import string_constants
 
 
-logging_format = "%(levelname)s: %(asctime)s %(message)s"
+logging_format = "%(levelname)s: %(process)d %(asctime)s %(message)s"
 logging.basicConfig(filename=string_constants.file_logs
                     , level=logging.DEBUG
                     , format=logging_format

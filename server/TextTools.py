@@ -12,31 +12,34 @@ stop_words = ["a", "about", "above", "above", "across", "after", "afterwards", "
 junk_words = ["", "\n", "\r\n"]
 all_words_to_remove = stop_words + junk_words
 
-def removePunctuations(text):
+def _removePunctuations(text):
     
-    #The pattern below is obtained by running: '[%s]' % re.escape(u",;:.!?-\"'&()\/`[]\u00AD")
+    #The pattern below is obtained by running: '[%s]' % re.escape(u",;:.!?-\"'&()\/`[]\u00AD<>")
     #The punctuation symbols are from string.punctuation
     #See http://stackoverflow.com/a/265995/681311 for details
-    pattern_for_punctuations = u'[\\,\\;\\:\\.\\!\\?\\-\\"\\\'\\&\\(\\)\\\\\\/\\`\\[\\]\\\xad]'
+    pattern_for_punctuations = u'[\\,\\;\\:\\.\\!\\?\\-\\"\\\'\\&\\(\\)\\\\\\/\\`\\[\\]\\\xad\\<\\>]'
     cleaned_text = re.sub(pattern_for_punctuations, " ", text)
 
     return cleaned_text
 
 
-def getCleanedWords(text):
-    cleaned_text = removePunctuations(text)
+def getCleanedWords(text, stem_words=True):
+    cleaned_text = _removePunctuations(text)
     words = word_tokenize(cleaned_text)
 
-    # WordNetLemmatizer()#LancasterStemmer()#PorterStemmer()#SnowballStemmer("english")
-    stemmer = LancasterStemmer()
-    base_words = [
-        stemmer.stem(word) for word in words if word not in all_words_to_remove]
-
-    return base_words
+    result = []
+    if(stem_words):
+        # WordNetLemmatizer()#LancasterStemmer()#PorterStemmer()#SnowballStemmer("english")
+        stemmer = LancasterStemmer()
+        result = [stemmer.stem(word).lower() for word in words if word not in all_words_to_remove]
+    else:
+        result = [word.lower() for word in words if word.lower() not in all_words_to_remove]
+    
+    return result
 
 def toUnicode(text):
     if isinstance(text, str):
-        return text.decode("utf-8")
+        return text.decode("utf-8", errors='ignore')
     elif isinstance(text, unicode):
         return text
     else:

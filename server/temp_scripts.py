@@ -1,4 +1,34 @@
 """
+**************************************************************************************************
+Check what's the role of PMID in MSH Corpus
+"""
+
+from arff import load
+import os
+
+pmids = {}
+folder = r"C:\Cloud\github\AcroDisam\server\storage\data_all\MSHCorpus\arff"
+for file_name in os.listdir(folder):
+    file_path = os.path.join(folder, file_name)
+    for row in load(file_path):
+        pmid = row.PMID
+        if(pmid not in pmids):
+            pmids[pmid] = []
+        pmids[pmid].append(file_name)
+
+for pmid in pmids:
+    if len(pmids[pmid])>1:
+        print("PMID %s is repeated" %str(pmid))
+print(len(pmids.keys()))
+
+"""
+PMID is a unique identifier of citation text in the MSH corpus
+"""
+
+#print(pmids)
+
+"""
+**************************************************************************************************
 Create a smaller DBs for debugging/testing scripts
 Steps:
 - Copy the following files to a new_folder:
@@ -12,6 +42,7 @@ Steps:
 - Keep relevant articles from scraped_articles in scraped_articles.csv
 - Change data folder in string_constants to point to new_folder
 - Run the script below
+"""
 """
 import csv
 import os
@@ -67,7 +98,7 @@ os.rename(small_path, file_path)
 ArticleDB.createFromScrapedArticles()
 AcronymDB.createFromScrapedDefinitions()
 ArticleInfoDB.dump(ArticleInfoDB.fromCSV())
-
+"""
 
 """
 **************************************************************************************************

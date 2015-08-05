@@ -5,7 +5,6 @@ from Logger import logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 import string_constants
 
-
 class Controller():  # todo: find better name
 
     def __init__(self, text_extractor, acronym_extractor, expanders):
@@ -17,7 +16,7 @@ class Controller():  # todo: find better name
         extension = filename.rsplit(".", 1)[1]
         return extension in string_constants.allowed_extensions
 
-    def processFile(self, file_text):
+    def processText(self, file_text):
         # expand the acronyms
         expanded_acronyms = self.acronymExtractor.get_acronyms(file_text)
         for expander in self.acronymExpanders:
