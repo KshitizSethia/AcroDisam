@@ -7,8 +7,7 @@ import csv
 import sys
 
 from Logger import logger
-import string_constants
-from string_constants import file_scraped_articles_list
+from string_constants import file_scraped_articles_list, file_articledb
 from TextTools import toUnicode
 
 
@@ -35,11 +34,11 @@ def createFromScrapedArticles():
 
 def dump(articleDB):
     pickle.dump(
-        articleDB, open(string_constants.file_articledb, "wb"), protocol=2)
+        articleDB, open(file_articledb, "wb"), protocol=2)
 
 
-def load():
-    return pickle.load(open(string_constants.file_articledb, "rb"))
+def load(path=file_articledb):
+    return pickle.load(open(path, "rb"))
 
 
 def addArticles(articleDB, articles):

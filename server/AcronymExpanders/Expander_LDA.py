@@ -1,15 +1,10 @@
-import sys
+from gensim.matutils import cossim
 
-from scipy.spatial.distance import cosine
-
-from AcronymExpanders import acronymDB, articleDB, AcronymExpanderEnum
+from AcronymExpanders import AcronymExpanderEnum
 from AcronymExpanders.AcronymExpander import AcronymExpander
+from DataCreators import LDAModel
 from Logger import logger
 from TextTools import getCleanedWords
-import cPickle as pickle
-from string_constants import file_lda_model, file_gensim_dictionary, file_articleIDToLDA
-from DataCreators import LDAModel
-from gensim.matutils import cossim
 
 
 class Expander_LDA(AcronymExpander):
@@ -18,8 +13,9 @@ class Expander_LDA(AcronymExpander):
     vectors of articles containing expansions of the acronym
     """
 
-    def __init__(self):
+    def __init__(self, articleDB, acronymDB):
         logger.info("Loading LDA model and dictionary")
+        AcronymExpander.__init__(self, articleDB, acronymDB)
         self.ldamodel, self.dictionary, self.articleIDToLDADict = LDAModel.load()
 
     def expand(self, acronym, acronymExpansion, text):
@@ -41,8 +37,3 @@ class Expander_LDA(AcronymExpander):
             acronymExpansion.expansion = chosen_expansion
             acronymExpansion.expander = AcronymExpanderEnum.LDA
         return acronymExpansion
-
-    @staticmethod
-    def update_model(articledb_path):
-        """returns built lda_model, lda_dictionary"""
-        pass  # todo: lda has update method, use it

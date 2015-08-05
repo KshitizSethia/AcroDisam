@@ -10,9 +10,8 @@ import csv
 import sys
 
 from Logger import logger
-import string_constants
 import numpy
-from string_constants import file_scraped_definitions_list
+from string_constants import file_scraped_definitions_list, file_acronymdb
 from TextTools import toUnicode
 
 
@@ -85,11 +84,11 @@ def is_same_expansion(true_exp, pred_exp):
 
 def dump(acronymDB):
     pickle.dump(
-        acronymDB, open(string_constants.file_acronymdb, "wb"), protocol=2)
+        acronymDB, open(file_acronymdb, "wb"), protocol=2)
 
 
-def load():
-    return pickle.load(open(string_constants.file_acronymdb, "rb"))
+def load(path = file_acronymdb):
+    return pickle.load(open(path, "rb"))
 
 # def addAcronyms(acronymDB, acronyms):#todo: add acronyms and articles
 

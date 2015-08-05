@@ -1,20 +1,24 @@
 import numpy
 
-from AcronymExpanders import AcronymExpanderEnum, acronymDB, articleDB
+from AcronymExpanders import AcronymExpanderEnum
 from Logger import logger
 import string_constants
 from helper import ExpansionChoice
 
+
 class AcronymExpander:
-    
-    def __init__(self):
+
+    # todo: not all expanders use articleDB and acronymDB, and getChoices. So
+    # create a subclass for ones which do
+    def __init__(self, articleDB, acronymDB):
+        self.articleDB = articleDB
+        self.acronymDB = acronymDB
         pass
-    
+
     # filename is optional
     # returns dictionary of acronym:expansion and
     # a boolean to indicate if all acronyms have been expanded
-    def try_to_expand_acronyms(self, text, expanded_acronyms, filename=""):
-        self.filename = filename  # todo: temporary hack as Expander SVC requires file to text in two ways
+    def try_to_expand_acronyms(self, text, expanded_acronyms):
         all_acronyms_expanded = True
         try:
             for (acronym, expansion) in expanded_acronyms.items():
@@ -25,21 +29,23 @@ class AcronymExpander:
                     all_acronyms_expanded = False
                 expanded_acronyms[acronym] = expansion
         except IndexError:
-            logger.error(string_constants.string_error_document_parse)  # todo print file name here
+            # todo print file name here
+            logger.error(string_constants.string_error_document_parse)
         return expanded_acronyms, all_acronyms_expanded
-    
+
     def getChoices(self, acronym):
         """returns array of ExpansionChoice"""
         results = []
-        if(acronym in acronymDB):
-            results += acronymDB[acronym]
-        if(acronym[-1] == "s" and acronym[:-1] in acronymDB):
-            results += acronymDB[acronym[:-1]]
+        if(acronym in self.acronymDB):
+            results += self.acronymDB[acronym]
+        if(acronym[-1] == "s" and acronym[:-1] in self.acronymDB):
+            results += self.acronymDB[acronym[:-1]]
         choices = []
         for definition, articleid, def_count in results:
-            text = articleDB[articleid]
+            text = self.articleDB[articleid]
             choices.append(ExpansionChoice(definition, articleid, text))
         return choices
+
     def expand(self, acronym, acronymExpansion, text):
         """
         expand one acronym, to be implemented by subclass

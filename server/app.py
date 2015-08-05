@@ -12,6 +12,7 @@ from werkzeug.utils import secure_filename
 from AcronymExpanders.Expander_SVC import Expander_SVC
 from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
 from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
+from DataCreators import ArticleDB, AcronymDB
 from Logger import logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 from controller import Controller
@@ -23,9 +24,11 @@ app = Flask(__name__)
 
 
 logger.info("Initializing Controller")
+articleDB = ArticleDB.load()
+acronymDB = AcronymDB.load()
 controlr = Controller(text_extractor=Extract_PdfMiner(),
                       acronym_extractor=AcronymExtractor_v1,
-                      expanders=[Expander_fromText_v2(), Expander_SVC()])
+                      expanders=[Expander_fromText_v2(), Expander_SVC(articleDB, acronymDB)])
 
 # This route will show a form to perform an AJAX request
 # jQuery is loaded to execute the request and update the
@@ -66,7 +69,7 @@ def upload():
         file.save(server_file_path)
 
         text = controlr.extractText(safe_filename)
-        expanded_acronyms = controlr.processFile(text)
+        expanded_acronyms = controlr.processText(text)
 
         output_file_path = os.path.join(
             string_constants.folder_output, controlr.getOutputFilename(safe_filename))

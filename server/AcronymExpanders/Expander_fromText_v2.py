@@ -24,7 +24,7 @@ class Expander_fromText_v2(AcronymExpander):
         
         for pattern in patterns:
             pattern_result = re.findall(pattern, text)
-            if pattern_result:
+            if pattern_result and pattern_result[0] != acronym:
                                 # todo: this assumption might be wrong
                 # what if there's a document with different senses of an acronym
                 # and disambiguation nearby
