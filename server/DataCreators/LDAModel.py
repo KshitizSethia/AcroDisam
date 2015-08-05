@@ -1,6 +1,6 @@
 import functools
 import math
-#from multiprocessing import Pool
+from multiprocessing import Pool
 from threading import Thread
 
 from gensim.corpora.dictionary import Dictionary
@@ -12,7 +12,8 @@ from TextTools import getCleanedWords
 import TextTools
 import cPickle as pickle
 from string_constants import file_lda_model, file_lda_gensim_dictionary, file_lda_word_corpus,\
-    file_lda_articleIDToLDA, file_lda_bow_corpus
+    file_lda_articleIDToLDA, file_lda_bow_corpus, file_articledb,\
+    file_msh_articleDB
 
 
 class USESAVED:
@@ -21,10 +22,6 @@ class USESAVED:
     dictionary = 1
     bow_corpus = 2
     lda_model = 3
-
-
-# global settings for parallelization
-numProcesses = 13
 
 
 def load():
@@ -59,7 +56,7 @@ def parallelGetCleanedWords(article):
 def parallelGetWordCorpus(articleDB, process_pool):
     articles = articleDB.items()
     results = process_pool.map(
-        parallelGetCleanedWords, articles, chunksize=10000)
+        parallelGetCleanedWords, articles, chunksize=chunkSizeWordCorpus)
 
     logger.info("Back from multiprocessing, making dict now")
     word_corpus = dict(results)
@@ -80,7 +77,7 @@ def parallelGetBoWCorpus(dictionary, word_corpus_values, process_pool):
     bound_instance = functools.partial(_doc2bow_alias, dictionary)
 
     result = process_pool.map(
-        bound_instance, word_corpus_values, chunksize=1000)
+        bound_instance, word_corpus_values, chunksize=chunkSizeBowCorpus)
 
     return result
 
@@ -181,12 +178,13 @@ def waitForDumper(dumper, name):
 
 def create_and_save_model(process_pool, useSavedTill=USESAVED.none):
     """
-    This takes a long time to train (~1 day), 
-    run on a compute node with ~25 GB RAM and fast processor
+    This takes a long time to train (~1 week), 
+    run on a compute node with ~250 GB RAM and fast processor
+    for wikipedia corpus of 410k documents
     """
     logger.info("Creating lda vectors for articles")
 
-    articleDB = ArticleDB.load()
+    articleDB = ArticleDB.load(path=articleDBPath)
 
     word_corpus, word_corpus_dumper = getWordCorpus(
         articleDB, process_pool, useSavedTill)
@@ -211,13 +209,18 @@ def update_model(articledb_path):
     """returns built lda_model, lda_dictionary"""
     pass  # todo: lda has update method, use it
 
-
+# global settings for making LDA model
+numProcesses = 3
+articleDBPath = file_msh_articleDB
+goParallel = True
+useSavedTill = USESAVED.none
+chunkSizeWordCorpus = 1000
+chunkSizeBowCorpus = 1000
+   
 if __name__ == "__main__":
-    goParallel = False
-    useSavedTill = USESAVED.none
     if(goParallel):
-        #process_pool = Pool(numProcesses)
-        #create_and_save_model(process_pool, useSavedTill=useSavedTill)
+        process_pool = Pool(numProcesses)
+        create_and_save_model(process_pool, useSavedTill=useSavedTill)
         pass
     else:
         create_and_save_model(None, useSavedTill=useSavedTill)
