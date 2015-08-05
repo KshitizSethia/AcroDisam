@@ -1,0 +1,20 @@
+BCC,LDA,botryococcus culture collection
+BCCs,LDA,botryococcus culture collection
+BMJ,LDA,british medical journal
+CCPDMA,None,___EXPANSION_NOT_FOUND___
+DNA,LDA,double strand breaks
+EDC,LDA,epidermal differentiation complex
+FDA,LDA,food and drug administration
+HPI,LDA,history of present illness
+ICD,LDA,implantable cardiac defibrillator
+ILDS,LDA,international league of dermatological societies
+IMQ,None,___EXPANSION_NOT_FOUND___
+ISBN,LDA,infobase publishing
+MMS,LDA,methyl methanesulfonate
+OMIM,LDA,online mendeleian inheritance in man
+PDF,LDA,probability density function
+PDT,LDA,phenylalanine dopp transaminase
+PMC,LDA,population monte carlo
+PMID,None,___EXPANSION_NOT_FOUND___
+SMO,LDA,styrene monooxygenase
+SPF,LDA,sun protection factor
