@@ -13,8 +13,11 @@ uploads
 output
 *.pickle
 *.bin
-server/storage/data_all/*.csv
+server/storage/data_all/*
 articledb.pickle
+server_ben/data/scraped*
+server_ben/data/vectorizer*
+server_ben/data/wordsEn.txt
 
 # Windows image file caches
 Thumbs.db
