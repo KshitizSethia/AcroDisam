@@ -14,6 +14,7 @@ folder_root = os.path.dirname(os.path.realpath(__file__)) + sep
 folder_output = folder_root + "storage" + sep + "outputs" + sep
 folder_upload = folder_root + "storage" + sep + "uploads" + sep
 folder_data = folder_root + "storage" + sep + "data_small" + sep
+folder_logs = folder_root + "logs" + sep
 
 folder_lda = folder_data + "lda" + sep
 
@@ -23,7 +24,7 @@ folder_msh_arff = folder_msh_corpus + "arff" + sep
 folder_scienceWise = folder_data + "ScienceWISE" + sep
 folder_scienceWise_pdfs = folder_scienceWise + "pdfs" + sep
 
-for folder in [folder_output, folder_data, folder_upload, folder_lda
+for folder in [folder_output, folder_data, folder_upload, folder_logs, folder_lda
                , folder_msh_corpus, folder_msh_arff, folder_scienceWise
                , folder_scienceWise_pdfs]:
     if(not os.path.exists(folder)):
@@ -42,7 +43,7 @@ file_lda_gensim_dictionary = folder_lda + "gensim_dictionary.bin"
 file_lda_model = folder_lda + "lda_model.bin"
 file_lda_word_corpus = folder_lda + "temp_word_corpus.bin"
 
-file_logs = folder_root +"logs" +sep + "log.txt"
+file_logs = folder_logs + "log.txt"
 
 file_msh_articleDB = folder_msh_corpus + "articledb.pickle"
 file_msh_acronymDB = folder_msh_corpus + "acronymdb.pickle"

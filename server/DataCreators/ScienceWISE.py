@@ -1,10 +1,12 @@
 import csv
-from string_constants import file_ScienceWise_index_train,\
-    folder_scienceWise_pdfs
-import urllib2
+import os
 import time
+import urllib2
 
 from Logger import common_logger
+from string_constants import file_ScienceWise_index_train,\
+    folder_scienceWise_pdfs
+
 
 def downloadPdfs():
     with open(file_ScienceWise_index_train, "r") as file:
@@ -12,15 +14,18 @@ def downloadPdfs():
         for line in reader:
             pdfID = line["ARXIV_ID"]
             pdfID = pdfID.replace("/", "_").replace("\\","_")
+            filename = pdfID +".pdf"
             try:
-                _downloadPdf(pdfID)
+                if(os.path.exists(folder_scienceWise_pdfs +filename)):
+                    common_logger.debug("present already " +pdfID)
+                    continue
+                _downloadPdf(filename)
                 common_logger.debug("successfully downloaded " +pdfID)
                 time.sleep(15*60)
             except:
                 common_logger.exception("Error in file " +pdfID)
             
-def _downloadPdf(pdfID):
-    filename = pdfID +".pdf"
+def _downloadPdf(filename):
     url = "http://arxiv.org/pdf/" +filename
     response = urllib2.urlopen(url)
     local_file = open(folder_scienceWise_pdfs +filename, "wb")

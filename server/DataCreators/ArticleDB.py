@@ -38,6 +38,7 @@ def dump(articleDB):
 
 
 def load(path=file_articledb):
+    common_logger.debug("loading articleDB from %s" %path)
     return pickle.load(open(path, "rb"))
 
 

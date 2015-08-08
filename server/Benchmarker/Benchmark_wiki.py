@@ -5,20 +5,13 @@ from multiprocessing import Pool
 from AcronymExpanders import AcronymExpanderEnum
 from AcronymExpanders.Expander_fromText import Expander_fromText
 from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
+from AcronymExtractors.AcronymExtractor_v2 import AcronymExtractor_v2
 from Benchmarker.Benchmark import Benchmarker
 from Logger import common_logger
 from string_constants import file_articledb, file_acronymdb
 
 
 class Benchmarker_wiki(Benchmarker):
-
-    def __init__(self):
-        self.numRounds = 10
-        self.numProcesses = 1
-        self.articleDBPath = file_articledb
-        self.acronymDBPath = file_acronymdb
-        self.expandersToUse = [
-            AcronymExpanderEnum.fromText, AcronymExpanderEnum.SVC]
 
     def _getActualExpansions(self, articleID, article):
         extractor = AcronymExtractor_v1()
@@ -62,6 +55,15 @@ class Benchmarker_wiki(Benchmarker):
                     acronym + "\nText:\n" + article_for_testing
                 common_logger.error(errorMessage)
                 raise RuntimeError(errorMessage)
+
+    def __init__(self):
+        self.numRounds = 10
+        self.numProcesses = 1
+        self.articleDBPath = file_articledb
+        self.acronymDBPath = file_acronymdb
+        self.expandersToUse = [
+            AcronymExpanderEnum.fromText, AcronymExpanderEnum.SVC]
+        self.acronymExtractor = AcronymExtractor_v2()
 
 
 def _proxyFunction(benchmarker, testArticles):

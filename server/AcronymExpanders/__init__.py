@@ -9,4 +9,5 @@ class AcronymExpanderEnum():
     fromText = "Text"
     fromText_v2 = "Text v2"
     SVC = "SVC"
-    LDA = "LDA"
+    LDA_cossim = "LDA cossim"
+    LDA_multiclass = "LDA multiclass"

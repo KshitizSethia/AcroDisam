@@ -1,0 +1,1339 @@
+INFO: 8668 08/05/2015 03:33:33 PM detected Windows; aliasing chunkize to chunkize_serial
+INFO: 9376 08/05/2015 03:33:38 PM detected Windows; aliasing chunkize to chunkize_serial
+INFO: 3692 08/05/2015 03:33:38 PM detected Windows; aliasing chunkize to chunkize_serial
+INFO: 3684 08/05/2015 03:33:38 PM detected Windows; aliasing chunkize to chunkize_serial
+INFO: 3684 08/05/2015 03:33:39 PM filtering articles with None
+INFO: 3684 08/05/2015 03:33:39 PM removing test articles from articleDB
+INFO: 3684 08/05/2015 03:33:39 PM correcting acronymDB
+INFO: 3692 08/05/2015 03:33:39 PM filtering articles with None
+INFO: 3692 08/05/2015 03:33:39 PM removing test articles from articleDB
+INFO: 3692 08/05/2015 03:33:39 PM correcting acronymDB
+INFO: 9376 08/05/2015 03:33:39 PM filtering articles with None
+INFO: 9376 08/05/2015 03:33:39 PM removing test articles from articleDB
+INFO: 9376 08/05/2015 03:33:39 PM correcting acronymDB
+INFO: 3692 08/05/2015 03:33:40 PM verifying training dataset
+INFO: 3684 08/05/2015 03:33:40 PM verifying training dataset
+INFO: 9376 08/05/2015 03:33:40 PM verifying training dataset
+INFO: 3684 08/05/2015 03:33:44 PM TFIDF vectorizer loaded
+INFO: 3684 08/05/2015 03:33:44 PM Expander_SVC loaded
+INFO: 3684 08/05/2015 03:33:44 PM evaluating test performance
+INFO: 3692 08/05/2015 03:33:44 PM TFIDF vectorizer loaded
+INFO: 3692 08/05/2015 03:33:44 PM Expander_SVC loaded
+INFO: 3692 08/05/2015 03:33:44 PM evaluating test performance
+INFO: 9376 08/05/2015 03:33:44 PM TFIDF vectorizer loaded
+INFO: 9376 08/05/2015 03:33:44 PM Expander_SVC loaded
+INFO: 9376 08/05/2015 03:33:45 PM evaluating test performance
+DEBUG: 3684 08/05/2015 03:33:45 PM Expansion matching failed: bloom, bleomycin
+DEBUG: 3692 08/05/2015 03:33:45 PM Expansion matching succeeded: capillary leak syndrome, capillary leakage syndrome
+DEBUG: 3684 08/05/2015 03:33:45 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9376 08/05/2015 03:33:45 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3684 08/05/2015 03:33:45 PM Expansion matching succeeded: phytohemagglutinin, phytohaemaglutinin
+DEBUG: 9376 08/05/2015 03:33:46 PM Expansion matching succeeded: primary ciliary dyskinesia, primary ciliary diskinesia
+DEBUG: 3692 08/05/2015 03:33:46 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3692 08/05/2015 03:33:46 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3684 08/05/2015 03:33:46 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:33:47 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 9376 08/05/2015 03:33:48 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3692 08/05/2015 03:33:48 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9376 08/05/2015 03:33:49 PM Expansion matching failed: procarbazine, polychlorinated biphenyls
+DEBUG: 3684 08/05/2015 03:33:49 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 3692 08/05/2015 03:33:49 PM Expansion matching failed: trimethoprim, the trimethoprim
+DEBUG: 3684 08/05/2015 03:33:49 PM Expansion matching failed: automatic data processing, and phospho
+DEBUG: 3692 08/05/2015 03:33:50 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9376 08/05/2015 03:33:51 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:33:51 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3684 08/05/2015 03:33:51 PM Expansion matching failed: osteochondritis dissecans, osteochondral defects
+DEBUG: 3692 08/05/2015 03:33:51 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3692 08/05/2015 03:33:53 PM Expansion matching failed: premature ventricular contractions, premature ventricular complexes
+DEBUG: 3692 08/05/2015 03:33:54 PM Expansion matching succeeded: osteochondritis dissecans, osteochondrosis dissecans
+DEBUG: 3684 08/05/2015 03:33:56 PM Expansion matching succeeded: complementarity determining region, complementary determining region
+DEBUG: 3684 08/05/2015 03:33:56 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 3684 08/05/2015 03:33:56 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 3684 08/05/2015 03:33:57 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3692 08/05/2015 03:33:57 PM Expansion matching failed: merkel cell carcinoma, merkel cell carcinoma carcinoma
+DEBUG: 3684 08/05/2015 03:33:58 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3684 08/05/2015 03:34:00 PM Expansion matching failed: death, dementia of alzheimer type
+DEBUG: 9376 08/05/2015 03:34:01 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3684 08/05/2015 03:34:01 PM Expansion matching failed: dopamine transporters, death
+DEBUG: 3692 08/05/2015 03:34:01 PM Expansion matching failed: idiopathic thrombocytopenic purpura, inosine triphosphate
+DEBUG: 3684 08/05/2015 03:34:02 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3684 08/05/2015 03:34:02 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3692 08/05/2015 03:34:02 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3684 08/05/2015 03:34:02 PM Expansion matching succeeded: cerebrotendinous xanthomatosis, cerebrotendinous xanthomathosis
+DEBUG: 3684 08/05/2015 03:34:04 PM Expansion matching succeeded: osteochondritis dissecans, osteochondrosis dissecans
+DEBUG: 9376 08/05/2015 03:34:04 PM Expansion matching failed: mannan binding protein, myelin basic protein
+DEBUG: 9376 08/05/2015 03:34:05 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3692 08/05/2015 03:34:05 PM Expansion matching failed: thrombopoietin, thrombopoiesis stimulating factor
+DEBUG: 9376 08/05/2015 03:34:05 PM Expansion matching succeeded: thin layer chromatography, thin layer chromatographic
+DEBUG: 3684 08/05/2015 03:34:06 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:34:06 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3684 08/05/2015 03:34:06 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9376 08/05/2015 03:34:06 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3692 08/05/2015 03:34:06 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3692 08/05/2015 03:34:07 PM Expansion matching failed: body surface area, burned surface area
+DEBUG: 3692 08/05/2015 03:34:07 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3684 08/05/2015 03:34:07 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9376 08/05/2015 03:34:08 PM Expansion matching succeeded: macrophage activating factor, macrophage activating factors
+DEBUG: 9376 08/05/2015 03:34:08 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:34:08 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3684 08/05/2015 03:34:08 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3684 08/05/2015 03:34:09 PM Expansion matching failed: trimethoprim, to trimethoprim
+DEBUG: 9376 08/05/2015 03:34:09 PM Expansion matching succeeded: alcohol dehydrogenase, alcohol dehydrogenases
+DEBUG: 3692 08/05/2015 03:34:09 PM Expansion matching failed: macrophage activating factor, microglia activation factor
+DEBUG: 3684 08/05/2015 03:34:10 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3684 08/05/2015 03:34:11 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 3692 08/05/2015 03:34:12 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3692 08/05/2015 03:34:12 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3684 08/05/2015 03:34:12 PM Expansion matching failed: bleomycin, bloom
+DEBUG: 3692 08/05/2015 03:34:12 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9376 08/05/2015 03:34:13 PM Expansion matching succeeded: bronchopulmonary dysplasia, broncho pulmonary dysplasia
+DEBUG: 3684 08/05/2015 03:34:13 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 9376 08/05/2015 03:34:13 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 3684 08/05/2015 03:34:14 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3692 08/05/2015 03:34:14 PM Expansion matching failed: cleidocranial dysplasia, classical cleidocranial dysplasia
+DEBUG: 9376 08/05/2015 03:34:15 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9376 08/05/2015 03:34:15 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3692 08/05/2015 03:34:15 PM Expansion matching failed: inosine triphosphate, idiopathic thrombocytopenic purpura
+DEBUG: 3692 08/05/2015 03:34:15 PM Expansion matching failed: pure autonomic failure, progressive autonomic failure
+DEBUG: 9376 08/05/2015 03:34:16 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9376 08/05/2015 03:34:16 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3684 08/05/2015 03:34:16 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3684 08/05/2015 03:34:16 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9376 08/05/2015 03:34:16 PM Expansion matching succeeded: complementarity determining region, complementarity determining regions
+DEBUG: 3692 08/05/2015 03:34:16 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9376 08/05/2015 03:34:16 PM Expansion matching failed: thyroperoxidase, thyroperoxidase antibody
+DEBUG: 3684 08/05/2015 03:34:16 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodiphenylsulfone
+DEBUG: 3684 08/05/2015 03:34:16 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3692 08/05/2015 03:34:16 PM Expansion matching failed: pelger huet anomaly, phytohemagglutinin
+DEBUG: 3692 08/05/2015 03:34:17 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9376 08/05/2015 03:34:17 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:34:18 PM Expansion matching failed: sickle cell disease, sickle cell disorder
+DEBUG: 3684 08/05/2015 03:34:19 PM Expansion matching failed: death, dementia of alzheimer type
+DEBUG: 3692 08/05/2015 03:34:19 PM Expansion matching failed: passive cutaneous anaphylaxis, patient controlled analgesia
+DEBUG: 9376 08/05/2015 03:34:20 PM Expansion matching failed: premature ventricular contractions, premature ventricular complex
+DEBUG: 3692 08/05/2015 03:34:20 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3692 08/05/2015 03:34:20 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3684 08/05/2015 03:34:20 PM Expansion matching succeeded: wiedemann beckwith syndrome, wiedemann beck with syndrome
+DEBUG: 3684 08/05/2015 03:34:20 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9376 08/05/2015 03:34:21 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9376 08/05/2015 03:34:22 PM Expansion matching succeeded: alcohol dehydrogenase, alcohol dehydrogenases
+DEBUG: 9376 08/05/2015 03:34:23 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:34:23 PM Expansion matching failed: inosine triphosphate, idiopathic thrombocytopenic purpura
+DEBUG: 9376 08/05/2015 03:34:23 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3692 08/05/2015 03:34:24 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3692 08/05/2015 03:34:24 PM Expansion matching failed: dopamine transporters, da transporter
+DEBUG: 9376 08/05/2015 03:34:25 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 9376 08/05/2015 03:34:25 PM Expansion matching failed: chronic renal failure, case report form
+DEBUG: 3684 08/05/2015 03:34:25 PM Expansion matching failed: thyroperoxidase, thrombopoietin
+DEBUG: 9376 08/05/2015 03:34:25 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3692 08/05/2015 03:34:26 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3684 08/05/2015 03:34:26 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3692 08/05/2015 03:34:26 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3684 08/05/2015 03:34:27 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3684 08/05/2015 03:34:27 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3684 08/05/2015 03:34:27 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:34:27 PM Expansion matching failed: obsessive compulsive disorder, osteochondritis dissecans
+DEBUG: 9376 08/05/2015 03:34:29 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 3684 08/05/2015 03:34:30 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3692 08/05/2015 03:34:30 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 9376 08/05/2015 03:34:30 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3684 08/05/2015 03:34:30 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 9376 08/05/2015 03:34:30 PM Expansion matching succeeded: macrophage activating factor, macrophage activating factors
+DEBUG: 3692 08/05/2015 03:34:31 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:34:31 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:34:31 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 3692 08/05/2015 03:34:31 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9376 08/05/2015 03:34:31 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3684 08/05/2015 03:34:32 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:34:32 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3684 08/05/2015 03:34:32 PM Expansion matching failed: thrombopoietin, thyroperoxidase
+DEBUG: 3692 08/05/2015 03:34:32 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 9376 08/05/2015 03:34:33 PM Expansion matching succeeded: para chloroamphetamine, parachloroamphetamine
+DEBUG: 3684 08/05/2015 03:34:33 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3684 08/05/2015 03:34:34 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3684 08/05/2015 03:34:35 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3684 08/05/2015 03:34:35 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3684 08/05/2015 03:34:36 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3692 08/05/2015 03:34:37 PM Expansion matching failed: dopamine transporters, da transporter
+DEBUG: 9376 08/05/2015 03:34:37 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:34:37 PM Expansion matching failed: diaminodiphenyl sulfone, denys drash syndrome
+DEBUG: 3684 08/05/2015 03:34:38 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 9376 08/05/2015 03:34:38 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3684 08/05/2015 03:34:40 PM Expansion matching failed: body surface area, bovine serum albumin
+DEBUG: 9376 08/05/2015 03:34:41 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3692 08/05/2015 03:34:41 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9376 08/05/2015 03:34:41 PM Expansion matching failed: bleomycin, bloom
+DEBUG: 3684 08/05/2015 03:34:42 PM Expansion matching failed: total lung capacity, thin layer chromatography
+DEBUG: 3692 08/05/2015 03:34:44 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:34:45 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemias
+DEBUG: 3684 08/05/2015 03:34:45 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 3692 08/05/2015 03:34:45 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3692 08/05/2015 03:34:46 PM Expansion matching failed: topical application, tissue plasminogen activator
+DEBUG: 3684 08/05/2015 03:34:47 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 9376 08/05/2015 03:34:47 PM Expansion matching failed: pelger huet anomaly, phytohemagglutinin
+DEBUG: 9376 08/05/2015 03:34:48 PM Expansion matching failed: psychotomimetic phencyclidine, psychotomimetic drug phencyclidine
+DEBUG: 3684 08/05/2015 03:34:49 PM Expansion matching succeeded: phytohemagglutinin, phytohemaglutinin
+DEBUG: 3684 08/05/2015 03:34:49 PM Expansion matching failed: calcium pyrophosphate deposition disease, cis platinum diammine dichloride
+DEBUG: 3692 08/05/2015 03:34:49 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+DEBUG: 3684 08/05/2015 03:34:49 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 9376 08/05/2015 03:34:50 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9376 08/05/2015 03:34:50 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9376 08/05/2015 03:34:50 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3684 08/05/2015 03:34:50 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 3692 08/05/2015 03:34:50 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 9376 08/05/2015 03:34:50 PM Expansion matching succeeded: major histocompatibility complex, major histocompability complex
+DEBUG: 9376 08/05/2015 03:34:51 PM Expansion matching succeeded: complementarity determining region, complementary determining region
+DEBUG: 3692 08/05/2015 03:34:51 PM Expansion matching failed: premature ventricular contractions, polyvinyl chloride
+DEBUG: 3692 08/05/2015 03:34:52 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:34:52 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 3684 08/05/2015 03:34:53 PM Expansion matching failed: and phospho, adenosine diphosphate
+DEBUG: 9376 08/05/2015 03:34:53 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:34:55 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:34:56 PM Expansion matching failed: drug delivery system, diaminodiphenyl sulfone
+DEBUG: 3684 08/05/2015 03:34:57 PM Expansion matching failed: death, dementia of alzheimer type
+DEBUG: 3684 08/05/2015 03:34:58 PM Expansion matching failed: williams beuren syndrome, wiedemann beckwith syndrome
+DEBUG: 9376 08/05/2015 03:34:59 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3692 08/05/2015 03:35:00 PM Expansion matching succeeded: thyrotropin releasing factor, thyrotrophin releasing factor
+DEBUG: 3684 08/05/2015 03:35:00 PM Expansion matching failed: diaminodiphenyl sulfone, denys drash syndrome
+DEBUG: 3692 08/05/2015 03:35:00 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:35:01 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:35:01 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9376 08/05/2015 03:35:01 PM Expansion matching failed: obsessive compulsive disorder, osteochondritis dissecans
+DEBUG: 3684 08/05/2015 03:35:02 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9376 08/05/2015 03:35:02 PM Expansion matching succeeded: bovine serum albumin, bovine serum album
+DEBUG: 3692 08/05/2015 03:35:02 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3684 08/05/2015 03:35:02 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 3692 08/05/2015 03:35:02 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3692 08/05/2015 03:35:03 PM Expansion matching succeeded: principal component analysis, principle component analysis
+DEBUG: 9376 08/05/2015 03:35:03 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3684 08/05/2015 03:35:03 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 9376 08/05/2015 03:35:03 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3684 08/05/2015 03:35:03 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 3684 08/05/2015 03:35:04 PM Expansion matching failed: dopamine transporters, da transporter
+DEBUG: 9376 08/05/2015 03:35:04 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3684 08/05/2015 03:35:06 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3692 08/05/2015 03:35:07 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 3684 08/05/2015 03:35:07 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3692 08/05/2015 03:35:07 PM Expansion matching failed: premature ventricular contractions, premature ventricular complexes
+DEBUG: 3684 08/05/2015 03:35:07 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9376 08/05/2015 03:35:08 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:35:08 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9376 08/05/2015 03:35:09 PM Expansion matching succeeded: macrophage activating factor, macrophage activation factors
+DEBUG: 3684 08/05/2015 03:35:09 PM Expansion matching failed: magnetic resonance spectroscopy, mr spectroscopy
+DEBUG: 3684 08/05/2015 03:35:09 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9376 08/05/2015 03:35:09 PM Expansion matching failed: topical application, tetradecanoyl 13 phorbol acetate
+DEBUG: 3692 08/05/2015 03:35:09 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3684 08/05/2015 03:35:10 PM Expansion matching failed: anti lymphocyte serum, anti rat lymphocyte serum
+DEBUG: 9376 08/05/2015 03:35:10 PM Expansion matching succeeded: endoscopic retrograde pancreatography, endoscopic retrograde pancreaticography
+DEBUG: 3692 08/05/2015 03:35:12 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 9376 08/05/2015 03:35:12 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 9376 08/05/2015 03:35:13 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3684 08/05/2015 03:35:14 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3684 08/05/2015 03:35:14 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 9376 08/05/2015 03:35:14 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 9376 08/05/2015 03:35:14 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 3692 08/05/2015 03:35:15 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9376 08/05/2015 03:35:15 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:35:16 PM Expansion matching failed: major histocompatibility complex, myosin heavy chains
+DEBUG: 3684 08/05/2015 03:35:16 PM Expansion matching succeeded: merkel cell carcinoma, merkel cell carcinomas
+DEBUG: 9376 08/05/2015 03:35:16 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodiphenyl sulphone
+DEBUG: 9376 08/05/2015 03:35:17 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9376 08/05/2015 03:35:17 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 3684 08/05/2015 03:35:17 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 9376 08/05/2015 03:35:17 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 3684 08/05/2015 03:35:18 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 3692 08/05/2015 03:35:18 PM Expansion matching failed: premature ventricular contractions, polyvinyl chloride
+DEBUG: 3692 08/05/2015 03:35:18 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3684 08/05/2015 03:35:18 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:35:20 PM Expansion matching failed: patient controlled analgesia, passive cutaneous anaphylaxis
+DEBUG: 9376 08/05/2015 03:35:20 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3692 08/05/2015 03:35:20 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3692 08/05/2015 03:35:20 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:35:22 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 3692 08/05/2015 03:35:22 PM Expansion matching succeeded: polyvinyl chloride, polyvinylchloride
+DEBUG: 9376 08/05/2015 03:35:22 PM Expansion matching failed: anti lymphocyte serum, anti mouse lymphocyte serum
+DEBUG: 3692 08/05/2015 03:35:23 PM Expansion matching failed: pelger huet anomaly, phytohemagglutinin
+DEBUG: 3692 08/05/2015 03:35:24 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9376 08/05/2015 03:35:24 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemias
+DEBUG: 9376 08/05/2015 03:35:25 PM Expansion matching failed: endoscopic retrograde pancreatography, event related potentials
+DEBUG: 9376 08/05/2015 03:35:25 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3684 08/05/2015 03:35:25 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9376 08/05/2015 03:35:27 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9376 08/05/2015 03:35:28 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9376 08/05/2015 03:35:28 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9376 08/05/2015 03:35:28 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3684 08/05/2015 03:35:29 PM Expansion matching failed: patient controlled analgesia, principal component analysis
+DEBUG: 3684 08/05/2015 03:35:29 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3684 08/05/2015 03:35:29 PM Expansion matching failed: microinjection, mutated in colon cancer
+DEBUG: 3692 08/05/2015 03:35:29 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 3684 08/05/2015 03:35:33 PM Expansion matching failed: cytoxan, cerebrotendinous xanthomatosis
+DEBUG: 3692 08/05/2015 03:35:34 PM Expansion matching succeeded: para chloroamphetamine, parachloroamphetamine
+DEBUG: 9376 08/05/2015 03:35:34 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 3692 08/05/2015 03:35:35 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3684 08/05/2015 03:35:36 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 9376 08/05/2015 03:35:36 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3684 08/05/2015 03:35:36 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9376 08/05/2015 03:35:37 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3684 08/05/2015 03:35:38 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3692 08/05/2015 03:35:39 PM Expansion matching failed: topical application, tissue plasminogen activator
+DEBUG: 9376 08/05/2015 03:35:39 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9376 08/05/2015 03:35:40 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3684 08/05/2015 03:35:40 PM Expansion matching failed: calcium pyrophosphate deposition disease, cis platinum diammine dichloride
+DEBUG: 3692 08/05/2015 03:35:40 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3684 08/05/2015 03:35:40 PM Expansion matching failed: premature ventricular contractions, premature ventricular complexes
+DEBUG: 3692 08/05/2015 03:35:40 PM Expansion matching failed: posterior cerebral artery, posterior cerebral
+DEBUG: 3692 08/05/2015 03:35:41 PM Expansion matching succeeded: passive cutaneous anaphylaxis, passive cutaenous anaphylaxis
+DEBUG: 9376 08/05/2015 03:35:41 PM Expansion matching succeeded: respiratory syncytial virus, respiratory syncytial viruses
+DEBUG: 3692 08/05/2015 03:35:42 PM Expansion matching failed: hantavirus pulmonary syndrome, hermansky pudlak syndrome
+DEBUG: 9376 08/05/2015 03:35:42 PM Expansion matching failed: passive cutaneous anaphylaxis, para chloroamphetamine
+DEBUG: 9376 08/05/2015 03:35:42 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3684 08/05/2015 03:35:43 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3692 08/05/2015 03:35:43 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 9376 08/05/2015 03:35:44 PM Expansion matching failed: osteochondritis dissecans, osteochondral defect
+DEBUG: 3684 08/05/2015 03:35:44 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3692 08/05/2015 03:35:44 PM Expansion matching failed: substance p receptor, sp receptors
+DEBUG: 9376 08/05/2015 03:35:45 PM Expansion matching failed: anti lymphocyte serum, anti rat lymphocyte serum
+DEBUG: 3692 08/05/2015 03:35:46 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 3684 08/05/2015 03:35:47 PM Expansion matching failed: psychotomimetic phencyclidine, produce phencyclidine
+DEBUG: 9376 08/05/2015 03:35:47 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 9376 08/05/2015 03:35:49 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 3684 08/05/2015 03:35:49 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+DEBUG: 3692 08/05/2015 03:35:50 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:35:50 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9376 08/05/2015 03:35:50 PM Expansion matching failed: automatic data processing, and phospho
+DEBUG: 9376 08/05/2015 03:35:50 PM Expansion matching failed: pure autonomic failure, platelet activating factor
+DEBUG: 3684 08/05/2015 03:35:51 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:35:52 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:35:52 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9376 08/05/2015 03:35:52 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3684 08/05/2015 03:35:52 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:35:52 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:35:53 PM Expansion matching failed: dopamine transporters, da transporter
+DEBUG: 3684 08/05/2015 03:35:53 PM Expansion matching failed: thyroperoxidase, thrombopoietin
+DEBUG: 9376 08/05/2015 03:35:53 PM Expansion matching failed: pentachlorophenate, potential pentachlorophenol
+DEBUG: 3692 08/05/2015 03:35:54 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3684 08/05/2015 03:35:54 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3692 08/05/2015 03:35:55 PM Expansion matching failed: bleomycin, bloom
+DEBUG: 9376 08/05/2015 03:35:56 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:35:56 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3684 08/05/2015 03:35:56 PM Expansion matching failed: myosin heavy chains, major histocompatibility complex
+DEBUG: 3692 08/05/2015 03:35:57 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3684 08/05/2015 03:35:57 PM Expansion matching succeeded: osteochondritis dissecans, osteochondrosis dissecans
+DEBUG: 3684 08/05/2015 03:35:57 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 3684 08/05/2015 03:35:58 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3692 08/05/2015 03:35:58 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9376 08/05/2015 03:35:58 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3684 08/05/2015 03:35:59 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 3692 08/05/2015 03:35:59 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:36:01 PM Expansion matching failed: para chloroamphetamine, passive cutaneous anaphylaxis
+DEBUG: 9376 08/05/2015 03:36:01 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9376 08/05/2015 03:36:01 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3684 08/05/2015 03:36:01 PM Expansion matching succeeded: williams beuren syndrome, williams beuren syndorme
+DEBUG: 9376 08/05/2015 03:36:02 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3684 08/05/2015 03:36:02 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3684 08/05/2015 03:36:03 PM Expansion matching failed: inosine triphosphate, intratracheal pressure
+DEBUG: 3684 08/05/2015 03:36:03 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 3684 08/05/2015 03:36:05 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3692 08/05/2015 03:36:05 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:36:05 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9376 08/05/2015 03:36:05 PM Expansion matching failed: dopamine transporters, da transporter
+DEBUG: 3684 08/05/2015 03:36:06 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 3692 08/05/2015 03:36:07 PM Expansion matching succeeded: posterior cerebral artery, posterior cerebral arteries
+DEBUG: 3692 08/05/2015 03:36:08 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:36:10 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3692 08/05/2015 03:36:10 PM Expansion matching failed: dopamine transporters, da transporter
+DEBUG: 3684 08/05/2015 03:36:10 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3692 08/05/2015 03:36:11 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9376 08/05/2015 03:36:11 PM Expansion matching failed: mannan binding protein, myelin basic protein
+DEBUG: 3692 08/05/2015 03:36:11 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 3692 08/05/2015 03:36:11 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3684 08/05/2015 03:36:11 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 3692 08/05/2015 03:36:11 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3684 08/05/2015 03:36:12 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3692 08/05/2015 03:36:12 PM Expansion matching succeeded: principal component analysis, principal components analysis
+DEBUG: 3692 08/05/2015 03:36:12 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3692 08/05/2015 03:36:14 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9376 08/05/2015 03:36:15 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3684 08/05/2015 03:36:16 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9376 08/05/2015 03:36:17 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3692 08/05/2015 03:36:17 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3684 08/05/2015 03:36:18 PM Expansion matching failed: mannan binding protein, maltose binding protein
+DEBUG: 3684 08/05/2015 03:36:18 PM Expansion matching succeeded: para chloroamphetamine, parachloroamphetamine
+DEBUG: 3692 08/05/2015 03:36:18 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9376 08/05/2015 03:36:18 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9376 08/05/2015 03:36:20 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 3692 08/05/2015 03:36:21 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3684 08/05/2015 03:36:22 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9376 08/05/2015 03:36:22 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodiphenyl sulphone
+DEBUG: 9376 08/05/2015 03:36:22 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 3692 08/05/2015 03:36:22 PM Expansion matching succeeded: hermansky pudlak syndrome, hermanky pudlak syndrome
+DEBUG: 3692 08/05/2015 03:36:23 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3684 08/05/2015 03:36:23 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 3692 08/05/2015 03:36:23 PM Expansion matching failed: anti lymphocyte serum, antilymphocytic serum
+DEBUG: 3692 08/05/2015 03:36:25 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9376 08/05/2015 03:36:25 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3684 08/05/2015 03:36:25 PM Expansion matching succeeded: pneumocystis pneumonia, pneumocysis pneumonia
+DEBUG: 3684 08/05/2015 03:36:25 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 9376 08/05/2015 03:36:25 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3692 08/05/2015 03:36:25 PM Expansion matching succeeded: principal component analysis, principal components analysis
+DEBUG: 3692 08/05/2015 03:36:26 PM Expansion matching succeeded: capillary leak syndrome, capillary leakage syndrome
+DEBUG: 3684 08/05/2015 03:36:28 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9376 08/05/2015 03:36:28 PM Expansion matching failed: patient controlled analgesia, principal component analysis
+DEBUG: 3692 08/05/2015 03:36:29 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3692 08/05/2015 03:36:29 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9376 08/05/2015 03:36:30 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3692 08/05/2015 03:36:30 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9376 08/05/2015 03:36:31 PM Expansion matching succeeded: osteochondritis dissecans, osteochondrosis dissecans
+DEBUG: 3684 08/05/2015 03:36:31 PM Expansion matching failed: patient controlled analgesia, principal component analysis
+DEBUG: 3692 08/05/2015 03:36:31 PM Expansion matching failed: microinjection, merkel cell carcinoma
+DEBUG: 3692 08/05/2015 03:36:33 PM Expansion matching failed: event related potentials, early event related potential
+DEBUG: 9376 08/05/2015 03:36:34 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+ERROR: 3684 08/05/2015 03:36:34 PM Total articles: 1239, skipped: 0
+DEBUG: 9376 08/05/2015 03:36:34 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+INFO: 3676 08/05/2015 03:36:34 PM detected Windows; aliasing chunkize to chunkize_serial
+DEBUG: 9376 08/05/2015 03:36:35 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+INFO: 3676 08/05/2015 03:36:35 PM filtering articles with None
+INFO: 3676 08/05/2015 03:36:36 PM removing test articles from articleDB
+INFO: 3676 08/05/2015 03:36:36 PM correcting acronymDB
+INFO: 3676 08/05/2015 03:36:36 PM verifying training dataset
+ERROR: 9376 08/05/2015 03:36:37 PM Total articles: 1239, skipped: 0
+DEBUG: 3692 08/05/2015 03:36:37 PM Expansion matching failed: and phospho, adenosine diphosphate
+INFO: 3736 08/05/2015 03:36:37 PM detected Windows; aliasing chunkize to chunkize_serial
+DEBUG: 3692 08/05/2015 03:36:38 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+INFO: 3736 08/05/2015 03:36:38 PM filtering articles with None
+INFO: 3736 08/05/2015 03:36:38 PM removing test articles from articleDB
+INFO: 3736 08/05/2015 03:36:38 PM correcting acronymDB
+DEBUG: 3692 08/05/2015 03:36:39 PM Expansion matching succeeded: fatty acid synthase, fatty acid synthetase
+INFO: 3736 08/05/2015 03:36:39 PM verifying training dataset
+DEBUG: 3692 08/05/2015 03:36:40 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+ERROR: 3692 08/05/2015 03:36:41 PM Total articles: 1239, skipped: 0
+INFO: 1196 08/05/2015 03:36:41 PM detected Windows; aliasing chunkize to chunkize_serial
+INFO: 3676 08/05/2015 03:36:41 PM TFIDF vectorizer loaded
+INFO: 3676 08/05/2015 03:36:41 PM Expander_SVC loaded
+INFO: 3676 08/05/2015 03:36:41 PM evaluating test performance
+INFO: 1196 08/05/2015 03:36:42 PM filtering articles with None
+INFO: 1196 08/05/2015 03:36:42 PM removing test articles from articleDB
+INFO: 1196 08/05/2015 03:36:42 PM correcting acronymDB
+INFO: 1196 08/05/2015 03:36:43 PM verifying training dataset
+DEBUG: 3676 08/05/2015 03:36:43 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3676 08/05/2015 03:36:44 PM Expansion matching failed: bleomycin, bloom
+INFO: 3736 08/05/2015 03:36:44 PM TFIDF vectorizer loaded
+INFO: 3736 08/05/2015 03:36:44 PM Expander_SVC loaded
+INFO: 3736 08/05/2015 03:36:44 PM evaluating test performance
+DEBUG: 3676 08/05/2015 03:36:45 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:36:46 PM Expansion matching failed: melkersson rosenthal syndrome, melkersson rosenthal
+DEBUG: 3676 08/05/2015 03:36:46 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3736 08/05/2015 03:36:47 PM Expansion matching failed: anti lymphocyte serum, and antilymphocyte serum
+DEBUG: 3736 08/05/2015 03:36:48 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 3676 08/05/2015 03:36:48 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+INFO: 1196 08/05/2015 03:36:48 PM TFIDF vectorizer loaded
+INFO: 1196 08/05/2015 03:36:48 PM Expander_SVC loaded
+INFO: 1196 08/05/2015 03:36:48 PM evaluating test performance
+DEBUG: 3736 08/05/2015 03:36:48 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 3676 08/05/2015 03:36:49 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3676 08/05/2015 03:36:49 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3676 08/05/2015 03:36:49 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 3676 08/05/2015 03:36:49 PM Expansion matching failed: microinjection, mutated in colorectal cancer
+DEBUG: 3676 08/05/2015 03:36:49 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3676 08/05/2015 03:36:50 PM Expansion matching failed: principal component analysis, para chloroamphetamine
+DEBUG: 3736 08/05/2015 03:36:50 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3676 08/05/2015 03:36:51 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3736 08/05/2015 03:36:51 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 3676 08/05/2015 03:36:51 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3676 08/05/2015 03:36:52 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 1196 08/05/2015 03:36:53 PM Expansion matching failed: premature ventricular contractions, premature ventricular complexes
+DEBUG: 3736 08/05/2015 03:36:53 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:36:54 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:36:54 PM Expansion matching succeeded: breast self examination, breast self examinations
+DEBUG: 3676 08/05/2015 03:36:54 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 3676 08/05/2015 03:36:55 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 1196 08/05/2015 03:36:55 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 3676 08/05/2015 03:36:56 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3676 08/05/2015 03:36:56 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3736 08/05/2015 03:36:56 PM Expansion matching succeeded: posterior cerebral artery, posterior cerebral arteries
+DEBUG: 3736 08/05/2015 03:36:57 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 1196 08/05/2015 03:36:58 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:36:58 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3736 08/05/2015 03:37:00 PM Expansion matching failed: anti lymphocyte serum, amyotrophic lateral sclerosis
+DEBUG: 3676 08/05/2015 03:37:00 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:37:00 PM Expansion matching failed: t replacing factor, thyrotropin releasing factor
+DEBUG: 1196 08/05/2015 03:37:00 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 1196 08/05/2015 03:37:01 PM Expansion matching failed: inosine triphosphate, idiopathic thrombocytopenic purpura
+DEBUG: 3736 08/05/2015 03:37:02 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3736 08/05/2015 03:37:02 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3676 08/05/2015 03:37:03 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:37:03 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 1196 08/05/2015 03:37:03 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3736 08/05/2015 03:37:03 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:37:05 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 1196 08/05/2015 03:37:06 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3676 08/05/2015 03:37:06 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 1196 08/05/2015 03:37:07 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 1196 08/05/2015 03:37:09 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3736 08/05/2015 03:37:10 PM Expansion matching failed: cis platinum diammine dichloride, cis platinum dichloride
+DEBUG: 3736 08/05/2015 03:37:10 PM Expansion matching failed: tissue plasminogen activator, tissue type plasminogen activator
+DEBUG: 1196 08/05/2015 03:37:10 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 1196 08/05/2015 03:37:10 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 1196 08/05/2015 03:37:10 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3736 08/05/2015 03:37:11 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3736 08/05/2015 03:37:11 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:37:11 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 1196 08/05/2015 03:37:12 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3736 08/05/2015 03:37:13 PM Expansion matching succeeded: endoscopic retrograde pancreatography, endoscopic retrograde pancreaticography
+DEBUG: 1196 08/05/2015 03:37:13 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:37:13 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodiphenyl sulphone
+DEBUG: 3676 08/05/2015 03:37:13 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 1196 08/05/2015 03:37:14 PM Expansion matching failed: patient controlled analgesia, patient controlled anesthesia
+DEBUG: 1196 08/05/2015 03:37:14 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3736 08/05/2015 03:37:15 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3736 08/05/2015 03:37:15 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 3676 08/05/2015 03:37:16 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3676 08/05/2015 03:37:16 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 3676 08/05/2015 03:37:16 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 3736 08/05/2015 03:37:16 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3736 08/05/2015 03:37:17 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:37:18 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 1196 08/05/2015 03:37:18 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:37:19 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:37:19 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:37:20 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 1196 08/05/2015 03:37:20 PM Expansion matching failed: bloom, bleomycin
+DEBUG: 3736 08/05/2015 03:37:21 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 1196 08/05/2015 03:37:23 PM Expansion matching failed: body surface area, between body surface area
+DEBUG: 1196 08/05/2015 03:37:23 PM Expansion matching failed: polyvinyl chloride, plasticized polyvinyl chloride
+DEBUG: 3736 08/05/2015 03:37:23 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:37:23 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3736 08/05/2015 03:37:24 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3676 08/05/2015 03:37:24 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:37:26 PM Expansion matching failed: cleidocranial dysplasia, causes cleidocranial dysplasia
+DEBUG: 3676 08/05/2015 03:37:27 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 1196 08/05/2015 03:37:28 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3736 08/05/2015 03:37:28 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:37:29 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 1196 08/05/2015 03:37:29 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:37:29 PM Expansion matching failed: mannan binding protein, myelin basic protein
+DEBUG: 3736 08/05/2015 03:37:29 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:37:29 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3736 08/05/2015 03:37:30 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3676 08/05/2015 03:37:30 PM Expansion matching failed: mannan binding protein, myelin basic protein
+DEBUG: 3736 08/05/2015 03:37:30 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3676 08/05/2015 03:37:32 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3736 08/05/2015 03:37:33 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3676 08/05/2015 03:37:33 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:37:33 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3676 08/05/2015 03:37:34 PM Expansion matching succeeded: posterior cerebral artery, posterior cerebral arteries
+DEBUG: 3676 08/05/2015 03:37:34 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase antibody
+DEBUG: 3676 08/05/2015 03:37:34 PM Expansion matching succeeded: melkersson rosenthal syndrome, melkerrson rosenthal syndrome
+DEBUG: 3736 08/05/2015 03:37:35 PM Expansion matching succeeded: principal component analysis, principal components analysis
+DEBUG: 3736 08/05/2015 03:37:36 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 1196 08/05/2015 03:37:36 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3736 08/05/2015 03:37:37 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3736 08/05/2015 03:37:37 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3736 08/05/2015 03:37:38 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 1196 08/05/2015 03:37:38 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodiphenylsulfone
+DEBUG: 3736 08/05/2015 03:37:38 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 1196 08/05/2015 03:37:38 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3736 08/05/2015 03:37:38 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:37:38 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3736 08/05/2015 03:37:39 PM Expansion matching succeeded: para chloroamphetamine, parachloroamphetamine
+DEBUG: 3676 08/05/2015 03:37:39 PM Expansion matching failed: anti lymphocyte serum, an antilymphocyte serum
+DEBUG: 3736 08/05/2015 03:37:40 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:37:40 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3736 08/05/2015 03:37:40 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3736 08/05/2015 03:37:42 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 1196 08/05/2015 03:37:42 PM Expansion matching succeeded: major histocompatibility complex, major histocompatibility complexes
+DEBUG: 3736 08/05/2015 03:37:43 PM Expansion matching failed: thyroperoxidase, thrombopoietin
+DEBUG: 1196 08/05/2015 03:37:44 PM Expansion matching failed: thyroperoxidase, thrombopoietin
+DEBUG: 1196 08/05/2015 03:37:44 PM Expansion matching failed: antidiuretic hormone, an antidiuretic hormone
+DEBUG: 3736 08/05/2015 03:37:44 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 1196 08/05/2015 03:37:45 PM Expansion matching failed: posterior cerebral artery, posterior cerebral
+DEBUG: 1196 08/05/2015 03:37:46 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3736 08/05/2015 03:37:46 PM Expansion matching failed: diaminodiphenyl sulfone, disposition of dapsone
+DEBUG: 1196 08/05/2015 03:37:46 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3736 08/05/2015 03:37:47 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:37:47 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 1196 08/05/2015 03:37:47 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3736 08/05/2015 03:37:48 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 1196 08/05/2015 03:37:49 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:37:49 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 1196 08/05/2015 03:37:50 PM Expansion matching succeeded: osteochondritis dissecans, osteochondrosis dissecans
+DEBUG: 3736 08/05/2015 03:37:51 PM Expansion matching succeeded: tenascin c, tenascin
+DEBUG: 3736 08/05/2015 03:37:51 PM Expansion matching succeeded: macrophage activating factor, macrophage activation factor
+DEBUG: 1196 08/05/2015 03:37:52 PM Expansion matching succeeded: principal component analysis, principal components analysis
+DEBUG: 3676 08/05/2015 03:37:52 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 3736 08/05/2015 03:37:54 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:37:54 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 1196 08/05/2015 03:37:54 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3736 08/05/2015 03:37:55 PM Expansion matching succeeded: phytohemagglutinin, phytohemaglutinin
+DEBUG: 3736 08/05/2015 03:37:55 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3676 08/05/2015 03:37:56 PM Expansion matching failed: substance p receptor, surface plasmon resonance
+DEBUG: 3736 08/05/2015 03:37:57 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:37:57 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3676 08/05/2015 03:37:58 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3736 08/05/2015 03:37:58 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3676 08/05/2015 03:37:58 PM Expansion matching failed: pneumocystis pneumonia, pentachlorophenate
+DEBUG: 1196 08/05/2015 03:37:58 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:37:59 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:37:59 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 1196 08/05/2015 03:38:00 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 1196 08/05/2015 03:38:00 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 3676 08/05/2015 03:38:00 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 1196 08/05/2015 03:38:01 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3676 08/05/2015 03:38:01 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 1196 08/05/2015 03:38:01 PM Expansion matching failed: trimethylpsoralen, to thymidine monophosphate
+DEBUG: 3676 08/05/2015 03:38:02 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:38:02 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3736 08/05/2015 03:38:03 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3676 08/05/2015 03:38:03 PM Expansion matching failed: obsessive compulsive disorder, osteochondritis dissecans
+DEBUG: 1196 08/05/2015 03:38:04 PM Expansion matching succeeded: polyvinyl chloride, poly vinyl chloride
+DEBUG: 3676 08/05/2015 03:38:04 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 1196 08/05/2015 03:38:04 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 3736 08/05/2015 03:38:04 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 3676 08/05/2015 03:38:05 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+DEBUG: 3676 08/05/2015 03:38:05 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 1196 08/05/2015 03:38:06 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3676 08/05/2015 03:38:06 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:38:07 PM Expansion matching failed: topical application, tetradecanoyl phorbol acetate
+DEBUG: 3676 08/05/2015 03:38:07 PM Expansion matching failed: niemann pick c1, nuclear pore complexes
+DEBUG: 1196 08/05/2015 03:38:07 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3676 08/05/2015 03:38:07 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3736 08/05/2015 03:38:08 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 3736 08/05/2015 03:38:08 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 3676 08/05/2015 03:38:08 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 1196 08/05/2015 03:38:08 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 1196 08/05/2015 03:38:08 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 1196 08/05/2015 03:38:10 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 1196 08/05/2015 03:38:12 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3676 08/05/2015 03:38:12 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3676 08/05/2015 03:38:14 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3676 08/05/2015 03:38:14 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3736 08/05/2015 03:38:16 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 1196 08/05/2015 03:38:17 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase antibodies
+DEBUG: 3736 08/05/2015 03:38:17 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3736 08/05/2015 03:38:18 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 3676 08/05/2015 03:38:18 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3736 08/05/2015 03:38:18 PM Expansion matching failed: anti lymphocyte serum, amyotrophic lateral sclerosis
+DEBUG: 3676 08/05/2015 03:38:19 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 1196 08/05/2015 03:38:19 PM Expansion matching succeeded: posterior cerebral artery, posterior cerebral arteries
+DEBUG: 1196 08/05/2015 03:38:21 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3736 08/05/2015 03:38:21 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+DEBUG: 1196 08/05/2015 03:38:22 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3736 08/05/2015 03:38:22 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 3736 08/05/2015 03:38:23 PM Expansion matching succeeded: principal component analysis, principle components analysis
+DEBUG: 3736 08/05/2015 03:38:23 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 1196 08/05/2015 03:38:23 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3676 08/05/2015 03:38:23 PM Expansion matching succeeded: osteochondritis dissecans, osteochondrosis dissecans
+DEBUG: 3676 08/05/2015 03:38:24 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 1196 08/05/2015 03:38:24 PM Expansion matching failed: trimethoprim, to trimethoprim
+DEBUG: 3736 08/05/2015 03:38:24 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:38:24 PM Expansion matching succeeded: thyrotropin releasing factor, thyroid releasing factor
+DEBUG: 1196 08/05/2015 03:38:24 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 3676 08/05/2015 03:38:25 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 3676 08/05/2015 03:38:26 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3676 08/05/2015 03:38:26 PM Expansion matching succeeded: complementarity determining region, complementarity determining regions
+DEBUG: 3676 08/05/2015 03:38:26 PM Expansion matching failed: procarbazine, polychlorinated biphenyl
+DEBUG: 1196 08/05/2015 03:38:27 PM Expansion matching failed: microinjection, mutated in colon cancer
+DEBUG: 1196 08/05/2015 03:38:27 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3736 08/05/2015 03:38:28 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3676 08/05/2015 03:38:28 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:38:28 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase antibodies
+DEBUG: 3676 08/05/2015 03:38:31 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodiphenylsulfone
+DEBUG: 1196 08/05/2015 03:38:31 PM Expansion matching failed: topical application, tetradecanoyl phorbor 13 acetate
+DEBUG: 1196 08/05/2015 03:38:31 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:38:32 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:38:32 PM Expansion matching failed: dopamine transporters, da transporter
+DEBUG: 3676 08/05/2015 03:38:32 PM Expansion matching failed: trimethoprim, trimethoprim sulphadiazine
+DEBUG: 3676 08/05/2015 03:38:32 PM Expansion matching failed: total lung capacity, than total lung capacity
+DEBUG: 1196 08/05/2015 03:38:33 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3736 08/05/2015 03:38:34 PM Expansion matching failed: t replacing factor, thyrotropin releasing factor
+DEBUG: 3736 08/05/2015 03:38:35 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3676 08/05/2015 03:38:35 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 1196 08/05/2015 03:38:37 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3676 08/05/2015 03:38:38 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 1196 08/05/2015 03:38:38 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3676 08/05/2015 03:38:38 PM Expansion matching failed: psychotomimetic phencyclidine, pentachlorophenate
+DEBUG: 3736 08/05/2015 03:38:39 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3676 08/05/2015 03:38:39 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 3676 08/05/2015 03:38:40 PM Expansion matching failed: thrombopoietin, thyroperoxidase
+DEBUG: 3736 08/05/2015 03:38:40 PM Expansion matching failed: corticotrophin releasing factor, chronic renal failure
+DEBUG: 1196 08/05/2015 03:38:40 PM Expansion matching failed: dopamine transporters, da transporter
+DEBUG: 3676 08/05/2015 03:38:40 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 3676 08/05/2015 03:38:40 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3736 08/05/2015 03:38:41 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 3736 08/05/2015 03:38:42 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3676 08/05/2015 03:38:42 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3736 08/05/2015 03:38:43 PM Expansion matching failed: death, dopamine transporters
+DEBUG: 3736 08/05/2015 03:38:43 PM Expansion matching succeeded: complementarity determining region, complementary determining region
+DEBUG: 3736 08/05/2015 03:38:43 PM Expansion matching failed: bloom, bleomycin
+DEBUG: 1196 08/05/2015 03:38:44 PM Expansion matching succeeded: trimethoprim, trimethoprime
+DEBUG: 1196 08/05/2015 03:38:44 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3736 08/05/2015 03:38:44 PM Expansion matching succeeded: macrophage activating factor, macrophage activating factors
+DEBUG: 1196 08/05/2015 03:38:45 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3676 08/05/2015 03:38:45 PM Expansion matching failed: cis platinum diammine dichloride, cisplatinumdiamminodichloride
+DEBUG: 3676 08/05/2015 03:38:45 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:38:46 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 1196 08/05/2015 03:38:46 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 1196 08/05/2015 03:38:46 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 1196 08/05/2015 03:38:47 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3736 08/05/2015 03:38:47 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:38:49 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 3676 08/05/2015 03:38:49 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 1196 08/05/2015 03:38:49 PM Expansion matching succeeded: polyvinyl chloride, polyvinylchloride
+DEBUG: 3736 08/05/2015 03:38:49 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3676 08/05/2015 03:38:50 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 1196 08/05/2015 03:38:50 PM Expansion matching succeeded: thyrotropin releasing factor, thyrotrophin releasing factor
+DEBUG: 3676 08/05/2015 03:38:51 PM Expansion matching failed: event related potentials, event related brain potential
+DEBUG: 3736 08/05/2015 03:38:51 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3676 08/05/2015 03:38:52 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3676 08/05/2015 03:38:52 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 1196 08/05/2015 03:38:52 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:38:53 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:38:53 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3676 08/05/2015 03:38:54 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3676 08/05/2015 03:38:56 PM Expansion matching failed: cleidocranial dysplasia, cbfa1 cause cleidocranial dysplasia
+DEBUG: 3676 08/05/2015 03:38:56 PM Expansion matching failed: cleidocranial dysplasia, cleidocranial dysostosis
+DEBUG: 3736 08/05/2015 03:38:57 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 1196 08/05/2015 03:38:57 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3676 08/05/2015 03:38:57 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 3736 08/05/2015 03:38:57 PM Expansion matching failed: antidiuretic hormone, an antidiuretic hormone
+DEBUG: 3676 08/05/2015 03:38:57 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 1196 08/05/2015 03:38:58 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3676 08/05/2015 03:38:58 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 3676 08/05/2015 03:38:58 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia purpura
+DEBUG: 3676 08/05/2015 03:38:59 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3676 08/05/2015 03:39:00 PM Expansion matching failed: diaminodiphenyl sulfone, drugs dapsone
+DEBUG: 3736 08/05/2015 03:39:00 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3676 08/05/2015 03:39:00 PM Expansion matching succeeded: polyvinyl chloride, polyvinylchloride
+DEBUG: 3676 08/05/2015 03:39:01 PM Expansion matching succeeded: fetal alcohol syndrome, foetal alcohol syndrome
+DEBUG: 1196 08/05/2015 03:39:01 PM Expansion matching failed: premature ventricular contractions, premature ventricular complex
+DEBUG: 1196 08/05/2015 03:39:01 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3736 08/05/2015 03:39:02 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 3736 08/05/2015 03:39:03 PM Expansion matching failed: macrophage activating factor, microglia activation factor
+DEBUG: 3736 08/05/2015 03:39:03 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3736 08/05/2015 03:39:04 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 3736 08/05/2015 03:39:04 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 3676 08/05/2015 03:39:05 PM Expansion matching failed: anti lymphocyte serum, anti mouse lymphocyte sera
+DEBUG: 3736 08/05/2015 03:39:06 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 1196 08/05/2015 03:39:07 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:39:07 PM Expansion matching failed: death, dementia of alzheimer type
+DEBUG: 1196 08/05/2015 03:39:08 PM Expansion matching failed: thyrotropin releasing factor, tsh releasing factor
+DEBUG: 1196 08/05/2015 03:39:08 PM Expansion matching succeeded: fatty acid synthase, fatty acid synthases
+DEBUG: 3736 08/05/2015 03:39:08 PM Expansion matching succeeded: principal component analysis, principal components analysis
+DEBUG: 1196 08/05/2015 03:39:08 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 3676 08/05/2015 03:39:09 PM Expansion matching failed: microinjection, merkel cell carcinoma
+DEBUG: 3736 08/05/2015 03:39:10 PM Expansion matching failed: death, dementia of alzheimer type
+DEBUG: 1196 08/05/2015 03:39:10 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 1196 08/05/2015 03:39:10 PM Expansion matching failed: para chloroamphetamine, passive cutaneous anaphylaxis
+DEBUG: 3736 08/05/2015 03:39:11 PM Expansion matching failed: premature ventricular contractions, premature ventricular complex
+DEBUG: 3676 08/05/2015 03:39:11 PM Expansion matching failed: topical application, tetradecanoylphorbol acetate
+DEBUG: 3676 08/05/2015 03:39:12 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 3736 08/05/2015 03:39:12 PM Expansion matching failed: death, dopamine transporters
+DEBUG: 3736 08/05/2015 03:39:14 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+DEBUG: 1196 08/05/2015 03:39:14 PM Expansion matching failed: microinjection, merkel cell carcinoma
+DEBUG: 3736 08/05/2015 03:39:15 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 1196 08/05/2015 03:39:15 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 1196 08/05/2015 03:39:16 PM Expansion matching succeeded: posterior cerebral artery, posterior cerebral arteries
+DEBUG: 3676 08/05/2015 03:39:16 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:39:17 PM Expansion matching succeeded: breast self examination, breast self examinations
+DEBUG: 3676 08/05/2015 03:39:18 PM Expansion matching failed: psychotomimetic phencyclidine, psychotomimetic drug phencyclidine
+DEBUG: 1196 08/05/2015 03:39:18 PM Expansion matching failed: premature ventricular contractions, premature ventricular complex
+DEBUG: 1196 08/05/2015 03:39:18 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3736 08/05/2015 03:39:19 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3676 08/05/2015 03:39:19 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 3736 08/05/2015 03:39:19 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 1196 08/05/2015 03:39:19 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 1196 08/05/2015 03:39:20 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital diserythropoietic anemias
+DEBUG: 3736 08/05/2015 03:39:20 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodiphenylsulfone
+DEBUG: 1196 08/05/2015 03:39:21 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 3736 08/05/2015 03:39:21 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 3676 08/05/2015 03:39:22 PM Expansion matching failed: mannan binding protein, myelin basic protein
+DEBUG: 1196 08/05/2015 03:39:22 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 3676 08/05/2015 03:39:23 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 1196 08/05/2015 03:39:24 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 3736 08/05/2015 03:39:26 PM Expansion matching failed: t replacing factor, thyrotropin releasing factor
+DEBUG: 3676 08/05/2015 03:39:27 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 1196 08/05/2015 03:39:28 PM Expansion matching succeeded: fetal alcohol syndrome, foetal alcohol syndrome
+DEBUG: 3676 08/05/2015 03:39:28 PM Expansion matching failed: antidiuretic hormone, and antidiuretic hormone
+DEBUG: 1196 08/05/2015 03:39:28 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3676 08/05/2015 03:39:28 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 3736 08/05/2015 03:39:28 PM Expansion matching failed: cleidocranial dysplasia, cleidocranial dysostosis
+DEBUG: 1196 08/05/2015 03:39:28 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:39:29 PM Expansion matching succeeded: principal component analysis, principal components analysis
+DEBUG: 1196 08/05/2015 03:39:29 PM Expansion matching failed: psychotomimetic phencyclidine, pentachlorophenate
+DEBUG: 3676 08/05/2015 03:39:30 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 3736 08/05/2015 03:39:30 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 1196 08/05/2015 03:39:31 PM Expansion matching succeeded: mannan binding protein, mannose binding proteins
+DEBUG: 3736 08/05/2015 03:39:31 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 3736 08/05/2015 03:39:31 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 3736 08/05/2015 03:39:32 PM Expansion matching failed: death, developing all dementias
+DEBUG: 1196 08/05/2015 03:39:33 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3676 08/05/2015 03:39:34 PM Expansion matching failed: microinjection, mutated in colorectal carcinomas
+DEBUG: 3736 08/05/2015 03:39:35 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 3676 08/05/2015 03:39:35 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 3736 08/05/2015 03:39:35 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+ERROR: 3676 08/05/2015 03:39:36 PM Total articles: 1239, skipped: 0
+DEBUG: 1196 08/05/2015 03:39:36 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 3736 08/05/2015 03:39:36 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+INFO: 9732 08/05/2015 03:39:37 PM detected Windows; aliasing chunkize to chunkize_serial
+INFO: 9732 08/05/2015 03:39:38 PM filtering articles with None
+INFO: 9732 08/05/2015 03:39:38 PM removing test articles from articleDB
+INFO: 9732 08/05/2015 03:39:38 PM correcting acronymDB
+DEBUG: 1196 08/05/2015 03:39:39 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+INFO: 9732 08/05/2015 03:39:39 PM verifying training dataset
+DEBUG: 3736 08/05/2015 03:39:39 PM Expansion matching failed: premature ventricular contractions, premature ventricular complex
+DEBUG: 3736 08/05/2015 03:39:43 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 3736 08/05/2015 03:39:44 PM Expansion matching failed: anti lymphocyte serum, antilymphocytic serum
+DEBUG: 1196 08/05/2015 03:39:44 PM Expansion matching failed: pneumocystis pneumonia, pneumocystis carinii pneumonia
+INFO: 9732 08/05/2015 03:39:44 PM TFIDF vectorizer loaded
+INFO: 9732 08/05/2015 03:39:44 PM Expander_SVC loaded
+INFO: 9732 08/05/2015 03:39:44 PM evaluating test performance
+DEBUG: 1196 08/05/2015 03:39:44 PM Expansion matching failed: event related potentials, event related brain potential
+ERROR: 3736 08/05/2015 03:39:44 PM Total articles: 1239, skipped: 0
+INFO: 4940 08/05/2015 03:39:45 PM detected Windows; aliasing chunkize to chunkize_serial
+DEBUG: 1196 08/05/2015 03:39:45 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+INFO: 4940 08/05/2015 03:39:46 PM filtering articles with None
+INFO: 4940 08/05/2015 03:39:46 PM removing test articles from articleDB
+INFO: 4940 08/05/2015 03:39:46 PM correcting acronymDB
+INFO: 4940 08/05/2015 03:39:47 PM verifying training dataset
+DEBUG: 1196 08/05/2015 03:39:47 PM Expansion matching succeeded: posterior cerebral artery, posterior cerebral arteries
+DEBUG: 1196 08/05/2015 03:39:48 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9732 08/05/2015 03:39:48 PM Expansion matching succeeded: thyrotropin releasing factor, thyrotrophin releasing factor
+DEBUG: 1196 08/05/2015 03:39:49 PM Expansion matching succeeded: diaminodiphenyl sulfone, diamino diphenyl sulfone
+DEBUG: 1196 08/05/2015 03:39:50 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 1196 08/05/2015 03:39:50 PM Expansion matching failed: bleomycin, bloom
+DEBUG: 9732 08/05/2015 03:39:50 PM Expansion matching failed: antidiuretic hormone, and antidiuretic hormone
+INFO: 4940 08/05/2015 03:39:52 PM TFIDF vectorizer loaded
+INFO: 4940 08/05/2015 03:39:52 PM Expander_SVC loaded
+INFO: 4940 08/05/2015 03:39:52 PM evaluating test performance
+DEBUG: 9732 08/05/2015 03:39:52 PM Expansion matching succeeded: posterior cerebral artery, posterior cerebral arteries
+DEBUG: 1196 08/05/2015 03:39:53 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 4940 08/05/2015 03:39:53 PM Expansion matching failed: pneumocystis pneumonia, pneumocystis carinii pneumonia
+DEBUG: 9732 08/05/2015 03:39:53 PM Expansion matching failed: osteochondritis dissecans, osteochondral defect
+ERROR: 1196 08/05/2015 03:39:53 PM Total articles: 1239, skipped: 0
+DEBUG: 4940 08/05/2015 03:39:53 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+INFO: 7992 08/05/2015 03:39:53 PM detected Windows; aliasing chunkize to chunkize_serial
+INFO: 7992 08/05/2015 03:39:54 PM filtering articles with None
+INFO: 7992 08/05/2015 03:39:55 PM removing test articles from articleDB
+INFO: 7992 08/05/2015 03:39:55 PM correcting acronymDB
+DEBUG: 9732 08/05/2015 03:39:55 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9732 08/05/2015 03:39:55 PM Expansion matching failed: magnetic resonance spectroscopy, mr spectroscopy
+DEBUG: 4940 08/05/2015 03:39:55 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+INFO: 7992 08/05/2015 03:39:55 PM verifying training dataset
+DEBUG: 4940 08/05/2015 03:39:57 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9732 08/05/2015 03:39:57 PM Expansion matching failed: t replacing factor, thyrotropin releasing factor
+DEBUG: 9732 08/05/2015 03:39:58 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:39:58 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 9732 08/05/2015 03:39:59 PM Expansion matching failed: pneumocystis pneumonia, pneumocystis carinii pneumonia
+DEBUG: 9732 08/05/2015 03:40:00 PM Expansion matching failed: trimethylpsoralen, thymidine monophosphate
+INFO: 7992 08/05/2015 03:40:00 PM TFIDF vectorizer loaded
+INFO: 7992 08/05/2015 03:40:00 PM Expander_SVC loaded
+INFO: 7992 08/05/2015 03:40:00 PM evaluating test performance
+DEBUG: 9732 08/05/2015 03:40:00 PM Expansion matching failed: thrombopoietin, thrombopoietic stimulating factor
+DEBUG: 9732 08/05/2015 03:40:01 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 7992 08/05/2015 03:40:01 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 4940 08/05/2015 03:40:01 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 4940 08/05/2015 03:40:01 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 9732 08/05/2015 03:40:02 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 4940 08/05/2015 03:40:03 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:40:03 PM Expansion matching failed: nijmegen breakage syndrome, neuroblastomas
+DEBUG: 9732 08/05/2015 03:40:03 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 7992 08/05/2015 03:40:04 PM Expansion matching failed: para chloroamphetamine, principal component analysis
+DEBUG: 9732 08/05/2015 03:40:05 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 7992 08/05/2015 03:40:05 PM Expansion matching failed: topical application, tetradecanoyl phorbol acetate
+DEBUG: 7992 08/05/2015 03:40:05 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 7992 08/05/2015 03:40:05 PM Expansion matching succeeded: para chloroamphetamine, parachloroamphetamine
+DEBUG: 9732 08/05/2015 03:40:05 PM Expansion matching failed: cleidocranial dysplasia, cleidocranial dysostosis
+DEBUG: 9732 08/05/2015 03:40:05 PM Expansion matching failed: drug delivery system, diaminodiphenyl sulfone
+DEBUG: 4940 08/05/2015 03:40:06 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:40:06 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 4940 08/05/2015 03:40:08 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+DEBUG: 7992 08/05/2015 03:40:09 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 4940 08/05/2015 03:40:09 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:40:09 PM Expansion matching succeeded: capillary leak syndrome, capillary leakage syndrome
+DEBUG: 4940 08/05/2015 03:40:10 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 4940 08/05/2015 03:40:11 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9732 08/05/2015 03:40:12 PM Expansion matching succeeded: borderline personality disorder, borderline personality disorders
+DEBUG: 7992 08/05/2015 03:40:13 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 9732 08/05/2015 03:40:14 PM Expansion matching succeeded: passive cutaneous anaphylaxis, passive cutaneous anaphylactic
+DEBUG: 4940 08/05/2015 03:40:14 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 4940 08/05/2015 03:40:15 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 4940 08/05/2015 03:40:15 PM Expansion matching succeeded: para chloroamphetamine, parachloroampetamine
+DEBUG: 9732 08/05/2015 03:40:16 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 9732 08/05/2015 03:40:16 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 9732 08/05/2015 03:40:16 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9732 08/05/2015 03:40:16 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 7992 08/05/2015 03:40:17 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 7992 08/05/2015 03:40:17 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 4940 08/05/2015 03:40:18 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 7992 08/05/2015 03:40:18 PM Expansion matching failed: and phospho, adenosine diphosphate
+DEBUG: 9732 08/05/2015 03:40:18 PM Expansion matching failed: macrophage activating factor, musculo aponeurotic fibrosacroma
+DEBUG: 9732 08/05/2015 03:40:19 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9732 08/05/2015 03:40:20 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 7992 08/05/2015 03:40:20 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+DEBUG: 4940 08/05/2015 03:40:21 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9732 08/05/2015 03:40:21 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 7992 08/05/2015 03:40:22 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:40:22 PM Expansion matching failed: death, dementia of alzheimer type
+DEBUG: 9732 08/05/2015 03:40:23 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 9732 08/05/2015 03:40:23 PM Expansion matching failed: thrombopoietin, thrombocytopoietic stimulating factor
+DEBUG: 7992 08/05/2015 03:40:24 PM Expansion matching failed: psychotomimetic phencyclidine, pentachlorophenate
+DEBUG: 9732 08/05/2015 03:40:24 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9732 08/05/2015 03:40:24 PM Expansion matching succeeded: diaminodiphenyl sulfone, diamino diphenyl sulfona
+DEBUG: 7992 08/05/2015 03:40:24 PM Expansion matching failed: automatic data processing, and phospho
+DEBUG: 9732 08/05/2015 03:40:25 PM Expansion matching failed: anti lymphocyte serum, antilimphocitic serum
+DEBUG: 7992 08/05/2015 03:40:26 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 7992 08/05/2015 03:40:26 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9732 08/05/2015 03:40:26 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 7992 08/05/2015 03:40:27 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 9732 08/05/2015 03:40:28 PM Expansion matching failed: diaminodiphenyl sulfone, drug delivery system
+DEBUG: 4940 08/05/2015 03:40:28 PM Expansion matching failed: thrombopoietin, thrombocytopoietic stimulatory factor
+DEBUG: 7992 08/05/2015 03:40:30 PM Expansion matching failed: and phospho, adenosine diphosphate
+DEBUG: 7992 08/05/2015 03:40:30 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9732 08/05/2015 03:40:31 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 7992 08/05/2015 03:40:31 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 9732 08/05/2015 03:40:31 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 7992 08/05/2015 03:40:31 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9732 08/05/2015 03:40:32 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 4940 08/05/2015 03:40:32 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 4940 08/05/2015 03:40:32 PM Expansion matching failed: tenascin c, troponin c
+DEBUG: 4940 08/05/2015 03:40:33 PM Expansion matching failed: diaminodiphenyl sulfone, diaminodiphenylsulphone
+DEBUG: 7992 08/05/2015 03:40:33 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 4940 08/05/2015 03:40:34 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 4940 08/05/2015 03:40:34 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9732 08/05/2015 03:40:35 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 7992 08/05/2015 03:40:35 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9732 08/05/2015 03:40:35 PM Expansion matching failed: pneumocystis pneumonia, pneumocystis cause pneumonia
+DEBUG: 4940 08/05/2015 03:40:35 PM Expansion matching succeeded: thin layer chromatography, thin layer chromatogram
+DEBUG: 4940 08/05/2015 03:40:36 PM Expansion matching failed: bleomycin, bloom
+DEBUG: 7992 08/05/2015 03:40:36 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:40:37 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 4940 08/05/2015 03:40:37 PM Expansion matching succeeded: macrophage activating factor, macrophage activation factor
+DEBUG: 7992 08/05/2015 03:40:38 PM Expansion matching succeeded: primary ciliary dyskinesia, primary cilliary dyskinesia
+DEBUG: 9732 08/05/2015 03:40:39 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 4940 08/05/2015 03:40:39 PM Expansion matching succeeded: phytohemagglutinin, phytohemaglutinin
+DEBUG: 7992 08/05/2015 03:40:40 PM Expansion matching failed: trimethylpsoralen, thymidine monophosphate
+DEBUG: 4940 08/05/2015 03:40:40 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 4940 08/05/2015 03:40:41 PM Expansion matching failed: premature ventricular contractions, premature ventricular complex
+DEBUG: 4940 08/05/2015 03:40:41 PM Expansion matching failed: trimethylpsoralen, thymidine monophosphate
+DEBUG: 7992 08/05/2015 03:40:42 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 4940 08/05/2015 03:40:42 PM Expansion matching succeeded: fatty acid synthase, fatty acid synthesis
+DEBUG: 4940 08/05/2015 03:40:42 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 4940 08/05/2015 03:40:42 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:40:42 PM Expansion matching succeeded: complementarity determining region, complementary determining region
+DEBUG: 4940 08/05/2015 03:40:44 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9732 08/05/2015 03:40:45 PM Expansion matching failed: anti lymphocyte serum, anti mouse lymphocyte serum
+DEBUG: 7992 08/05/2015 03:40:46 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 7992 08/05/2015 03:40:46 PM Expansion matching failed: calcium pyrophosphate deposition disease, calcium pyrophosphate dihydrate disease
+DEBUG: 4940 08/05/2015 03:40:46 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 9732 08/05/2015 03:40:47 PM Expansion matching failed: bleomycin, bloom
+DEBUG: 4940 08/05/2015 03:40:47 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9732 08/05/2015 03:40:47 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9732 08/05/2015 03:40:47 PM Expansion matching failed: mannan binding protein, myelin basic protein
+DEBUG: 4940 08/05/2015 03:40:47 PM Expansion matching failed: polychlorinated biphenyls, polychlorobiphenyl
+DEBUG: 4940 08/05/2015 03:40:48 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:40:48 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:40:49 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:40:50 PM Expansion matching succeeded: melkersson rosenthal syndrome, merkersson rosenthal syndrome
+DEBUG: 4940 08/05/2015 03:40:50 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 4940 08/05/2015 03:40:50 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 4940 08/05/2015 03:40:51 PM Expansion matching failed: cleidocranial dysplasia, cleidocranial dysostosis
+DEBUG: 7992 08/05/2015 03:40:51 PM Expansion matching failed: major histocompatibility complex, mouse major histocompatibility complex
+DEBUG: 4940 08/05/2015 03:40:51 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 9732 08/05/2015 03:40:52 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9732 08/05/2015 03:40:53 PM Expansion matching failed: psychotomimetic phencyclidine, pentachlorophenate
+DEBUG: 9732 08/05/2015 03:40:53 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 7992 08/05/2015 03:40:54 PM Expansion matching failed: magnetic resonance spectroscopy, melkersson rosenthal syndrome
+DEBUG: 7992 08/05/2015 03:40:54 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:40:54 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 4940 08/05/2015 03:40:54 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 4940 08/05/2015 03:40:54 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 7992 08/05/2015 03:40:55 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 4940 08/05/2015 03:40:55 PM Expansion matching succeeded: posterior cerebral artery, posterior cerebral arteries
+DEBUG: 9732 08/05/2015 03:40:55 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 9732 08/05/2015 03:40:55 PM Expansion matching succeeded: thyrotropin releasing factor, thyrotrophin releasing factor
+DEBUG: 7992 08/05/2015 03:40:55 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 7992 08/05/2015 03:40:55 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9732 08/05/2015 03:40:55 PM Expansion matching failed: pelger huet anomaly, phytohemagglutinin
+DEBUG: 9732 08/05/2015 03:40:56 PM Expansion matching failed: death, dementia of alzheimer type
+DEBUG: 7992 08/05/2015 03:40:56 PM Expansion matching succeeded: fetal alcohol syndrome, foetal alcohol syndrome
+DEBUG: 9732 08/05/2015 03:40:56 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9732 08/05/2015 03:40:57 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 7992 08/05/2015 03:40:57 PM Expansion matching succeeded: polyvinyl chloride, polyvinylchloride
+DEBUG: 9732 08/05/2015 03:40:58 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9732 08/05/2015 03:40:59 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 4940 08/05/2015 03:40:59 PM Expansion matching failed: thyroperoxidase, thrombopoietin
+DEBUG: 4940 08/05/2015 03:41:00 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 7992 08/05/2015 03:41:00 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 7992 08/05/2015 03:41:02 PM Expansion matching failed: trimethoprim, the trimethoprim
+DEBUG: 9732 08/05/2015 03:41:02 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 7992 08/05/2015 03:41:03 PM Expansion matching failed: cleidocranial dysplasia, classic cleidocranial dysplasia
+DEBUG: 4940 08/05/2015 03:41:03 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodiphenylsulfone
+DEBUG: 9732 08/05/2015 03:41:04 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 4940 08/05/2015 03:41:04 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 7992 08/05/2015 03:41:05 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9732 08/05/2015 03:41:05 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9732 08/05/2015 03:41:05 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 7992 08/05/2015 03:41:06 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 4940 08/05/2015 03:41:06 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 7992 08/05/2015 03:41:06 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 9732 08/05/2015 03:41:06 PM Expansion matching failed: niemann pick c1, niemann pick
+DEBUG: 7992 08/05/2015 03:41:07 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:41:08 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 7992 08/05/2015 03:41:09 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 4940 08/05/2015 03:41:10 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 7992 08/05/2015 03:41:12 PM Expansion matching succeeded: osteochondritis dissecans, osteochonditis dissecans
+DEBUG: 9732 08/05/2015 03:41:13 PM Expansion matching succeeded: idiopathic thrombocytopenic purpura, idiopathic thrombocytopenia purpura
+DEBUG: 7992 08/05/2015 03:41:13 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 7992 08/05/2015 03:41:14 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 7992 08/05/2015 03:41:14 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 9732 08/05/2015 03:41:14 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 7992 08/05/2015 03:41:15 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 4940 08/05/2015 03:41:16 PM Expansion matching succeeded: alcohol dehydrogenase, alcohol dehydogenease
+DEBUG: 4940 08/05/2015 03:41:17 PM Expansion matching failed: drug delivery system, diaminodiphenyl sulfone
+DEBUG: 7992 08/05/2015 03:41:19 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 4940 08/05/2015 03:41:20 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 7992 08/05/2015 03:41:22 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 4940 08/05/2015 03:41:23 PM Expansion matching succeeded: thin layer chromatography, thin layer chromatographic
+DEBUG: 4940 08/05/2015 03:41:23 PM Expansion matching failed: pelger huet anomaly, phytohemagglutinin
+DEBUG: 4940 08/05/2015 03:41:23 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 4940 08/05/2015 03:41:24 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 7992 08/05/2015 03:41:24 PM Expansion matching failed: tenascin c, the healing process
+DEBUG: 7992 08/05/2015 03:41:25 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 4940 08/05/2015 03:41:26 PM Expansion matching succeeded: capillary leak syndrome, capillary leakage syndrome
+DEBUG: 7992 08/05/2015 03:41:26 PM Expansion matching failed: premature ventricular contractions, premature ventricular complex
+DEBUG: 4940 08/05/2015 03:41:26 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 4940 08/05/2015 03:41:26 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 4940 08/05/2015 03:41:27 PM Expansion matching succeeded: principal component analysis, principal components analysis
+DEBUG: 7992 08/05/2015 03:41:27 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 4940 08/05/2015 03:41:29 PM Expansion matching succeeded: polyvinyl chloride, polyvinylchloride
+DEBUG: 7992 08/05/2015 03:41:29 PM Expansion matching failed: cleidocranial dysplasia, cerebellar cortical dysplasia
+DEBUG: 7992 08/05/2015 03:41:29 PM Expansion matching failed: anti lymphocyte serum, antilymphocyte antiserum
+DEBUG: 4940 08/05/2015 03:41:30 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 9732 08/05/2015 03:41:30 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:41:30 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:41:30 PM Expansion matching failed: major histocompatibility complex, major histocompatibility
+DEBUG: 7992 08/05/2015 03:41:31 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9732 08/05/2015 03:41:31 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9732 08/05/2015 03:41:31 PM Expansion matching failed: anti lymphocyte serum, anti rat lymphocyte serum
+DEBUG: 4940 08/05/2015 03:41:31 PM Expansion matching succeeded: complementarity determining region, complementary determining region
+DEBUG: 9732 08/05/2015 03:41:32 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 7992 08/05/2015 03:41:32 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:41:32 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:41:33 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 9732 08/05/2015 03:41:34 PM Expansion matching failed: pneumocystis pneumonia, pneumocystis carinii pneumonia
+DEBUG: 4940 08/05/2015 03:41:34 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9732 08/05/2015 03:41:34 PM Expansion matching failed: pneumocystis pneumonia, pneumocystis carinii pneumonia
+DEBUG: 9732 08/05/2015 03:41:34 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 7992 08/05/2015 03:41:35 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 4940 08/05/2015 03:41:36 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 4940 08/05/2015 03:41:36 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 4940 08/05/2015 03:41:36 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 4940 08/05/2015 03:41:37 PM Expansion matching failed: polychlorinated biphenyls, prenatal polychlorinated biphenyl
+DEBUG: 4940 08/05/2015 03:41:38 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:41:38 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 4940 08/05/2015 03:41:39 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9732 08/05/2015 03:41:39 PM Expansion matching failed: sudden cardiac death, sickle cell disease
+DEBUG: 4940 08/05/2015 03:41:40 PM Expansion matching failed: congenital dyserythropoietic anemias, chlorodeoxyadenosine
+DEBUG: 9732 08/05/2015 03:41:40 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:41:40 PM Expansion matching succeeded: fatty acid synthase, fatty acid synthases
+DEBUG: 9732 08/05/2015 03:41:40 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:41:40 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 4940 08/05/2015 03:41:41 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 7992 08/05/2015 03:41:41 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 9732 08/05/2015 03:41:41 PM Expansion matching succeeded: hantavirus pulmonary syndrome, hantaviral pulmonary syndrome
+DEBUG: 9732 08/05/2015 03:41:42 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 7992 08/05/2015 03:41:43 PM Expansion matching succeeded: endoscopic retrograde pancreatography, endoscopic retrograde pancreatographic
+DEBUG: 4940 08/05/2015 03:41:43 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 7992 08/05/2015 03:41:43 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 4940 08/05/2015 03:41:44 PM Expansion matching succeeded: breast self examination, breast self exam
+DEBUG: 4940 08/05/2015 03:41:44 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 9732 08/05/2015 03:41:44 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 7992 08/05/2015 03:41:44 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 7992 08/05/2015 03:41:44 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 4940 08/05/2015 03:41:45 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 7992 08/05/2015 03:41:45 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 7992 08/05/2015 03:41:46 PM Expansion matching failed: osteochondritis dissecans, osteochondral defects
+DEBUG: 7992 08/05/2015 03:41:46 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 9732 08/05/2015 03:41:46 PM Expansion matching failed: thyroperoxidase, thrombopoietin
+DEBUG: 9732 08/05/2015 03:41:46 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 4940 08/05/2015 03:41:47 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase antibody
+DEBUG: 9732 08/05/2015 03:41:47 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9732 08/05/2015 03:41:47 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 7992 08/05/2015 03:41:47 PM Expansion matching failed: mannan binding protein, myelin basic protein
+DEBUG: 4940 08/05/2015 03:41:48 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 4940 08/05/2015 03:41:48 PM Expansion matching succeeded: thyrotropin releasing factor, thyrotrophin releasing factor
+DEBUG: 4940 08/05/2015 03:41:49 PM Expansion matching failed: death, dementia of alzheimer type
+DEBUG: 9732 08/05/2015 03:41:49 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9732 08/05/2015 03:41:50 PM Expansion matching failed: premature ventricular contractions, premature ventricular complexes
+DEBUG: 7992 08/05/2015 03:41:51 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:41:51 PM Expansion matching failed: calcium pyrophosphate deposition disease, calcium pyrophosphate dihydrate deposition
+DEBUG: 7992 08/05/2015 03:41:52 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 4940 08/05/2015 03:41:52 PM Expansion matching succeeded: tenascin c, tenascin
+DEBUG: 7992 08/05/2015 03:41:54 PM Expansion matching failed: osteochondritis dissecans, osteochondral defects
+DEBUG: 7992 08/05/2015 03:41:54 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 4940 08/05/2015 03:41:55 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:41:55 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9732 08/05/2015 03:41:57 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 7992 08/05/2015 03:41:57 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 4940 08/05/2015 03:41:57 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase antibodies
+DEBUG: 9732 08/05/2015 03:41:57 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 7992 08/05/2015 03:41:57 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 7992 08/05/2015 03:41:58 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:41:59 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9732 08/05/2015 03:42:00 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 9732 08/05/2015 03:42:00 PM Expansion matching failed: magnetic resonance spectroscopy, mr spectroscopy
+DEBUG: 9732 08/05/2015 03:42:00 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9732 08/05/2015 03:42:00 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 7992 08/05/2015 03:42:01 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9732 08/05/2015 03:42:01 PM Expansion matching failed: para chloroamphetamine, passive cutaneous anaphylaxis
+DEBUG: 4940 08/05/2015 03:42:02 PM Expansion matching succeeded: breast self examination, breast self exam
+DEBUG: 9732 08/05/2015 03:42:03 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 7992 08/05/2015 03:42:03 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9732 08/05/2015 03:42:03 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:42:03 PM Expansion matching failed: t replacing factor, thyrotropin releasing factor
+DEBUG: 4940 08/05/2015 03:42:04 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 7992 08/05/2015 03:42:05 PM Expansion matching failed: idiopathic thrombocytopenic purpura, inosine triphosphate
+DEBUG: 7992 08/05/2015 03:42:05 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9732 08/05/2015 03:42:06 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 7992 08/05/2015 03:42:06 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9732 08/05/2015 03:42:06 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+DEBUG: 4940 08/05/2015 03:42:07 PM Expansion matching succeeded: thyrotropin releasing factor, thyrotrophin releasing factor
+DEBUG: 7992 08/05/2015 03:42:08 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9732 08/05/2015 03:42:09 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 7992 08/05/2015 03:42:10 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9732 08/05/2015 03:42:10 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:42:10 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 4940 08/05/2015 03:42:10 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 7992 08/05/2015 03:42:10 PM Expansion matching failed: t replacing factor, thyrotropin releasing factor
+DEBUG: 7992 08/05/2015 03:42:11 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 4940 08/05/2015 03:42:11 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 7992 08/05/2015 03:42:12 PM Expansion matching failed: anti lymphocyte serum, anti mouse lymphocyte serum
+DEBUG: 4940 08/05/2015 03:42:13 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 9732 08/05/2015 03:42:13 PM Expansion matching succeeded: macrophage activating factor, macrophage activating factors
+DEBUG: 7992 08/05/2015 03:42:13 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9732 08/05/2015 03:42:13 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 4940 08/05/2015 03:42:14 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 7992 08/05/2015 03:42:14 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 4940 08/05/2015 03:42:15 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 9732 08/05/2015 03:42:16 PM Expansion matching failed: magnetic resonance spectroscopy, mr spectroscopy
+DEBUG: 9732 08/05/2015 03:42:17 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:42:17 PM Expansion matching succeeded: fetal alcohol syndrome, foetal alcohol syndrome
+DEBUG: 7992 08/05/2015 03:42:18 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:42:18 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 7992 08/05/2015 03:42:19 PM Expansion matching succeeded: premature ventricular contractions, premature ventricular contraction
+DEBUG: 4940 08/05/2015 03:42:21 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 7992 08/05/2015 03:42:21 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:42:22 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9732 08/05/2015 03:42:22 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:42:23 PM Expansion matching failed: thin layer chromatography, thin layer liquid chromatography
+DEBUG: 9732 08/05/2015 03:42:23 PM Expansion matching failed: topical application, tetradecanoyl 13 phorbol acetate
+DEBUG: 4940 08/05/2015 03:42:23 PM Expansion matching failed: death, dopamine transporters
+DEBUG: 7992 08/05/2015 03:42:25 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 9732 08/05/2015 03:42:25 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 4940 08/05/2015 03:42:25 PM Expansion matching succeeded: para chloroamphetamine, parachloroamphetamine
+DEBUG: 9732 08/05/2015 03:42:26 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9732 08/05/2015 03:42:26 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9732 08/05/2015 03:42:26 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9732 08/05/2015 03:42:28 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 7992 08/05/2015 03:42:29 PM Expansion matching failed: psychotomimetic phencyclidine, psychotomimetic drug phencyclidine
+DEBUG: 9732 08/05/2015 03:42:29 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 4940 08/05/2015 03:42:29 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 7992 08/05/2015 03:42:30 PM Expansion matching failed: passive cutaneous anaphylaxis, principal component analysis
+DEBUG: 7992 08/05/2015 03:42:31 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9732 08/05/2015 03:42:31 PM Expansion matching failed: polyvinyl chloride, plasticized polyvinyl chloride
+DEBUG: 7992 08/05/2015 03:42:31 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 7992 08/05/2015 03:42:32 PM Expansion matching failed: event related potentials, event related brain potential
+DEBUG: 9732 08/05/2015 03:42:32 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:42:32 PM Expansion matching succeeded: drug delivery system, drug delivery systems
+DEBUG: 7992 08/05/2015 03:42:32 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 7992 08/05/2015 03:42:33 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9732 08/05/2015 03:42:33 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:42:34 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 7992 08/05/2015 03:42:35 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 4940 08/05/2015 03:42:35 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 4940 08/05/2015 03:42:35 PM Expansion matching failed: calcium pyrophosphate deposition disease, calcium pyrophosphate dihydrate deposition
+DEBUG: 9732 08/05/2015 03:42:36 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 7992 08/05/2015 03:42:37 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9732 08/05/2015 03:42:37 PM Expansion matching failed: pelger huet anomaly, phytohemagglutinin
+DEBUG: 9732 08/05/2015 03:42:37 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9732 08/05/2015 03:42:38 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 4940 08/05/2015 03:42:38 PM Expansion matching failed: magnetic resonance spectroscopy, mr spectroscopy
+DEBUG: 9732 08/05/2015 03:42:38 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 4940 08/05/2015 03:42:39 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 7992 08/05/2015 03:42:40 PM Expansion matching succeeded: para chloroamphetamine, parachloroamphetamine
+DEBUG: 9732 08/05/2015 03:42:40 PM Expansion matching failed: topical application, tissue plasminogen activator
+DEBUG: 7992 08/05/2015 03:42:41 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 4940 08/05/2015 03:42:42 PM Expansion matching succeeded: hermansky pudlak syndrome, hermansky pudlack syndrome
+DEBUG: 7992 08/05/2015 03:42:42 PM Expansion matching failed: death, dementia of alzheimer type
+DEBUG: 7992 08/05/2015 03:42:42 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anemia
+DEBUG: 4940 08/05/2015 03:42:43 PM Expansion matching failed: pneumocystis pneumonia, pneumocystis carinii pneumonia
+DEBUG: 4940 08/05/2015 03:42:43 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 4940 08/05/2015 03:42:46 PM Expansion matching failed: cleidocranial dysplasia, cleidocranial dysostosis
+DEBUG: 4940 08/05/2015 03:42:46 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 9732 08/05/2015 03:42:47 PM Expansion matching failed: and phospho, adenosine diphosphate
+DEBUG: 7992 08/05/2015 03:42:47 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 7992 08/05/2015 03:42:48 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 7992 08/05/2015 03:42:48 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9732 08/05/2015 03:42:48 PM Expansion matching failed: t replacing factor, thyrotropin releasing factor
+DEBUG: 4940 08/05/2015 03:42:49 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 9732 08/05/2015 03:42:49 PM Expansion matching failed: topical application, tetradecanoyl phorbol 13 acetate
+DEBUG: 7992 08/05/2015 03:42:50 PM Expansion matching failed: premature ventricular contractions, premature ventricular complex
+DEBUG: 9732 08/05/2015 03:42:51 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 7992 08/05/2015 03:42:51 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 7992 08/05/2015 03:42:52 PM Expansion matching succeeded: principal component analysis, principal components analysis
+DEBUG: 4940 08/05/2015 03:42:52 PM Expansion matching succeeded: complementarity determining region, complementarity determining regions
+DEBUG: 9732 08/05/2015 03:42:52 PM Expansion matching failed: thrombopoietin, thrombopoietic stimulatory factor
+DEBUG: 7992 08/05/2015 03:42:52 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 4940 08/05/2015 03:42:52 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 7992 08/05/2015 03:42:52 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 4940 08/05/2015 03:42:53 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9732 08/05/2015 03:42:54 PM Expansion matching succeeded: event related potentials, event related potential
+ERROR: 9732 08/05/2015 03:42:54 PM Total articles: 1239, skipped: 0
+INFO: 9336 08/05/2015 03:42:54 PM detected Windows; aliasing chunkize to chunkize_serial
+DEBUG: 4940 08/05/2015 03:42:55 PM Expansion matching succeeded: diamond blackfan anemia, diamond blackfan anaemia
+DEBUG: 4940 08/05/2015 03:42:55 PM Expansion matching succeeded: corticotrophin releasing factor, corticothophin releasing factor
+INFO: 9336 08/05/2015 03:42:55 PM filtering articles with None
+INFO: 9336 08/05/2015 03:42:55 PM removing test articles from articleDB
+INFO: 9336 08/05/2015 03:42:55 PM correcting acronymDB
+INFO: 9336 08/05/2015 03:42:56 PM verifying training dataset
+DEBUG: 4940 08/05/2015 03:42:56 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 7992 08/05/2015 03:42:56 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 4940 08/05/2015 03:42:58 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 4940 08/05/2015 03:42:58 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+ERROR: 4940 08/05/2015 03:42:59 PM Total articles: 1239, skipped: 0
+INFO: 7920 08/05/2015 03:42:59 PM detected Windows; aliasing chunkize to chunkize_serial
+INFO: 9336 08/05/2015 03:43:01 PM TFIDF vectorizer loaded
+INFO: 9336 08/05/2015 03:43:01 PM Expander_SVC loaded
+INFO: 9336 08/05/2015 03:43:01 PM evaluating test performance
+DEBUG: 9336 08/05/2015 03:43:01 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 7992 08/05/2015 03:43:01 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9336 08/05/2015 03:43:01 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9336 08/05/2015 03:43:02 PM Expansion matching failed: t replacing factor, this supernatant factor
+DEBUG: 9336 08/05/2015 03:43:03 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 9336 08/05/2015 03:43:03 PM Expansion matching succeeded: thyrotropin releasing factor, thyreotropin releasing factor
+DEBUG: 9336 08/05/2015 03:43:03 PM Expansion matching succeeded: phytohemagglutinin, phytohemmagluttin
+DEBUG: 9336 08/05/2015 03:43:04 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9336 08/05/2015 03:43:04 PM Expansion matching succeeded: capillary leak syndrome, capillary leakage syndrome
+DEBUG: 9336 08/05/2015 03:43:05 PM Expansion matching failed: idiopathic thrombocytopenic purpura, idiopathic thrombocytopenia
+DEBUG: 9336 08/05/2015 03:43:05 PM Expansion matching failed: mannan binding protein, myelin basic protein
+DEBUG: 7992 08/05/2015 03:43:05 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9336 08/05/2015 03:43:05 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodifenyl sulfone
+ERROR: 7992 08/05/2015 03:43:05 PM Total articles: 1239, skipped: 0
+INFO: 4676 08/05/2015 03:43:06 PM detected Windows; aliasing chunkize to chunkize_serial
+DEBUG: 9336 08/05/2015 03:43:07 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9336 08/05/2015 03:43:08 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:43:08 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9336 08/05/2015 03:43:10 PM Expansion matching succeeded: hermansky pudlak syndrome, hermansky pudiak syndrome
+DEBUG: 9336 08/05/2015 03:43:10 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9336 08/05/2015 03:43:11 PM Expansion matching succeeded: pneumocystis pneumonia, pneumocystic pneumonia
+DEBUG: 9336 08/05/2015 03:43:12 PM Expansion matching failed: passive cutaneous anaphylaxis, principal component analysis
+DEBUG: 9336 08/05/2015 03:43:13 PM Expansion matching succeeded: para chloroamphetamine, parachloroamphetamine
+DEBUG: 9336 08/05/2015 03:43:15 PM Expansion matching succeeded: posterior cerebral artery, posterior cerebral arteries
+DEBUG: 9336 08/05/2015 03:43:15 PM Expansion matching succeeded: principal component analysis, principal component analyses
+DEBUG: 9336 08/05/2015 03:43:15 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9336 08/05/2015 03:43:16 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:43:16 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9336 08/05/2015 03:43:18 PM Expansion matching succeeded: diaminodiphenyl sulfone, diaminodiphenylsulfone
+DEBUG: 9336 08/05/2015 03:43:19 PM Expansion matching failed: mannan binding protein, myelin basic protein
+DEBUG: 9336 08/05/2015 03:43:20 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 9336 08/05/2015 03:43:22 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9336 08/05/2015 03:43:23 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:43:24 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9336 08/05/2015 03:43:25 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 9336 08/05/2015 03:43:26 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:43:26 PM Expansion matching failed: cleidocranial dysplasia, cleidocranial dysostosis
+DEBUG: 9336 08/05/2015 03:43:26 PM Expansion matching succeeded: cerebrotendinous xanthomatosis, cerebrontendinous xanthomatosis
+DEBUG: 9336 08/05/2015 03:43:28 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9336 08/05/2015 03:43:30 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9336 08/05/2015 03:43:30 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenic purpura
+DEBUG: 9336 08/05/2015 03:43:31 PM Expansion matching succeeded: complementarity determining region, complementary determining regions
+DEBUG: 9336 08/05/2015 03:43:33 PM Expansion matching failed: trimethoprim, to trimethoprim
+DEBUG: 9336 08/05/2015 03:43:33 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factors
+DEBUG: 9336 08/05/2015 03:43:35 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:43:35 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 9336 08/05/2015 03:43:37 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9336 08/05/2015 03:43:37 PM Expansion matching failed: idiopathic thrombocytopenic purpura, inosine triphosphate
+DEBUG: 9336 08/05/2015 03:43:37 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:43:39 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9336 08/05/2015 03:43:39 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9336 08/05/2015 03:43:40 PM Expansion matching failed: bleomycin, bloom
+DEBUG: 9336 08/05/2015 03:43:40 PM Expansion matching failed: trimethylpsoralen, threo methylphenidate
+DEBUG: 9336 08/05/2015 03:43:40 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9336 08/05/2015 03:43:40 PM Expansion matching succeeded: para chloroamphetamine, parachloroamphetamine
+DEBUG: 9336 08/05/2015 03:43:40 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9336 08/05/2015 03:43:40 PM Expansion matching failed: idiopathic thrombocytopenic purpura, immune thrombocytopenia
+DEBUG: 9336 08/05/2015 03:43:41 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9336 08/05/2015 03:43:42 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9336 08/05/2015 03:43:42 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:43:43 PM Expansion matching failed: cytoxan, cerebrotendinous xanthomatosis
+DEBUG: 9336 08/05/2015 03:43:43 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9336 08/05/2015 03:43:44 PM Expansion matching succeeded: event related potentials, event related potential
+DEBUG: 9336 08/05/2015 03:43:45 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9336 08/05/2015 03:43:45 PM Expansion matching failed: diaminodiphenyl sulfone, drug dapsone
+DEBUG: 9336 08/05/2015 03:43:46 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9336 08/05/2015 03:43:47 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9336 08/05/2015 03:43:47 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9336 08/05/2015 03:43:48 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:43:48 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:43:50 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9336 08/05/2015 03:43:53 PM Expansion matching failed: magnetic resonance spectroscopy, mr spectroscopy
+DEBUG: 9336 08/05/2015 03:43:53 PM Expansion matching succeeded: congenital dyserythropoietic anemias, congenital dyserythropoietic anaemia
+DEBUG: 9336 08/05/2015 03:43:54 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9336 08/05/2015 03:43:54 PM Expansion matching succeeded: phytohemagglutinin, phytohaemagglutinin
+DEBUG: 9336 08/05/2015 03:43:55 PM Expansion matching succeeded: mannan binding protein, mannose binding protein
+DEBUG: 9336 08/05/2015 03:43:55 PM Expansion matching failed: sickle cell disease, sickle cell disorder
+DEBUG: 9336 08/05/2015 03:43:56 PM Expansion matching failed: microinjection, mutated in colorectal carcinoma
+DEBUG: 9336 08/05/2015 03:43:58 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9336 08/05/2015 03:43:58 PM Expansion matching failed: pneumocystis pneumonia, pneumocystis carinii pneumonia
+DEBUG: 9336 08/05/2015 03:43:59 PM Expansion matching failed: thrombopoietin, thrombopoiesis stimulating factor
+DEBUG: 9336 08/05/2015 03:43:59 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 9336 08/05/2015 03:43:59 PM Expansion matching succeeded: para chloroamphetamine, parachloramphetamine
+DEBUG: 9336 08/05/2015 03:43:59 PM Expansion matching succeeded: melkersson rosenthal syndrome, melkerson rosenthal syndrome
+DEBUG: 9336 08/05/2015 03:44:00 PM Expansion matching failed: and phospho, adenosine diphosphate
+DEBUG: 9336 08/05/2015 03:44:02 PM Expansion matching failed: topical application, tetradecanoylphorbol 13 acetate
+DEBUG: 9336 08/05/2015 03:44:02 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:44:02 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9336 08/05/2015 03:44:03 PM Expansion matching failed: osteochondritis dissecans, of osteochondritis dissecans
+DEBUG: 9336 08/05/2015 03:44:03 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+DEBUG: 9336 08/05/2015 03:44:05 PM Expansion matching failed: thrombopoietin, thyroperoxidase
+DEBUG: 9336 08/05/2015 03:44:05 PM Expansion matching succeeded: thyrotropin releasing factor, thyrotropic releasing factor
+DEBUG: 9336 08/05/2015 03:44:05 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9336 08/05/2015 03:44:06 PM Expansion matching succeeded: merkel cell carcinoma, merkel cell carcinomas
+DEBUG: 9336 08/05/2015 03:44:07 PM Expansion matching succeeded: anti lymphocyte serum, antilymphocyte serum
+DEBUG: 9336 08/05/2015 03:44:07 PM Expansion matching succeeded: principal component analysis, principle components analysis
+DEBUG: 9336 08/05/2015 03:44:08 PM Expansion matching failed: t replacing factor, thyrotropin releasing factor
+DEBUG: 9336 08/05/2015 03:44:08 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:44:09 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9336 08/05/2015 03:44:10 PM Expansion matching failed: pneumocystis pneumonia, pathogen that causes pneumonia
+DEBUG: 9336 08/05/2015 03:44:11 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9336 08/05/2015 03:44:11 PM Expansion matching succeeded: complementarity determining region, complementary determining region
+DEBUG: 9336 08/05/2015 03:44:12 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9336 08/05/2015 03:44:14 PM Expansion matching failed: trimethoprim, trimethoprim sulphamethoxazole
+DEBUG: 9336 08/05/2015 03:44:16 PM Expansion matching succeeded: polychlorinated biphenyls, polychlorinated biphenyl
+DEBUG: 9336 08/05/2015 03:44:18 PM Expansion matching succeeded: alcohol dehydrogenase, alcohol dehydrogenases
+DEBUG: 9336 08/05/2015 03:44:18 PM Expansion matching succeeded: polyvinyl chloride, polyvinylchloride
+DEBUG: 9336 08/05/2015 03:44:20 PM Expansion matching succeeded: corticotrophin releasing factor, corticotropin releasing factor
+DEBUG: 9336 08/05/2015 03:44:20 PM Expansion matching failed: pneumocystis pneumonia, pneumocystis carinii pneumonia
+DEBUG: 9336 08/05/2015 03:44:21 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:44:21 PM Expansion matching succeeded: dopamine transporters, dopamine transporter
+DEBUG: 9336 08/05/2015 03:44:21 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 9336 08/05/2015 03:44:22 PM Expansion matching failed: psychotomimetic phencyclidine, pentachlorophenate
+DEBUG: 9336 08/05/2015 03:44:23 PM Expansion matching failed: major histocompatibility complex, murine major histocompatibility complex
+DEBUG: 9336 08/05/2015 03:44:23 PM Expansion matching failed: neuroblastomas, newborn screening
+DEBUG: 9336 08/05/2015 03:44:23 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 9336 08/05/2015 03:44:23 PM Expansion matching succeeded: pentachlorophenate, pentachlorophenol
+DEBUG: 9336 08/05/2015 03:44:24 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9336 08/05/2015 03:44:25 PM Expansion matching succeeded: polyvinyl chloride, poly vinyl chloride
+DEBUG: 9336 08/05/2015 03:44:25 PM Expansion matching succeeded: capillary leak syndrome, capillary leakage syndrome
+DEBUG: 9336 08/05/2015 03:44:26 PM Expansion matching succeeded: trimethylpsoralen, trimethoprim
+DEBUG: 9336 08/05/2015 03:44:26 PM Expansion matching succeeded: merkel cell carcinoma, merkel cell carcinomas
+DEBUG: 9336 08/05/2015 03:44:28 PM Expansion matching succeeded: myosin heavy chains, myosin heavy chain
+DEBUG: 9336 08/05/2015 03:44:29 PM Expansion matching failed: thrombopoietin, thrombocytopoiesis stimulating factor
+DEBUG: 9336 08/05/2015 03:44:31 PM Expansion matching succeeded: nuclear pore complexes, nuclear pore complex
+DEBUG: 9336 08/05/2015 03:44:32 PM Expansion matching succeeded: sodium lauryl sulphate, sodium lauryl sulfate
+DEBUG: 9336 08/05/2015 03:44:34 PM Expansion matching failed: psychotomimetic phencyclidine, pneumocystis pneumonia
+DEBUG: 9336 08/05/2015 03:44:35 PM Expansion matching failed: congenital dyserythropoietic anemias, chlorodeoxyadenosine
+DEBUG: 9336 08/05/2015 03:44:39 PM Expansion matching failed: thyroperoxidase, thyroid peroxidase
+ERROR: 9336 08/05/2015 03:44:39 PM Total articles: 1234, skipped: 0
+CRITICAL: 8668 08/05/2015 03:44:39 PM Processed 10 rounds out of 10
+CRITICAL: 8668 08/05/2015 03:44:39 PM Mean 0.594223, Standard Deviation: 0.021748

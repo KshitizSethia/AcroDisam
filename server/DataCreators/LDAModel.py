@@ -38,7 +38,8 @@ def load():
 def serialGetWordCorpus(articleDB):
     word_corpus = {}
     for article_id, text in articleDB.items():
-        word_corpus[article_id] = TextTools.getCleanedWords(text)
+        word_corpus[article_id] = TextTools.getCleanedWords(
+            text, stem_words=stem_words)
         if len(word_corpus) % 1000 == 0:
             common_logger.debug(
                 "converted " + str(len(word_corpus)) + " articles to words")
@@ -50,13 +51,13 @@ def serialGetBoWCorpus(dictionary, word_corpus_values):
 
 
 def parallelGetCleanedWords(article):
-    return article[0], getCleanedWords(article[1])
+    return article[0], getCleanedWords(article[1], stem_words=stem_words)
 
 
 def parallelGetWordCorpus(articleDB, process_pool):
     articles = articleDB.items()
     results = process_pool.map(
-        parallelGetCleanedWords, articles, chunksize=chunkSizeWordCorpus)
+        parallelGetCleanedWords, articles, chunksize=chunkSize_getCleanedWords)
 
     common_logger.info("Back from multiprocessing, making dict now")
     word_corpus = dict(results)
@@ -77,7 +78,7 @@ def parallelGetBoWCorpus(dictionary, word_corpus_values, process_pool):
     bound_instance = functools.partial(_doc2bow_alias, dictionary)
 
     result = process_pool.map(
-        bound_instance, word_corpus_values, chunksize=chunkSizeBowCorpus)
+        bound_instance, word_corpus_values, chunksize=chunkSize_doc2BoW)
 
     return result
 
@@ -181,8 +182,9 @@ def create_and_save_model(process_pool, useSavedTill=USESAVED.none):
     This takes a long time to train (~1 week), 
     run on a compute node with ~250 GB RAM and fast processor
     for wikipedia corpus of 410k documents
+
+    Above time and storage estimates are not correct yet.
     """
-    common_logger.info("Creating lda vectors for articles")
 
     articleDB = ArticleDB.load(path=articleDBPath)
 
@@ -193,6 +195,11 @@ def create_and_save_model(process_pool, useSavedTill=USESAVED.none):
 
     bow_corpus, bow_corpus_dumper = getBoWCorpus(
         word_corpus, dictionary, process_pool, useSavedTill)
+
+    if(process_pool):
+        common_logger.info("terminating process pool")
+        process_pool.close()
+        process_pool.terminate()
 
     lda_model = getLdaModel(bow_corpus, dictionary, useSavedTill)
 
@@ -209,18 +216,32 @@ def update_model(articledb_path):
     """returns built lda_model, lda_dictionary"""
     pass  # todo: lda has update method, use it
 
-# global settings for making LDA model
+
+def logConfig():
+    common_logger.info("Logging config of script")
+    common_logger.info("numProcesses = %d" % numProcesses)
+    common_logger.info("articleDBPath = %s" % articleDBPath)
+    common_logger.info("goParallel = %s" % goParallel)
+    common_logger.info("useSavedTill = %d" % useSavedTill)
+    common_logger.info("chunkSize_getCleanedWords = %d" %
+                       chunkSize_getCleanedWords)
+    common_logger.info("chunkSize_doc2BoW = %d" % chunkSize_doc2BoW)
+    common_logger.info("stem_words = %s" % stem_words)
+
+# global config for making LDA model
 numProcesses = 3
 articleDBPath = file_msh_articleDB
 goParallel = True
 useSavedTill = USESAVED.none
-chunkSizeWordCorpus = 1000
-chunkSizeBowCorpus = 1000
-   
+chunkSize_getCleanedWords = 1000
+chunkSize_doc2BoW = 1000
+stem_words = False
+
 if __name__ == "__main__":
+    common_logger.info("LDA Model script started")
+    logConfig()
     if(goParallel):
         process_pool = Pool(numProcesses)
         create_and_save_model(process_pool, useSavedTill=useSavedTill)
-        pass
     else:
         create_and_save_model(None, useSavedTill=useSavedTill)

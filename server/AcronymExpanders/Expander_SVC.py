@@ -9,6 +9,7 @@ from AcronymExpanders.AcronymExpander import AcronymExpander
 
 from Logger import common_logger
 import string_constants
+from helper import AcronymExpansion
 
 
 class Expander_SVC(AcronymExpander):
@@ -27,7 +28,7 @@ class Expander_SVC(AcronymExpander):
             #todo: uncomment below line
             #common_logger.warning("No expansion for %s in\n{%s}", acronym, text)
             return acronymExpansion
-        elif not self.distinct_results(choices):
+        elif not AcronymExpansion.areDistinctChoices(choices):
             acronymExpansion.expansion = choices[0].expansion
             acronymExpansion.expander = AcronymExpanderEnum.SVC
         else:
@@ -48,16 +49,15 @@ class Expander_SVC(AcronymExpander):
 
         return acronymExpansion
 
-    # todo: this should be done when generating the db?
-    def distinct_results(self, choices):
-        count = len(choices)
-        if(count <= 1):
-            return False
-        else:
-            res1 = choices[0].expansion.strip().lower().replace('-', ' ')
-            res1 = ' '.join([w[:4] for w in res1.split()])
-            res2 = choices[-1].expansion.strip().lower().replace('-', ' ')
-            res2 = ' '.join([w[:4] for w in res2.split()])
-            if res1 != res2:
-                return True
-            return False
+    #def distinct_results(self, choices):
+    #    count = len(choices)
+    #    if(count <= 1):
+    #        return False
+    #    else:
+    #        res1 = choices[0].expansion.strip().lower().replace('-', ' ')
+    #        res1 = ' '.join([w[:4] for w in res1.split()])
+    #        res2 = choices[-1].expansion.strip().lower().replace('-', ' ')
+    #        res2 = ' '.join([w[:4] for w in res2.split()])
+    #        if res1 != res2:
+    #            return True
+    #        return False

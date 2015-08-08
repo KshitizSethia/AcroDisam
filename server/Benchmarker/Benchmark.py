@@ -7,12 +7,13 @@ from AcronymExpanders.Expander_LDA import Expander_LDA
 from AcronymExpanders.Expander_SVC import Expander_SVC
 from AcronymExpanders.Expander_fromText import Expander_fromText
 from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
-from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
 from DataCreators import AcronymDB, ArticleDB
 from Logger import common_logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 from controller import Controller
-from nltk.metrics.distance import edit_distance
+from helper import AcronymExpansion
+from AcronymExpanders.Expander_LDA_multiclass import Expander_LDA_multiclass
+import random
 
 
 class Benchmarker:
@@ -36,8 +37,10 @@ class Benchmarker:
                 expanders.append(Expander_fromText())
             elif (expanderType == AcronymExpanderEnum.fromText_v2):
                 expanders.append(Expander_fromText_v2())
-            elif (expanderType == AcronymExpanderEnum.LDA):
+            elif (expanderType == AcronymExpanderEnum.LDA_cossim):
                 expanders.append(Expander_LDA(articleDB, acronymDB))
+            elif (expanderType == AcronymExpanderEnum.LDA_multiclass):
+                expanders.append(Expander_LDA_multiclass(articleDB, acronymDB))
             elif (expanderType == AcronymExpanderEnum.SVC):
                 expanders.append(Expander_SVC(articleDB, acronymDB))
 
@@ -47,7 +50,7 @@ class Benchmarker:
         #text_expander = Expander_fromText()
         expanders = self.__makeExpanders(articleDB, acronymDB)
 
-        return Controller(text_extractor=Extract_PdfMiner(), acronym_extractor=AcronymExtractor_v1(), expanders=expanders)
+        return Controller(text_extractor=Extract_PdfMiner(), acronym_extractor=self.acronymExtractor, expanders=expanders)
 
     def __verifyTrainSet(self, articleDB, acronymDB, testArticleIDs):
         for articleId in articleDB:
@@ -61,29 +64,26 @@ class Benchmarker:
 
     def _getActualExpansions(self, articleID, article):
         pass
-    
+
     def _removeInTextExpansions(self, article, acronyms):
         pass
 
-    def __areExpansionsSimilar(self, actual_expansion, predicted_expansion):
-        actual_expansion = actual_expansion.lower().replace(u"-", u" ")
-        predicted_expansion = predicted_expansion.lower().replace(u"-", u" ")
-        numActualWords = len(actual_expansion)
-        numPredictedWords = len(predicted_expansion)
-        
-        if(actual_expansion == predicted_expansion):
-            return True
-        elif AcronymDB.is_same_expansion(actual_expansion, predicted_expansion):
-            common_logger.debug("Expansion matching succeeded: " +
-                         actual_expansion + ", " + predicted_expansion)
-            return True
-        elif(edit_distance(actual_expansion, predicted_expansion)<=2):#max(numActualWords, numPredictedWords)):
-            common_logger.debug("Expansion matching succeeded: " +
-                         actual_expansion + ", " + predicted_expansion)
-            return True
-        common_logger.debug(
-            "Expansion matching failed: " + actual_expansion + ", " + predicted_expansion)
-        return False
+    # def __areExpansionsSimilar(self, actual_expansion, predicted_expansion):
+    #    actual_expansion = actual_expansion.lower().replace(u"-", u" ")
+    #    predicted_expansion = predicted_expansion.lower().replace(u"-", u" ")
+    #    #numActualWords = len(actual_expansion)
+    #    #numPredictedWords = len(predicted_expansion)
+    #
+    #    if(actual_expansion == predicted_expansion
+    #       or AcronymExpansion.startsSameWay(actual_expansion, predicted_expansion)
+    #       or edit_distance(actual_expansion, predicted_expansion) <= 2):  # max(numActualWords, numPredictedWords)):
+    #        common_logger.debug("Expansion matching succeeded: " +
+    #                            actual_expansion + ", " + predicted_expansion)
+    #        return True
+    #
+    #    common_logger.debug(
+    #        "Expansion matching failed: " + actual_expansion + ", " + predicted_expansion)
+    #    return False
 
     def __getResults(self, actual_expansions, predicted_expansions):
         correct_expansions = 0
@@ -93,9 +93,18 @@ class Benchmarker:
             actual_expansion = actual_expansions[acronym].expansion
 
             if (acronym in predicted_expansions
-                    and self.__areExpansionsSimilar(actual_expansion, predicted_expansions[acronym].expansion)):
+                and AcronymExpansion.
+                    areExpansionsSimilar(actual_expansion, predicted_expansions[acronym].expansion)):
+                common_logger.debug("Expansion matching succeeded (%s): %s, %s" % (
+                    acronym, actual_expansion, predicted_expansions[acronym].expansion))
                 correct_expansions += 1
             else:
+                predicted_expansion = "expansion not predicted"
+                if (acronym in predicted_expansions):
+                    predicted_expansion = predicted_expansions[
+                        acronym].expansion
+                common_logger.debug(
+                    "Expansion matching failed (%s): %s, %s" % (acronym, actual_expansion, predicted_expansion))
                 incorrect_expansions += 1
 
         return correct_expansions, incorrect_expansions
@@ -124,6 +133,7 @@ class Benchmarker:
             totalExpansions = 0.0
             articlesWithErrors = []
             for articleID in testArticles:
+                common_logger.debug("articleID: %s" % articleID)
                 try:
                     article = testArticles[articleID]
                     actual_expansions = self._getActualExpansions(
@@ -146,7 +156,7 @@ class Benchmarker:
                     articlesWithErrors.append(articleID)
 
             common_logger.error("Total articles: %d, skipped: %d" %
-                         (len(testArticles.keys()), len(articlesWithErrors)))
+                                (len(testArticles.keys()), len(articlesWithErrors)))
 
             if(totalExpansions > 0):
                 results["correct_expansions"] = results[
@@ -175,7 +185,7 @@ class Benchmarker:
         partitions = []
 
         articleDbItems = articleDb.items()
-        #random.shuffle(articleDbItems)#todo: un-comment this
+        random.shuffle(articleDbItems)  # todo: un-comment this
 
         partitionSize = int(len(articleDbItems) / self.numRounds)
         if((len(articleDbItems) % self.numRounds) != 0):
@@ -193,6 +203,6 @@ class Benchmarker:
         mean_val = mean(validSuccesses)
         std_dev = std(validSuccesses)
         common_logger.critical("Processed %d rounds out of %d" %
-                        (len(validSuccesses), len(results)))
+                               (len(validSuccesses), len(results)))
         common_logger.critical("Mean %f, Standard Deviation: %f" %
-                        (mean_val, std_dev))
+                               (mean_val, std_dev))

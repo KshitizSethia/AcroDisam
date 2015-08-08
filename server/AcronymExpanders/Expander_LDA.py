@@ -17,6 +17,20 @@ class Expander_LDA(AcronymExpander):
         common_logger.info("Loading LDA model and dictionary")
         AcronymExpander.__init__(self, articleDB, acronymDB)
         self.ldamodel, self.dictionary, self.articleIDToLDADict = LDAModel.load()
+        self.expander_type = AcronymExpanderEnum.LDA_cossim
+
+
+    def getChosenExpansion(self, choices, target_lda):
+        max_cos_sim = -1.0
+        chosen_expansion = ""
+        for choice in choices:
+            choice_lda = self.articleIDToLDADict[choice.article_id]
+            cos_sim = cossim(target_lda, choice_lda)
+            if (cos_sim > max_cos_sim):
+                chosen_expansion = choice.expansion
+                max_cos_sim = cos_sim
+        
+        return chosen_expansion
 
     def expand(self, acronym, acronymExpansion, text):
         choices = self.getChoices(acronym)
@@ -25,15 +39,8 @@ class Expander_LDA(AcronymExpander):
         bow = self.dictionary.doc2bow(cleaned_words)
         target_lda = self.ldamodel[bow]
 
-        max_cos_sim = -1.0
-        chosen_expansion = ""
-        for choice in choices:
-            choice_lda = self.articleIDToLDADict[choice.article_id]
-            cos_sim = cossim(target_lda, choice_lda)
-            if(cos_sim > max_cos_sim):
-                chosen_expansion = choice.expansion
-                max_cos_sim = cos_sim
+        chosen_expansion = self.getChosenExpansion(choices, target_lda)
         if(chosen_expansion != ""):
             acronymExpansion.expansion = chosen_expansion
-            acronymExpansion.expander = AcronymExpanderEnum.LDA
+            acronymExpansion.expander = self.expander_type
         return acronymExpansion

@@ -5,14 +5,16 @@ acronymdb is a dictionary in the format:
 
 OLD FORMAT:(acronym: [array of [acronym_expansion, article_id, article_title]])
 """
-import cPickle as pickle
 import csv
 import sys
 
-from Logger import common_logger
 import numpy
-from string_constants import file_scraped_definitions_list, file_acronymdb
+
+from Logger import common_logger
 from TextTools import toUnicode
+import cPickle as pickle
+from helper import AcronymExpansion
+from string_constants import file_scraped_definitions_list, file_acronymdb
 
 
 def createFromScrapedDefinitions():
@@ -53,7 +55,7 @@ def createFromScrapedDefinitions():
         #, article_title]\ # title was part of old format in the line below
         for index, [acronym_expansion, article_id]\
                 in enumerate(values_for_this_acronym):
-            if is_same_expansion(acronym_expansion, expansion_of_last_acronym):
+            if AcronymExpansion.startsSameWay(acronym_expansion, expansion_of_last_acronym):
                 inst_count += 1
                 values_for_this_acronym[index].append(def_count)
                 values_for_this_acronym[index][0] = expansion_of_last_acronym
@@ -70,16 +72,16 @@ def createFromScrapedDefinitions():
     common_logger.info("Dumped AcronymDB successfully")
 
 
-def is_same_expansion(true_exp, pred_exp):
-    true_exp = true_exp.strip().lower().replace("-", " ")
-    pred_exp = " ".join([word[:4] for word in pred_exp.split()])
-    true_exp = " ".join([word[:4] for word in true_exp.split()])
-    if(pred_exp == true_exp):
-        return True
-    #    ed = distance.edit_distance(pred_exp, true_exp)
-    #    if ed < 3:
-    #        return True
-    return False
+# def is_same_expansion(true_exp, pred_exp):
+#    true_exp = true_exp.strip().lower().replace("-", " ")
+#    pred_exp = " ".join([word[:4] for word in pred_exp.split()])
+#    true_exp = " ".join([word[:4] for word in true_exp.split()])
+#    if(pred_exp == true_exp):
+#        return True
+#    #    ed = distance.edit_distance(pred_exp, true_exp)
+#    #    if ed < 3:
+#    #        return True
+#    return False
 
 
 def dump(acronymDB):
@@ -87,7 +89,8 @@ def dump(acronymDB):
         acronymDB, open(file_acronymdb, "wb"), protocol=2)
 
 
-def load(path = file_acronymdb):
+def load(path=file_acronymdb):
+    common_logger.debug("loading acronymDB from %s" % path)
     return pickle.load(open(path, "rb"))
 
 # def addAcronyms(acronymDB, acronyms):#todo: add acronyms and articles
