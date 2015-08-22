@@ -8,7 +8,9 @@ from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
 from AcronymExtractors.AcronymExtractor_v2 import AcronymExtractor_v2
 from Benchmarker.Benchmark import Benchmarker
 from Logger import common_logger
-from string_constants import file_articledb, file_acronymdb
+from string_constants import file_articledb, file_acronymdb,\
+    file_articledb_shuffled
+from AcronymExtractors.AcronymExtractor_v2_small import AcronymExtractor_v2_small
 
 
 class Benchmarker_wiki(Benchmarker):
@@ -21,8 +23,7 @@ class Benchmarker_wiki(Benchmarker):
         actualExpansions, ignore_boolean = expander.try_to_expand_acronyms(
             article, acronymExpansions)
 
-        result = [item for item in actualExpansions.items() if item[1].expander !=
-                  AcronymExpanderEnum.none]
+        result = [item for item in actualExpansions.items() if len(item)>0]
 
         return dict(result)
 
@@ -57,17 +58,18 @@ class Benchmarker_wiki(Benchmarker):
                 raise RuntimeError(errorMessage)
 
     def __init__(self):
-        self.numRounds = 10
+        self.numRounds = 3
         self.numProcesses = 1
         self.articleDBPath = file_articledb
+        self.shuffledArticleDBPath = file_articledb_shuffled
         self.acronymDBPath = file_acronymdb
-        self.expandersToUse = [
-            AcronymExpanderEnum.fromText, AcronymExpanderEnum.SVC]
+        self.expandersToUse = [AcronymExpanderEnum.LDA_multiclass]
         self.acronymExtractor = AcronymExtractor_v2()
+        self.acronymExtractor = AcronymExtractor_v2_small()
 
 
 def _proxyFunction(benchmarker, testArticles):
-    return benchmarker.getScores(testArticles)
+    return benchmarker.getScoresAndReport(testArticles)
 
 if __name__ == "__main__":
     common_logger.info("Starting Benchmarking")
@@ -83,5 +85,6 @@ if __name__ == "__main__":
 
     partialFunc = functools.partial(_proxyFunction, benchmarker)
 
-    scores = pool.map(partialFunc, partitions, chunksize=1)
-    benchmarker.plotStats(scores)
+    results = pool.map(partialFunc, partitions, chunksize=1)
+    benchmarker.plotStats(benchmarker.extractScores(results))
+    benchmarker.saveAndPrintReport(benchmarker.extractReports(results))

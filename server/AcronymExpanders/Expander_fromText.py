@@ -3,14 +3,16 @@ import re
 import string_constants
 from Logger import common_logger
 from AcronymExpanders import AcronymExpanderEnum
+from helper import AcronymExpansion
+from string_constants import max_confidence
 
 
 class Expander_fromText(AcronymExpander):
     
     def __init__(self):
-        pass  # todo:
+        self.confidence = max_confidence
     
-    def expand(self, acronym, acronymExpansion, text):
+    def expand(self, acronym, acronymExpansions, text):
         patterns = self.definition_patterns(acronym)
         
         #common_logger.debug("Text:\n%s", text)
@@ -21,11 +23,12 @@ class Expander_fromText(AcronymExpander):
                 # todo: this assumption might be wrong
                 # what if there's a document with different senses of an acronym
                 # and disambiguation nearby
-                acronymExpansion.expansion = pattern_result[0]
-                acronymExpansion.expander = AcronymExpanderEnum.fromText
-                return acronymExpansion  
+                acronymExpansions.append(AcronymExpansion(expansion = pattern_result[0]
+                                                          , expander=AcronymExpanderEnum.fromText
+                                                          , confidence=self.confidence))
+                return acronymExpansions  
             
-        return acronymExpansion
+        return acronymExpansions
         
     def definition_patterns(self, acronym):
         def_pattern1, def_pattern2 = r'', r''

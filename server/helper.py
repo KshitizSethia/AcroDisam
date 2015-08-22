@@ -1,13 +1,16 @@
 from nltk.metrics.distance import edit_distance
 
 from Logger import common_logger
+import cPickle as pickle
+from string_constants import file_lda_model_all
 
 
 class AcronymExpansion:
 
-    def __init__(self, expansion, expander):
+    def __init__(self, expansion, expander, confidence):
         self.expansion = expansion
         self.expander = expander
+        self.confidence = confidence
 
     def __str__(self):
         return self.expander + "," + self.expansion
@@ -63,3 +66,15 @@ class ExpansionChoice:
         self.expansion = expansion
         self.article_id = article_id
         self.article_text = article_text
+
+
+class SavedLDAModel:
+
+    def __init__(self, ldaModel, dictionary, articleIDToLDADict, articleDBused, stem_words, numPasses, removeNumbers):
+        self.ldaModel = ldaModel
+        self.dictionary = dictionary
+        self.articleIDToLDADict = articleIDToLDADict
+        self.articleDBused = articleDBused
+        self.stem_words = stem_words
+        self.numPasses = numPasses
+        self.removeNumbers = removeNumbers

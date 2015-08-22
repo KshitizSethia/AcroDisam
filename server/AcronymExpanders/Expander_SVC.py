@@ -10,6 +10,7 @@ from AcronymExpanders.AcronymExpander import AcronymExpander
 from Logger import common_logger
 import string_constants
 from helper import AcronymExpansion
+from string_constants import min_confidence
 
 
 class Expander_SVC(AcronymExpander):
@@ -21,16 +22,16 @@ class Expander_SVC(AcronymExpander):
         common_logger.info("TFIDF vectorizer loaded")
         common_logger.info("Expander_SVC loaded")
 
-    def expand(self, acronym, acronymExpansion, text):
+    def expand(self, acronym, acronymExpansions, text):
         choices = self.getChoices(acronym)
 
         if(len(choices) == 0):
-            #todo: uncomment below line
+            # todo: uncomment below line
             #common_logger.warning("No expansion for %s in\n{%s}", acronym, text)
-            return acronymExpansion
+            return acronymExpansions
         elif not AcronymExpansion.areDistinctChoices(choices):
-            acronymExpansion.expansion = choices[0].expansion
-            acronymExpansion.expander = AcronymExpanderEnum.SVC
+            acronymExpansions.append(AcronymExpansion(
+                expansion=choices[0].expansion, expander=AcronymExpanderEnum.SVC, confidence=min_confidence))
         else:
             definitions = [choice.expansion for choice in choices]
             articles = [choice.article_text for choice in choices]
@@ -39,17 +40,29 @@ class Expander_SVC(AcronymExpander):
 
             classifier = LinearSVC(C=1., loss="l1")
             classifier.fit(X, Y)
-            
-            #unicode transform works differently, see http://stackoverflow.com/a/11693937/681311
-            remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
+
+            # unicode transform works differently, see
+            # http://stackoverflow.com/a/11693937/681311
+            remove_punctuation_map = dict(
+                (ord(char), None) for char in string.punctuation)
             s = self.vectorizer.transform(
                 [text.translate(remove_punctuation_map)])  # todo:
-            acronymExpansion.expansion = classifier.predict(s)[0]
-            acronymExpansion.expander = AcronymExpanderEnum.SVC
 
-        return acronymExpansion
+            predicted_expansion = classifier.predict(s)[0]
 
-    #def distinct_results(self, choices):
+            decisions = classifier.decision_function(s)
+            confidence=min_confidence
+            if(hasattr(decisions[0], "__iter__")):
+                confidence = max(decisions[0])
+            else:
+                confidence=abs(decisions[0])
+            #todo: put correct value of confidence below
+            acronymExpansions.append(AcronymExpansion(
+                expansion=predicted_expansion, expander=AcronymExpanderEnum.SVC, confidence = confidence))
+
+        return acronymExpansions
+
+    # def distinct_results(self, choices):
     #    count = len(choices)
     #    if(count <= 1):
     #        return False

@@ -28,16 +28,19 @@ def createFromScrapedArticles():
             if(loaded_articles % 10000 == 0):
                 common_logger.debug("loaded %d articles", loaded_articles)
 
-    dump(articleDB)
+    dump(articleDB, path=file_articledb)
     common_logger.info("Dumped ArticleDB successfully")
 
 
-def dump(articleDB):
+def dump(articleDB, path):
     pickle.dump(
-        articleDB, open(file_articledb, "wb"), protocol=2)
+        articleDB, open(path, "wb"), protocol=2)
 
 
 def load(path=file_articledb):
+    """
+    Returns: dictionary in the format (article_id: article_text)
+    """
     common_logger.debug("loading articleDB from %s" %path)
     return pickle.load(open(path, "rb"))
 

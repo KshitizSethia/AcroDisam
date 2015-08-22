@@ -1,7 +1,7 @@
 """
 collection of functions used to manipulate the acronymdb dictionary
 acronymdb is a dictionary in the format:
-(acronym: [array of [acronym_expansion, article_id]])
+(acronym: [list of [acronym_expansion, article_id]])
 
 OLD FORMAT:(acronym: [array of [acronym_expansion, article_id, article_title]])
 """
@@ -90,6 +90,10 @@ def dump(acronymDB):
 
 
 def load(path=file_acronymdb):
+    """
+    acronymdb is a dictionary in the format:
+    (acronym: [list of [acronym_expansion, article_id]])
+    """
     common_logger.debug("loading acronymDB from %s" % path)
     return pickle.load(open(path, "rb"))
 

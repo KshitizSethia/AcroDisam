@@ -11,9 +11,11 @@ from Logger import common_logger
 from TextTools import getCleanedWords
 import TextTools
 import cPickle as pickle
-from string_constants import file_lda_model, file_lda_gensim_dictionary, file_lda_word_corpus,\
-    file_lda_articleIDToLDA, file_lda_bow_corpus, file_articledb,\
-    file_msh_articleDB
+from helper import SavedLDAModel
+from string_constants import file_lda_word_corpus,\
+    file_lda_bow_corpus, file_articledb,\
+    file_msh_articleDB, file_lda_model_all, file_lda_model,\
+    file_lda_articleIDToLDA, file_lda_gensim_dictionary
 
 
 class USESAVED:
@@ -24,13 +26,17 @@ class USESAVED:
     lda_model = 3
 
 
-def load():
-    """return lda_model, gensim_dictionary, article_id_to_LDA_dictionary"""
-    lda_model = LdaModel.load(file_lda_model)
-    gensim_dictionary = Dictionary.load(file_lda_gensim_dictionary)
-    article_id_to_LDA_dictionary = pickle.load(
-        open(file_lda_articleIDToLDA, "rb"))
-    return lda_model, gensim_dictionary, article_id_to_LDA_dictionary
+def load(path=file_lda_model_all):
+    """
+    Returns: SavedLDAModel object
+    """
+    #lda_model = LdaModel.load(file_lda_model)
+    #gensim_dictionary = Dictionary.load(file_lda_gensim_dictionary)
+    # article_id_to_LDA_dictionary = pickle.load(
+    #    open(file_lda_articleIDToLDA, "rb"))
+    # return lda_model, gensim_dictionary, article_id_to_LDA_dictionary
+    common_logger.info("Loading LDA model from " + path)
+    return pickle.load(open(path, "rb"))
 
 # todo: put "_" in front of all private methods
 
@@ -39,7 +45,9 @@ def serialGetWordCorpus(articleDB):
     word_corpus = {}
     for article_id, text in articleDB.items():
         word_corpus[article_id] = TextTools.getCleanedWords(
-            text, stem_words=stem_words)
+            text
+            , stem_words=stem_words
+            , removeNumbers=removeNumbers)
         if len(word_corpus) % 1000 == 0:
             common_logger.debug(
                 "converted " + str(len(word_corpus)) + " articles to words")
@@ -51,7 +59,9 @@ def serialGetBoWCorpus(dictionary, word_corpus_values):
 
 
 def parallelGetCleanedWords(article):
-    return article[0], getCleanedWords(article[1], stem_words=stem_words)
+    return article[0], getCleanedWords(article[1]
+                                       , stem_words=stem_words
+                                       , removeNumbers=removeNumbers)
 
 
 def parallelGetWordCorpus(articleDB, process_pool):
@@ -143,7 +153,7 @@ def getLdaModel(bow_corpus, dictionary, useSavedTill):
         # todo: LdaMulticore is not working on windows, change before running on
         # compute node
         lda_model = LdaModel(
-            bow_corpus, num_topics=num_topics, id2word=dictionary)
+            bow_corpus, num_topics=num_topics, id2word=dictionary, passes=numPasses)
 
         common_logger.info("Saving LDA model")
         lda_model.save(file_lda_model)
@@ -164,17 +174,18 @@ def createArticleIdToLdaDict(word_corpus, dictionary, lda_model):
             common_logger.debug("done with %d articles", index)
     common_logger.info("saving article_id -> lda_vector dictionary")
     pickle.dump(article_lda, open(file_lda_articleIDToLDA, "wb"), protocol=2)
+    return article_lda
 
 
 def waitForDumper(dumper, name):
     if(dumper != None):
         if(dumper.is_alive()):
             common_logger.info(
-                "Waiting for" + name + "dumper to finish saving to disk")
+                "Waiting for" + name + " dumper to finish saving to disk")
             dumper.join()
         else:
             common_logger.info(
-                name + "dumper has already finished saving to disk, not waiting")
+                name + " dumper has already finished saving to disk, not waiting")
 
 
 def create_and_save_model(process_pool, useSavedTill=USESAVED.none):
@@ -203,13 +214,24 @@ def create_and_save_model(process_pool, useSavedTill=USESAVED.none):
 
     lda_model = getLdaModel(bow_corpus, dictionary, useSavedTill)
 
-    createArticleIdToLdaDict(word_corpus, dictionary, lda_model)
+    articleIDToLDADict = createArticleIdToLdaDict(
+        word_corpus, dictionary, lda_model)
+
+    _saveAll(lda_model, dictionary, articleIDToLDADict, articleDBPath,
+             stem_words, numPasses, removeNumbers, path=file_lda_model_all)
 
     waitForDumper(word_corpus_dumper, "word corpus")
 
     waitForDumper(bow_corpus_dumper, "bow corpus")
 
     common_logger.info("Done creating articleIDToLDA dictionary, exiting")
+
+
+def _saveAll(ldaModel, dictionary, articleIDToLDADict, articleDBused, stem_words, numPasses, removeNumbers, path=file_lda_model_all):
+    common_logger.info("Saving LDA model object with all data")
+    model_all = SavedLDAModel(
+        ldaModel, dictionary, articleIDToLDADict, articleDBused, stem_words, numPasses, removeNumbers)
+    pickle.dump(model_all, open(file_lda_model_all, "wb"), protocol=-1)
 
 
 def update_model(articledb_path):
@@ -227,15 +249,20 @@ def logConfig():
                        chunkSize_getCleanedWords)
     common_logger.info("chunkSize_doc2BoW = %d" % chunkSize_doc2BoW)
     common_logger.info("stem_words = %s" % stem_words)
+    common_logger.info(
+        "removeNumbers = %s" % removeNumbers)
+    common_logger.info("numPasses = %d" % numPasses)
 
 # global config for making LDA model
 numProcesses = 3
-articleDBPath = file_msh_articleDB
+articleDBPath = file_articledb
 goParallel = True
 useSavedTill = USESAVED.none
 chunkSize_getCleanedWords = 1000
 chunkSize_doc2BoW = 1000
 stem_words = False
+removeNumbers = True
+numPasses = 2
 
 if __name__ == "__main__":
     common_logger.info("LDA Model script started")

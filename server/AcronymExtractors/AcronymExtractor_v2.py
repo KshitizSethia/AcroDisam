@@ -18,6 +18,5 @@ class AcronymExtractor_v2(AcronymExtractor):
         acronyms = re.findall(self.pattern, text)
         result = {}
         for acronym in set(acronyms):
-            result[acronym] = AcronymExpansion(
-                string_constants.string_unexpanded_acronym, AcronymExpanderEnum.none)
+            result[acronym] = []
         return result

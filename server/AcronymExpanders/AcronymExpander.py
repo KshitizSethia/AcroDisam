@@ -21,13 +21,13 @@ class AcronymExpander:
     def try_to_expand_acronyms(self, text, expanded_acronyms):
         all_acronyms_expanded = True
         try:
-            for (acronym, expansion) in expanded_acronyms.items():
-                if(expansion.expander != AcronymExpanderEnum.none):
+            for (acronym, expansions) in expanded_acronyms.items():
+                if(len(expansions)!=0):#todo: remove this check
                     continue
-                expansion = self.expand(acronym, expansion, text)
-                if(expansion.expander == AcronymExpanderEnum.none):
+                expansions = self.expand(acronym, expansions, text)
+                if(len(expansions)==0):
                     all_acronyms_expanded = False
-                expanded_acronyms[acronym] = expansion
+                expanded_acronyms[acronym] = expansions
         except IndexError:
             # todo print file name here
             common_logger.error(string_constants.string_error_document_parse)
@@ -46,7 +46,7 @@ class AcronymExpander:
             choices.append(ExpansionChoice(definition, articleid, text))
         return choices
 
-    def expand(self, acronym, acronymExpansion, text):
+    def expand(self, acronym, acronymExpansions, text):
         """
         expand one acronym, to be implemented by subclass
         returns an AcronymExpansion instance

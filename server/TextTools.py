@@ -17,13 +17,13 @@ def _removePunctuations(text):
     #The pattern below is obtained by running: '[%s]' % re.escape(u",;:.!?-\"'&()\/`[]\u00AD<>")
     #The punctuation symbols are from string.punctuation
     #See http://stackoverflow.com/a/265995/681311 for details
-    pattern_for_punctuations = u'[\\,\\;\\:\\.\\!\\?\\-\\"\\\'\\&\\(\\)\\\\\\/\\`\\[\\]\\\xad\\<\\>]'
+    pattern_for_punctuations = u'[\\,\\;\\:\\.\\!\\?\\-\\"\\\'\\&\\(\\)\\\\\\/\\`\\[\\]\\\xad\\<\\>\\%\\+\\=]'
     cleaned_text = re.sub(pattern_for_punctuations, " ", text)
 
     return cleaned_text
 
 
-def getCleanedWords(text, stem_words=True):
+def getCleanedWords(text, stem_words, removeNumbers):
     cleaned_text = _removePunctuations(text)
     words = word_tokenize(cleaned_text)
 
@@ -35,6 +35,9 @@ def getCleanedWords(text, stem_words=True):
     else:
         result = [word.lower() for word in words if word.lower() not in all_words_to_remove]
     
+    if(removeNumbers):
+        result = [word for word in result if not word.isdigit()]
+        
     return result
 
 def toUnicode(text):
