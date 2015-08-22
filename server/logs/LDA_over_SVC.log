@@ -1,0 +1,188 @@
+articleID,acronym,correct_expansion,wrong_expansion2,isOneMoreConfident
+8170349,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+19320452,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+162767,ADP,automatic data-processing,adenosine diphosphate,False
+7985721,ALS,anti-lymphocyte serum,amyotrophic lateral sclerosis,False
+19081934,BLM,bleomycin,Bloom,True
+18923075,BLM,Bloom,bleomycin,True
+19222034,BLM,bleomycin,Bloom,True
+15493326,BLM,Bloom,bleomycin,True
+17537309,BLM,bleomycin,Bloom,True
+19863834,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+17593513,BSA,body surface area,bovine serum albumin,True
+20124233,CAD,coronary artery disease,Computer aided detection,False
+18311010,CAD,Computer aided detection,coronary artery disease,True
+16469869,CAM,cell adhesion molecules,Chorioallantoic Membrane,False
+19123068,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+16187083,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+16302733,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+20066899,CAM,Chorioallantoic Membrane,cell adhesion molecules,False
+17314073,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+12742882,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,False
+16735466,CDR,complementarity-determining region,Deoxycytidine,True
+17307011,CDR,complementarity-determining region,Deoxycytidine,True
+17211986,CP,cleft palate,Corynebacterium parvum,True
+15880679,CP,cleft palate,Corynebacterium parvum,True
+2835568,CP,Corynebacterium parvum,cleft palate,True
+9195122,CPDD,calcium pyrophosphate deposition disease,cis-platinum diammine dichloride,False
+11344817,CPDD,calcium pyrophosphate deposition disease,cis-platinum diammine dichloride,True
+9080765,CTX,Cerebrotendinous xanthomatosis,cytoxan,True
+19447687,CTX,cytoxan,Cerebrotendinous xanthomatosis,False
+10066446,CTX,Cerebrotendinous xanthomatosis,cytoxan,True
+20157861,DAT,dopamine transporters,dementia of the Alzheimer's type,False
+17664527,DAT,dementia of the Alzheimer's type,dopamine transporters,True
+19852071,DAT,dopamine transporters,dementia of the Alzheimer's type,True
+12850491,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti,True
+16458028,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti,False
+16226333,DDS,drug delivery system,diaminodiphenyl sulfone,True
+18007284,DDS,drug delivery system,diaminodiphenyl sulfone,True
+1828062,DDS,diaminodiphenyl sulfone,Denys-Drash syndrome,True
+19952519,DDS,drug delivery system,diaminodiphenyl sulfone,True
+12165212,DDS,diaminodiphenyl sulfone,drug delivery system,True
+10066962,DDS,diaminodiphenyl sulfone,drug delivery system,True
+17062390,DDS,drug delivery system,diaminodiphenyl sulfone,True
+16282964,DDS,drug delivery system,diaminodiphenyl sulfone,True
+10506613,EM,Estramustine,Electron microscopy,True
+19866516,EMS,ethyl methane sulfonate,emergency medical service,False
+15963565,EMS,ethyl methane sulfonate,emergency medical service,True
+20232746,ERP,Event-related potentials,endoscopic retrograde pancreatography,True
+12652779,ERP,endoscopic retrograde pancreatography,Event-related potentials,True
+18997962,FA,Fanconi anemia,folic acid,True
+19561169,FA,Fanconi anemia,folic acid,True
+18651631,FA,folic acid,Fanconi anemia,True
+19131774,FA,Fanconi anemia,folic acid,True
+19282359,FA,folic acid,Fanconi anemia,True
+17961254,FAS,fetal alcohol syndrome,fatty acid synthase,True
+8982552,HPS,hantavirus pulmonary syndrome,Hermansky-Pudlak syndrome,True
+18629000,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,False
+17598509,HR,high-risk,heart rate,False
+6124282,ITP,inosine triphosphate,idiopathic thrombocytopenic purpura,True
+20043469,ITP,idiopathic thrombocytopenic purpura,inosine triphosphate,True
+9094462,ITP,inosine triphosphate,idiopathic thrombocytopenic purpura,False
+20353528,ITP,idiopathic thrombocytopenic purpura,inosine triphosphate,True
+15543617,MAF,macrophage activating factor,musculo-aponeurotic fibrosacroma,True
+7540906,MBP,mannan-binding protein,myelin basic protein,True
+12471128,MBP,mannan-binding protein,myelin basic protein,False
+18589813,MBP,mannan-binding protein,myelin basic protein,True
+16982837,MBP,mannan-binding protein,myelin basic protein,False
+7766991,MBP,mannan-binding protein,myelin basic protein,True
+11196698,MBP,mannan-binding protein,myelin basic protein,False
+19517016,MBP,myelin basic protein,mannan-binding protein,True
+15467404,MBP,mannan-binding protein,myelin basic protein,False
+9188718,MBP,mannan-binding protein,myelin basic protein,True
+15060079,MBP,mannan-binding protein,myelin basic protein,True
+12691753,MBP,mannan-binding protein,myelin basic protein,True
+16595889,MBP,mannan-binding protein,myelin basic protein,True
+17415991,MBP,mannan-binding protein,myelin basic protein,False
+7515696,MBP,mannan-binding protein,myelin basic protein,True
+12713285,MBP,mannan-binding protein,myelin basic protein,True
+8920660,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+19813199,MHC,major histocompatibility complex,myosin heavy chains,True
+17442057,NBS,Nijmegen breakage syndrome,neuroblastomas,True
+18364569,NBS,Nijmegen breakage syndrome,neuroblastomas,True
+19822450,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19950690,OCD,Obsessive-Compulsive Disorder,osteochondritis dissecans,True
+20143498,OCD,Obsessive-Compulsive Disorder,osteochondritis dissecans,True
+18226555,OCD,osteochondritis dissecans,Obsessive-Compulsive Disorder,True
+19949212,OCD,Obsessive-Compulsive Disorder,osteochondritis dissecans,False
+19624630,PCA,patient controlled analgesia,principal-component analysis,True
+7903417,PCA,para-chloroamphetamine,principal-component analysis,True
+12672153,PCA,passive cutaneous anaphylaxis,para-chloroamphetamine,True
+19020166,PCA,patient controlled analgesia,principal-component analysis,True
+17544150,PCA,passive cutaneous anaphylaxis,para-chloroamphetamine,True
+19224364,PCA,para-chloroamphetamine,passive cutaneous anaphylaxis,True
+12641656,PCA,passive cutaneous anaphylaxis,para-chloroamphetamine,True
+10822083,PCA,passive cutaneous anaphylaxis,principal-component analysis,True
+10869387,PCA,para-chloroamphetamine,passive cutaneous anaphylaxis,True
+11146385,PCA,passive cutaneous anaphylaxis,posterior cerebral artery,True
+10999445,PCA,para-chloroamphetamine,passive cutaneous anaphylaxis,False
+10320767,PCA,para-chloroamphetamine,passive cutaneous anaphylaxis,True
+11282390,PCA,passive cutaneous anaphylaxis,principal-component analysis,True
+15946623,PCA,passive cutaneous anaphylaxis,principal-component analysis,True
+10622452,PCB,Procarbazine,polychlorinated biphenyls,True
+3134124,PCB,Procarbazine,polychlorinated biphenyls,True
+321233,PCB,Procarbazine,polychlorinated biphenyls,True
+11000577,PCB,Procarbazine,polychlorinated biphenyls,False
+19780475,PCP,Pneumocystis pneumonia,pentachlorophenate,True
+19029576,PCP,Pneumocystis pneumonia,pentachlorophenate,True
+18065667,PCP,Pneumocystis pneumonia,pentachlorophenate,True
+19353758,PCP,psychotomimetic phencyclidine,pentachlorophenate,True
+19425051,PCP,psychotomimetic phencyclidine,Pneumocystis pneumonia,True
+12628374,PEP,phosphoenolpyruvate,peplomycin,True
+6690241,PHA,Pelger-Huet anomaly,phytohemagglutinin,True
+16007606,PHA,Pelger-Huet anomaly,phytohemagglutinin,False
+17123255,PHA,Pelger-Huet anomaly,phytohemagglutinin,True
+16724080,PHA,Pelger-Huet anomaly,phytohemagglutinin,False
+12879427,PHA,Pelger-Huet anomaly,phytohemagglutinin,True
+1418654,PHA,Pelger-Huet anomaly,phytohemagglutinin,True
+1951327,PHA,Pelger-Huet anomaly,phytohemagglutinin,True
+6244014,PHA,Pelger-Huet anomaly,phytohemagglutinin,False
+9647622,PVC,Premature ventricular contractions,polyvinyl chloride,True
+10812321,PVC,Premature ventricular contractions,polyvinyl chloride,True
+19338595,PVC,polyvinyl chloride,Premature ventricular contractions,True
+20412708,RA,rheumatoid arthritis,refractory anemia,False
+10629588,RA,refractory anemia,rheumatoid arthritis,True
+11380604,RA,refractory anemia,rheumatoid arthritis,True
+16445979,RA,refractory anemia,rheumatoid arthritis,True
+20435930,RA,rheumatoid arthritis,refractory anemia,True
+18691343,RA,refractory anemia,rheumatoid arthritis,True
+20398000,RA,rheumatoid arthritis,refractory anemia,True
+20332595,RA,rheumatoid arthritis,refractory anemia,True
+20514776,RA,rheumatoid arthritis,refractory anemia,True
+19499580,RA,refractory anemia,rheumatoid arthritis,True
+19641066,RSV,respiratory syncytial virus,Rous sarcoma virus,True
+19368128,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+18037405,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+17913830,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+17448514,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+9679937,SPR,substance P receptor,Surface Plasmon Resonance,True
+16179788,SS,Sweet's syndrome,Synovial sarcoma,True
+19288517,TAT,tyrosine aminotransferase,Trans-Activation of Transcription,True
+19789962,TAT,tyrosine aminotransferase,Trans-Activation of Transcription,False
+14425726,TEM,triethylene melamine,transmission electron microscopy,True
+14466717,TEM,triethylene melamine,transmission electron microscopy,False
+19398372,TLC,total lung capacity,thin layer chromatography,True
+19893743,TLC,thin layer chromatography,total lung capacity,True
+19796182,TLC,thin layer chromatography,total lung capacity,True
+18753731,TNC,tenascin-C,troponin C,True
+19258009,TPA,12-O-tetradecanoylphorbol-13-acetate,Tissue plasminogen activator,True
+20033916,TPA,12-O-tetradecanoylphorbol-13-acetate,Tissue plasminogen activator,False
+20232358,TPA,12-O-tetradecanoylphorbol-13-acetate,Tissue plasminogen activator,True
+19586612,TPA,12-O-tetradecanoylphorbol-13-acetate,Tissue plasminogen activator,True
+18073303,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+18265539,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+18363888,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+17482640,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+17963848,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+18302514,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+18774556,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+19553636,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,True
+18457671,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+17822378,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+19889150,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,True
+17880809,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+18271683,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+19669106,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+18432545,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+19348579,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,False
+18617523,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,True
+19225535,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,True
+6420206,TRF,thyrotropin-releasing factor,T-replacing factor,True
+6757723,TRF,T-replacing factor,thyrotropin-releasing factor,True
+6376215,TRF,T-replacing factor,thyrotropin-releasing factor,True
+7026423,TRF,T-replacing factor,thyrotropin-releasing factor,True
+7044951,TRF,T-replacing factor,thyrotropin-releasing factor,True
+3871678,TRF,T-replacing factor,thyrotropin-releasing factor,True
+3261808,TRF,T-replacing factor,thyrotropin-releasing factor,True
+8723124,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+9004128,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+11170076,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,False
+15933846,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+16140988,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+10440826,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+15303821,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+17658187,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+11170085,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,False
+15770126,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+15994861,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+8968740,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True

@@ -1,0 +1,903 @@
+articleID,acronym,correct_expansion,wrong_expansion2,isOneMoreConfident
+20148520,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+19128188,ADH,alcohol dehydrogenase,antidiuretic hormone,False
+3939555,ADH,antidiuretic hormone,alcohol dehydrogenase,False
+2944140,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+20026516,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+19109675,ADH,alcohol dehydrogenase,antidiuretic hormone,False
+18853207,ADH,alcohol dehydrogenase,antidiuretic hormone,False
+17022550,ADH,antidiuretic hormone,alcohol dehydrogenase,False
+18828806,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+3922622,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+19578994,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+19218278,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+3920247,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+19110411,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+2986486,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+2841870,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+2458353,ADH,antidiuretic hormone,alcohol dehydrogenase,False
+20116195,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+6799525,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+6391788,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+19811926,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+6360918,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+3020336,ADH,antidiuretic hormone,alcohol dehydrogenase,True
+20090911,ADH,alcohol dehydrogenase,antidiuretic hormone,False
+18845238,ADH,alcohol dehydrogenase,antidiuretic hormone,True
+20394442,ADP,adenosine diphosphate,automatic data-processing,False
+14074287,ADP,automatic data-processing,adenosine diphosphate,True
+3447277,ADP,automatic data-processing,adenosine diphosphate,False
+1177618,ADP,automatic data-processing,adenosine diphosphate,True
+6913188,ADP,automatic data-processing,adenosine diphosphate,True
+6040505,ADP,automatic data-processing,adenosine diphosphate,True
+311081,ADP,automatic data-processing,adenosine diphosphate,True
+19947384,ADP,adenosine diphosphate,automatic data-processing,True
+252803,ADP,automatic data-processing,adenosine diphosphate,True
+20059362,ADP,adenosine diphosphate,automatic data-processing,True
+20096678,ALS,amyotrophic lateral sclerosis,anti-lymphocyte serum,True
+20169590,ALS,amyotrophic lateral sclerosis,anti-lymphocyte serum,True
+3503654,ALS,anti-lymphocyte serum,amyotrophic lateral sclerosis,False
+20099342,ALS,amyotrophic lateral sclerosis,anti-lymphocyte serum,True
+18194208,BLM,bleomycin,Bloom,False
+18974632,BLM,bleomycin,Bloom,True
+20100681,BLM,bleomycin,Bloom,True
+19165145,BLM,Bloom,bleomycin,True
+17880775,BLM,bleomycin,Bloom,True
+15520224,BLM,Bloom,bleomycin,True
+15498034,BLM,Bloom,bleomycin,False
+19218193,BLM,bleomycin,Bloom,True
+18602243,BLM,bleomycin,Bloom,True
+18008008,BLM,bleomycin,Bloom,True
+19549112,BLM,bleomycin,Bloom,True
+19758434,BLM,bleomycin,Bloom,True
+17713091,BLM,bleomycin,Bloom,True
+20067618,BLM,bleomycin,Bloom,False
+19429264,BLM,bleomycin,Bloom,False
+20028084,BLM,Bloom,bleomycin,True
+19428379,BLM,bleomycin,Bloom,True
+19109203,BLM,bleomycin,Bloom,True
+17321898,BLM,Bloom,bleomycin,False
+17950632,BLM,bleomycin,Bloom,True
+19380784,BLM,bleomycin,Bloom,True
+19180474,BLM,bleomycin,Bloom,True
+19540250,BLM,bleomycin,Bloom,True
+18832650,BLM,bleomycin,Bloom,True
+19573614,BLM,bleomycin,Bloom,True
+17900800,BLM,Bloom,bleomycin,True
+18234257,BLM,bleomycin,Bloom,False
+17825263,BLM,bleomycin,Bloom,True
+17825850,BLM,bleomycin,Bloom,True
+18355908,BLM,bleomycin,Bloom,True
+11876000,BLM,Bloom,bleomycin,True
+18205074,BLM,bleomycin,Bloom,True
+19250543,BLM,bleomycin,Bloom,True
+15450411,BLM,Bloom,bleomycin,False
+16501249,BLM,Bloom,bleomycin,True
+18582404,BLM,bleomycin,Bloom,True
+18210922,BLM,Bloom,bleomycin,False
+19766550,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+20199748,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+19837517,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+18598128,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+20001175,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+20415055,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+19583715,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+19825272,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+19591899,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+19085927,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+20386259,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+19932003,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+19794362,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+19043958,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+20458679,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+20047175,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+20004912,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+20107104,BPD,borderline personality disorder,bronchopulmonary dysplasia,False
+18760808,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+19574444,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+19485259,BPD,bronchopulmonary dysplasia,borderline personality disorder,True
+19807718,BPD,borderline personality disorder,bronchopulmonary dysplasia,True
+19837906,BSA,body surface area,bovine serum albumin,True
+20152466,BSA,bovine serum albumin,body surface area,True
+18952236,BSA,body surface area,bovine serum albumin,True
+19244869,BSE,bovine spongiform encephalopathy,breast self examination,True
+18643829,BSE,bovine spongiform encephalopathy,breast self examination,True
+19242452,BSE,bovine spongiform encephalopathy,breast self examination,True
+19103624,BSE,bovine spongiform encephalopathy,breast self examination,True
+18347512,CAD,Computer aided detection,coronary artery disease,True
+20152218,CAD,coronary artery disease,Computer aided detection,True
+20386243,CAD,coronary artery disease,Computer aided detection,True
+19863409,CAD,Computer aided detection,coronary artery disease,True
+20202511,CAD,coronary artery disease,Computer aided detection,False
+20180613,CAD,coronary artery disease,Computer aided detection,True
+20410412,CAD,coronary artery disease,Computer aided detection,True
+20124046,CAD,coronary artery disease,Computer aided detection,True
+20204992,CAD,coronary artery disease,Computer aided detection,True
+18724867,CAD,Computer aided detection,coronary artery disease,True
+20538671,CAD,coronary artery disease,Computer aided detection,True
+19774509,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+19482088,CAM,cell adhesion molecules,Chorioallantoic Membrane,False
+18291379,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+16720322,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+17681789,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+19428938,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+19842048,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+19284324,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+18678496,CAM,Chorioallantoic Membrane,cell adhesion molecules,False
+17519975,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+18810647,CAM,Chorioallantoic Membrane,cell adhesion molecules,False
+17709431,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+19635491,CAM,Chorioallantoic Membrane,cell adhesion molecules,False
+19277014,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+18790036,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+16308137,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+19403415,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+18692618,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+17202440,CAM,cell adhesion molecules,Chorioallantoic Membrane,False
+19715750,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+19469865,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+19834094,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+18958417,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+17205779,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+18319540,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+18095189,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+19196466,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+16214039,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+19135695,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+19720068,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+19380349,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+19401151,CAM,Chorioallantoic Membrane,cell adhesion molecules,False
+20096070,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+17929513,CAM,cell adhesion molecules,Chorioallantoic Membrane,False
+20049873,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+18626782,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+19197150,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+18494942,CAM,Chorioallantoic Membrane,cell adhesion molecules,True
+18853253,CAM,Chorioallantoic Membrane,cell adhesion molecules,False
+18790807,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+19479183,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+17280489,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+16944754,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+17483743,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+19250612,CAM,cell adhesion molecules,Chorioallantoic Membrane,True
+10618932,CCD,Central Core Disease,Cleidocranial dysplasia,True
+19027160,CCD,Central Core Disease,Cleidocranial dysplasia,True
+10484775,CCD,Central Core Disease,Cleidocranial dysplasia,True
+17081152,CCD,Central Core Disease,Cleidocranial dysplasia,True
+15336973,CCD,Central Core Disease,Cleidocranial dysplasia,True
+14708096,CCD,Central Core Disease,Cleidocranial dysplasia,True
+11216663,CCD,Central Core Disease,Cleidocranial dysplasia,True
+15589992,CCD,Central Core Disease,Cleidocranial dysplasia,True
+12937085,CCD,Central Core Disease,Cleidocranial dysplasia,True
+17190947,CCD,Central Core Disease,Cleidocranial dysplasia,True
+19206168,CCD,Central Core Disease,Cleidocranial dysplasia,True
+14513182,CCD,Central Core Disease,Cleidocranial dysplasia,True
+17204937,CCD,Central Core Disease,Cleidocranial dysplasia,True
+16866299,CCD,Central Core Disease,Cleidocranial dysplasia,True
+15347586,CCD,Central Core Disease,Cleidocranial dysplasia,False
+17631035,CCD,Central Core Disease,Cleidocranial dysplasia,True
+12161072,CCD,Central Core Disease,Cleidocranial dysplasia,True
+10951187,CCD,Central Core Disease,Cleidocranial dysplasia,True
+17504518,CCD,Central Core Disease,Cleidocranial dysplasia,True
+11274444,CCD,Central Core Disease,Cleidocranial dysplasia,True
+15269663,CCD,Central Core Disease,Cleidocranial dysplasia,True
+19303294,CCD,Central Core Disease,Cleidocranial dysplasia,True
+12124989,CCD,Central Core Disease,Cleidocranial dysplasia,True
+12642598,CCD,Central Core Disease,Cleidocranial dysplasia,True
+10790202,CCD,Central Core Disease,Cleidocranial dysplasia,True
+11524458,CCD,Central Core Disease,Cleidocranial dysplasia,True
+12810058,CCD,Central Core Disease,Cleidocranial dysplasia,True
+16917943,CCD,Central Core Disease,Cleidocranial dysplasia,True
+11063719,CCD,Central Core Disease,Cleidocranial dysplasia,True
+16550918,CCD,Central Core Disease,Cleidocranial dysplasia,True
+12566385,CCD,Central Core Disease,Cleidocranial dysplasia,True
+17226826,CCD,Central Core Disease,Cleidocranial dysplasia,True
+15926054,CCD,Central Core Disease,Cleidocranial dysplasia,True
+16958053,CCD,Central Core Disease,Cleidocranial dysplasia,True
+11741831,CCD,Central Core Disease,Cleidocranial dysplasia,True
+10783639,CCD,Central Core Disease,Cleidocranial dysplasia,True
+15175001,CCD,Central Core Disease,Cleidocranial dysplasia,False
+16621918,CCD,Central Core Disease,Cleidocranial dysplasia,True
+11709545,CCD,Central Core Disease,Cleidocranial dysplasia,True
+18313359,CCD,Central Core Disease,Cleidocranial dysplasia,True
+17455311,CDA,chlorodeoxyadenosine,Congenital dyserythropoietic anemias,True
+7777940,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+11007058,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+15075093,CDA,chlorodeoxyadenosine,Congenital dyserythropoietic anemias,False
+12180113,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,False
+12894049,CDA,chlorodeoxyadenosine,Congenital dyserythropoietic anemias,True
+10100277,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+15312436,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+10468869,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+15151542,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+19125089,CDA,chlorodeoxyadenosine,Congenital dyserythropoietic anemias,True
+10841325,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+9694508,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+11310976,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+9266923,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,False
+15170896,CDA,chlorodeoxyadenosine,Congenital dyserythropoietic anemias,True
+18824595,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+10711781,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+9858239,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,False
+8634422,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+15960289,CDA,chlorodeoxyadenosine,Congenital dyserythropoietic anemias,True
+15745056,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+17117609,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,False
+18322355,CDA,chlorodeoxyadenosine,Congenital dyserythropoietic anemias,True
+12847329,CDA,chlorodeoxyadenosine,Congenital dyserythropoietic anemias,True
+12130485,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+12152244,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+15024607,CDA,chlorodeoxyadenosine,Congenital dyserythropoietic anemias,True
+9111594,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine,True
+15365768,CLS,capillary leak syndrome,Coffin-Lowry syndrome,True
+12792428,CLS,Coffin-Lowry syndrome,capillary leak syndrome,True
+12575619,CLS,capillary leak syndrome,Coffin-Lowry syndrome,True
+19846389,CP,cerebral palsy,cleft palate,True
+20003101,CP,cerebral palsy,cleft palate,True
+20083809,CP,cleft palate,cerebral palsy,True
+20179566,CP,cerebral palsy,cleft palate,True
+19924492,CP,cerebral palsy,cleft palate,True
+19575106,CP,cleft palate,cerebral palsy,True
+15806447,CP,cleft palate,cerebral palsy,True
+16243237,CP,cleft palate,cerebral palsy,True
+20412253,CP,cerebral palsy,cleft palate,True
+20099613,CP,cerebral palsy,cleft palate,True
+19041924,CP,cleft palate,Corynebacterium parvum,False
+20300011,CP,cerebral palsy,cleft palate,True
+17133404,CP,cleft palate,cerebral palsy,False
+19854058,CP,cerebral palsy,cleft palate,True
+19938160,CP,cerebral palsy,cleft palate,True
+20120414,CP,cerebral palsy,cleft palate,False
+19864110,CP,cerebral palsy,cleft palate,True
+19934797,CP,cerebral palsy,Corynebacterium parvum,False
+20055573,CP,cerebral palsy,cleft palate,True
+16034735,CP,cleft palate,cerebral palsy,True
+20357589,CP,cerebral palsy,cleft palate,True
+20132137,CP,cerebral palsy,cleft palate,True
+16687910,CP,cleft palate,cerebral palsy,False
+18616373,CP,cleft palate,cerebral palsy,False
+19923970,CP,cerebral palsy,cleft palate,True
+17489001,CP,cleft palate,cerebral palsy,False
+20006274,CP,cleft palate,cerebral palsy,False
+19815646,CP,cerebral palsy,cleft palate,True
+20338763,CP,cerebral palsy,cleft palate,False
+20132139,CP,cerebral palsy,cleft palate,True
+20132136,CP,cerebral palsy,cleft palate,True
+20298838,CP,cerebral palsy,cleft palate,True
+17366853,CP,cleft palate,cerebral palsy,True
+20306774,CP,cerebral palsy,cleft palate,False
+20035642,CP,cerebral palsy,cleft palate,True
+20187888,CP,cerebral palsy,cleft palate,True
+17152223,CP,cleft palate,cerebral palsy,True
+16846134,CP,cleft palate,cerebral palsy,True
+20158415,CP,cleft palate,Corynebacterium parvum,True
+15733594,CP,cleft palate,cerebral palsy,True
+9432522,CP,Corynebacterium parvum,cleft palate,False
+19687392,CP,cleft palate,Corynebacterium parvum,True
+19401770,CP,cleft palate,cerebral palsy,True
+20067354,CP,cerebral palsy,cleft palate,True
+17477747,CP,cleft palate,cerebral palsy,False
+16420271,CP,cleft palate,cerebral palsy,True
+20120401,CP,cerebral palsy,cleft palate,True
+18481336,CP,cleft palate,cerebral palsy,False
+18325604,CP,cleft palate,cerebral palsy,True
+20298820,CP,cerebral palsy,cleft palate,True
+11490129,CP,Corynebacterium parvum,cerebral palsy,True
+19703238,CP,cleft palate,cerebral palsy,True
+20002130,CP,cerebral palsy,cleft palate,True
+20207020,CP,cleft palate,cerebral palsy,True
+20042475,CP,cerebral palsy,cleft palate,True
+20335565,CP,cleft palate,cerebral palsy,True
+20002117,CP,cerebral palsy,cleft palate,True
+18616361,CP,cleft palate,cerebral palsy,True
+17349597,CP,cleft palate,cerebral palsy,True
+19880137,CP,cerebral palsy,cleft palate,True
+20141494,CP,cerebral palsy,cleft palate,True
+19961501,CP,cerebral palsy,cleft palate,True
+12930843,CPDD,cis-platinum diammine dichloride,calcium pyrophosphate deposition disease,True
+19357177,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19321994,CRF,chronic renal failure,corticotrophin-releasing factor,False
+20007296,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19553908,CRF,corticotrophin-releasing factor,chronic renal failure,True
+19814639,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19912987,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19404572,CRF,corticotrophin-releasing factor,chronic renal failure,False
+19080229,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19112899,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19878707,CRF,chronic renal failure,corticotrophin-releasing factor,True
+18721740,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19422857,CRF,corticotrophin-releasing factor,chronic renal failure,True
+19523931,CRF,corticotrophin-releasing factor,chronic renal failure,True
+19879859,CRF,corticotrophin-releasing factor,chronic renal failure,True
+19118829,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19225048,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19750259,CRF,chronic renal failure,corticotrophin-releasing factor,True
+19397334,CRF,chronic renal failure,corticotrophin-releasing factor,True
+20071461,CRF,chronic renal failure,corticotrophin-releasing factor,False
+11737215,CTX,Cerebrotendinous xanthomatosis,cytoxan,True
+9178427,CTX,Cerebrotendinous xanthomatosis,cytoxan,True
+18718065,CTX,cytoxan,Cerebrotendinous xanthomatosis,True
+19004041,CTX,cytoxan,Cerebrotendinous xanthomatosis,True
+16830884,CTX,cytoxan,Cerebrotendinous xanthomatosis,False
+20003864,DAT,dementia of the Alzheimer's type,dopamine transporters,True
+19501717,DAT,dementia of the Alzheimer's type,dopamine transporters,False
+16390030,DAT,dementia of the Alzheimer's type,dopamine transporters,True
+16325150,DAT,dementia of the Alzheimer's type,dopamine transporters,True
+16305479,DAT,dementia of the Alzheimer's type,dopamine transporters,False
+19960520,DAT,dopamine transporters,dementia of the Alzheimer's type,False
+19542944,DAT,dopamine transporters,dementia of the Alzheimer's type,True
+19907013,DAT,dementia of the Alzheimer's type,dopamine transporters,True
+20019219,DAT,dopamine transporters,dementia of the Alzheimer's type,False
+19877234,DAT,dopamine transporters,dementia of the Alzheimer's type,False
+20049490,DAT,dopamine transporters,dementia of the Alzheimer's type,True
+20184806,DAT,dopamine transporters,dementia of the Alzheimer's type,True
+19590515,DAT,dopamine transporters,dementia of the Alzheimer's type,True
+20233662,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+20384817,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+17726054,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti,True
+20305363,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+20373399,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+20091782,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+20233743,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+20060461,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+19997907,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+20335075,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+19760280,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+20371546,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+18671700,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti,True
+19733691,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+12041668,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti,True
+18028431,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti,True
+16304857,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti,True
+19489057,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti,True
+19641932,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+20018491,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+20022637,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti,True
+19937000,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+19743418,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia,True
+16616604,DDS,drug delivery system,diaminodiphenyl sulfone,False
+19836833,DDS,drug delivery system,Denys-Drash syndrome,True
+2262714,DDS,diaminodiphenyl sulfone,drug delivery system,False
+11201896,DDS,diaminodiphenyl sulfone,drug delivery system,False
+17658251,DDS,drug delivery system,diaminodiphenyl sulfone,False
+7725382,DDS,diaminodiphenyl sulfone,drug delivery system,True
+2072851,DDS,diaminodiphenyl sulfone,drug delivery system,False
+9401487,DDS,diaminodiphenyl sulfone,drug delivery system,False
+17285949,DDS,drug delivery system,diaminodiphenyl sulfone,False
+11703851,DDS,diaminodiphenyl sulfone,drug delivery system,True
+15866332,DDS,drug delivery system,diaminodiphenyl sulfone,True
+8201835,DDS,diaminodiphenyl sulfone,Denys-Drash syndrome,True
+8885125,DDS,diaminodiphenyl sulfone,drug delivery system,True
+16457769,DDS,diaminodiphenyl sulfone,drug delivery system,True
+12932885,DDS,Denys-Drash syndrome,diaminodiphenyl sulfone,True
+2126271,DDS,diaminodiphenyl sulfone,drug delivery system,True
+17061122,DDS,Denys-Drash syndrome,diaminodiphenyl sulfone,True
+1594661,DDS,diaminodiphenyl sulfone,drug delivery system,False
+2071980,DDS,diaminodiphenyl sulfone,Denys-Drash syndrome,True
+2206787,DDS,diaminodiphenyl sulfone,drug delivery system,True
+18203491,DDS,drug delivery system,diaminodiphenyl sulfone,False
+18822969,DDS,drug delivery system,diaminodiphenyl sulfone,True
+16877400,DDS,drug delivery system,diaminodiphenyl sulfone,True
+11765001,DDS,diaminodiphenyl sulfone,drug delivery system,True
+7714357,DDS,diaminodiphenyl sulfone,drug delivery system,False
+17353400,DDS,drug delivery system,diaminodiphenyl sulfone,True
+18819869,DDS,drug delivery system,diaminodiphenyl sulfone,True
+11920946,DDS,diaminodiphenyl sulfone,drug delivery system,True
+16075742,DDS,diaminodiphenyl sulfone,drug delivery system,True
+16235676,DI,diabetes insipidus,DNA index,True
+14504846,DI,diabetes insipidus,DNA index,True
+14676564,DI,diabetes insipidus,DNA index,True
+15211159,DI,diabetes insipidus,DNA index,True
+15212402,DI,diabetes insipidus,DNA index,True
+15134627,DI,diabetes insipidus,DNA index,True
+12006285,DI,diabetes insipidus,DNA index,True
+11124437,DI,diabetes insipidus,DNA index,True
+12516704,DI,diabetes insipidus,DNA index,True
+7532932,DI,DNA index,diabetes insipidus,True
+12139729,DI,diabetes insipidus,DNA index,True
+14635749,DI,diabetes insipidus,DNA index,True
+15049016,DI,diabetes insipidus,DNA index,True
+9766256,DI,diabetes insipidus,DNA index,True
+16059642,DI,DNA index,diabetes insipidus,True
+9694340,DI,diabetes insipidus,DNA index,True
+19380027,DI,diabetes insipidus,DNA index,False
+15696461,DI,diabetes insipidus,DNA index,True
+10557042,DI,DNA index,diabetes insipidus,False
+9149915,DI,DNA index,diabetes insipidus,True
+18515145,EM,Electron microscopy,Estramustine,True
+10461848,EM,Estramustine,Electron microscopy,True
+2346305,EM,Estramustine,Electron microscopy,True
+19403600,EM,Electron microscopy,Estramustine,True
+18928504,EM,Electron microscopy,Estramustine,True
+2734976,EM,Estramustine,Electron microscopy,True
+8653701,EM,Estramustine,Electron microscopy,True
+18664125,EM,Electron microscopy,Estramustine,True
+9508362,EM,Estramustine,Electron microscopy,True
+20432988,EMS,emergency medical service,ethyl methane sulfonate,True
+19957706,EMS,emergency medical service,ethyl methane sulfonate,False
+19857798,EMS,ethyl methane sulfonate,emergency medical service,True
+20219509,EMS,emergency medical service,ethyl methane sulfonate,True
+19856773,EMS,emergency medical service,ethyl methane sulfonate,False
+20053255,EMS,emergency medical service,ethyl methane sulfonate,False
+19439165,EMS,ethyl methane sulfonate,emergency medical service,True
+19897139,EMS,emergency medical service,ethyl methane sulfonate,False
+19957697,EMS,emergency medical service,ethyl methane sulfonate,False
+19442710,EMS,ethyl methane sulfonate,emergency medical service,True
+17284775,EMS,ethyl methane sulfonate,emergency medical service,False
+8212753,ERP,endoscopic retrograde pancreatography,Event-related potentials,True
+18436268,FA,folic acid,Fanconi anemia,True
+19638421,FA,folic acid,Fanconi anemia,True
+19065770,FA,Fanconi anemia,folic acid,True
+18375715,FA,folic acid,Fanconi anemia,False
+19098451,FA,folic acid,Fanconi anemia,False
+18163165,FA,folic acid,Fanconi anemia,True
+18495331,FA,Fanconi anemia,folic acid,True
+20010426,FA,folic acid,Fanconi anemia,True
+19121630,FA,folic acid,Fanconi anemia,False
+18372237,FAS,fatty acid synthase,fetal alcohol syndrome,True
+17701351,FAS,fetal alcohol syndrome,fatty acid synthase,True
+19251116,FAS,fetal alcohol syndrome,fatty acid synthase,True
+20021705,FAS,fatty acid synthase,fetal alcohol syndrome,True
+18591393,FAS,fatty acid synthase,fetal alcohol syndrome,True
+11919112,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,True
+16431308,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,True
+19729668,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,True
+16734315,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,True
+12126938,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,True
+11414528,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,True
+19370510,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,True
+11217408,HPS,hantavirus pulmonary syndrome,Hermansky-Pudlak syndrome,False
+16102489,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,True
+16547274,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,False
+12404153,HPS,hantavirus pulmonary syndrome,Hermansky-Pudlak syndrome,True
+15575250,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,False
+19160629,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome,True
+15655502,ITP,inosine triphosphate,idiopathic thrombocytopenic purpura,False
+19755017,ITP,idiopathic thrombocytopenic purpura,inosine triphosphate,False
+15063720,MAF,macrophage activating factor,musculo-aponeurotic fibrosacroma,True
+16342171,MAF,macrophage activating factor,musculo-aponeurotic fibrosacroma,True
+19692128,MBP,myelin basic protein,mannan-binding protein,True
+19053745,MBP,myelin basic protein,mannan-binding protein,True
+19930042,MBP,myelin basic protein,mannan-binding protein,True
+12365732,MBP,mannan-binding protein,myelin basic protein,False
+18989578,MBP,myelin basic protein,mannan-binding protein,False
+19877432,MBP,myelin basic protein,mannan-binding protein,False
+19822525,MBP,myelin basic protein,mannan-binding protein,True
+19630914,MBP,myelin basic protein,mannan-binding protein,True
+19132105,MBP,myelin basic protein,mannan-binding protein,False
+14724269,MBP,mannan-binding protein,myelin basic protein,True
+19072222,MBP,myelin basic protein,mannan-binding protein,True
+18543229,MBP,mannan-binding protein,myelin basic protein,False
+19468823,MBP,myelin basic protein,mannan-binding protein,True
+19178193,MBP,myelin basic protein,mannan-binding protein,True
+19191913,MBP,myelin basic protein,mannan-binding protein,True
+19017944,MBP,myelin basic protein,mannan-binding protein,True
+9250932,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+8855982,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+15842799,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+8080684,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+7585453,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+7994660,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+7640085,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,False
+19001805,MCC,Merkel cell carcinoma,mutated in colorectal carcinomas,True
+8061582,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+1668888,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+8402727,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+8032525,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+9592312,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+9592313,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+18645305,MCC,Merkel cell carcinoma,mutated in colorectal carcinomas,True
+8732100,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+12901725,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+8071957,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,False
+11776787,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+10605402,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+7947085,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+8943812,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+12901620,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+18219279,MCC,Merkel cell carcinoma,mutated in colorectal carcinomas,True
+8108146,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma,True
+19177556,MHC,myosin heavy chains,major histocompatibility complex,True
+20089178,MHC,major histocompatibility complex,myosin heavy chains,True
+18798247,MHC,myosin heavy chains,major histocompatibility complex,True
+19624800,MHC,major histocompatibility complex,myosin heavy chains,True
+20004369,MHC,major histocompatibility complex,myosin heavy chains,False
+19633717,MHC,major histocompatibility complex,myosin heavy chains,True
+19322778,MHC,myosin heavy chains,major histocompatibility complex,True
+19891747,MHC,major histocompatibility complex,myosin heavy chains,True
+20062062,MHC,major histocompatibility complex,myosin heavy chains,True
+19860679,MHC,major histocompatibility complex,myosin heavy chains,True
+20347157,MHC,major histocompatibility complex,myosin heavy chains,True
+19915060,MHC,major histocompatibility complex,myosin heavy chains,True
+19901985,MHC,major histocompatibility complex,myosin heavy chains,True
+20090908,MHC,major histocompatibility complex,myosin heavy chains,True
+20300982,MHC,major histocompatibility complex,myosin heavy chains,True
+19218519,MHC,myosin heavy chains,major histocompatibility complex,True
+19282494,MHC,myosin heavy chains,major histocompatibility complex,True
+19851445,MHC,major histocompatibility complex,myosin heavy chains,True
+19651181,MHC,major histocompatibility complex,myosin heavy chains,True
+19205846,MHC,myosin heavy chains,major histocompatibility complex,True
+19684280,MHC,myosin heavy chains,major histocompatibility complex,True
+18480046,MHC,myosin heavy chains,major histocompatibility complex,True
+19395549,MHC,myosin heavy chains,major histocompatibility complex,True
+19640970,MHC,major histocompatibility complex,myosin heavy chains,True
+18787035,MHC,myosin heavy chains,major histocompatibility complex,True
+20012395,MHC,major histocompatibility complex,myosin heavy chains,True
+19864282,MHC,major histocompatibility complex,myosin heavy chains,True
+18816601,MHC,myosin heavy chains,major histocompatibility complex,True
+20347979,MHC,myosin heavy chains,major histocompatibility complex,True
+19719404,MHC,major histocompatibility complex,myosin heavy chains,True
+18535124,MHC,myosin heavy chains,major histocompatibility complex,True
+19903780,MHC,major histocompatibility complex,myosin heavy chains,False
+19720873,MHC,major histocompatibility complex,myosin heavy chains,True
+19111326,MHC,myosin heavy chains,major histocompatibility complex,False
+20035931,MHC,major histocompatibility complex,myosin heavy chains,True
+20019647,MHC,major histocompatibility complex,myosin heavy chains,True
+19768738,MHC,myosin heavy chains,major histocompatibility complex,True
+19752118,MHC,myosin heavy chains,major histocompatibility complex,True
+18463191,MHC,myosin heavy chains,major histocompatibility complex,True
+18978449,MHC,myosin heavy chains,major histocompatibility complex,True
+19234575,MHC,myosin heavy chains,major histocompatibility complex,True
+19741092,MHC,major histocompatibility complex,myosin heavy chains,True
+19369448,MHC,myosin heavy chains,major histocompatibility complex,True
+19684093,MHC,myosin heavy chains,major histocompatibility complex,True
+19623632,MHC,myosin heavy chains,major histocompatibility complex,True
+19808674,MHC,major histocompatibility complex,myosin heavy chains,True
+20409590,MHC,major histocompatibility complex,myosin heavy chains,True
+19907296,MHC,major histocompatibility complex,myosin heavy chains,True
+19830457,MHC,major histocompatibility complex,myosin heavy chains,True
+20177343,MHC,major histocompatibility complex,myosin heavy chains,True
+19955111,MRS,magnetic resonance spectroscopy,Melkersson-Rosenthal Syndrome,True
+17969476,MRS,Melkersson-Rosenthal Syndrome,magnetic resonance spectroscopy,True
+19901714,MRS,magnetic resonance spectroscopy,Melkersson-Rosenthal Syndrome,True
+17891875,MRS,Melkersson-Rosenthal Syndrome,magnetic resonance spectroscopy,False
+16877808,NBS,Nijmegen breakage syndrome,neuroblastomas,True
+18788073,NBS,Nijmegen breakage syndrome,neuroblastomas,True
+20167538,NBS,Nijmegen breakage syndrome,neuroblastomas,False
+18937313,NBS,Nijmegen breakage syndrome,neuroblastomas,True
+19601769,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17921694,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17314284,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17156101,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19730674,NPC,nuclear pore complexes,Niemann-Pick C1,True
+19699313,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19540204,NPC,Niemann-Pick C1,nuclear pore complexes,True
+20412078,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19900398,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19660552,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19939718,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17458880,NPC,Niemann-Pick C1,nuclear pore complexes,False
+20132544,NPC,nuclear pore complexes,Niemann-Pick C1,True
+18644787,NPC,Niemann-Pick C1,nuclear pore complexes,True
+20212119,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18438776,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18782459,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18081003,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19819881,NPC,nuclear pore complexes,Niemann-Pick C1,False
+19948501,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17705200,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17499483,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18778306,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18591368,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18790990,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17470133,NPC,Niemann-Pick C1,nuclear pore complexes,True
+20153740,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19332999,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17183645,NPC,Niemann-Pick C1,nuclear pore complexes,True
+16734766,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17683244,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18681838,NPC,Niemann-Pick C1,nuclear pore complexes,False
+16797161,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18500759,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19472223,NPC,Niemann-Pick C1,nuclear pore complexes,True
+20138836,NPC,Niemann-Pick C1,nuclear pore complexes,True
+20213549,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19893049,NPC,Niemann-Pick C1,nuclear pore complexes,True
+17611388,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18981471,NPC,nuclear pore complexes,Niemann-Pick C1,True
+20007718,NPC,Niemann-Pick C1,nuclear pore complexes,True
+18953351,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19074461,NPC,Niemann-Pick C1,nuclear pore complexes,True
+19304740,OCD,osteochondritis dissecans,Obsessive-Compulsive Disorder,True
+16048146,OCD,osteochondritis dissecans,Obsessive-Compulsive Disorder,False
+19934996,OCD,Obsessive-Compulsive Disorder,osteochondritis dissecans,True
+19138479,OCD,osteochondritis dissecans,Obsessive-Compulsive Disorder,False
+20106536,OCD,Obsessive-Compulsive Disorder,osteochondritis dissecans,True
+16179221,PAC,P1 artificial chromosomes,premature atrial contraction,True
+19716589,PAF,platelet-activating factor,pure autonomic failure,True
+8170565,PAF,pure autonomic failure,platelet-activating factor,True
+20181231,PCA,principal-component analysis,patient controlled analgesia,True
+19618674,PCA,patient controlled analgesia,principal-component analysis,False
+20087373,PCA,principal-component analysis,patient controlled analgesia,False
+18990261,PCA,patient controlled analgesia,principal-component analysis,False
+19530742,PCA,patient controlled analgesia,principal-component analysis,False
+18387547,PCA,posterior cerebral artery,patient controlled analgesia,True
+19928504,PCA,patient controlled analgesia,posterior cerebral artery,True
+20103154,PCA,principal-component analysis,passive cutaneous anaphylaxis,False
+18551260,PCA,patient controlled analgesia,principal-component analysis,True
+20019597,PCA,principal-component analysis,posterior cerebral artery,True
+9730245,PCA,passive cutaneous anaphylaxis,principal-component analysis,True
+20230047,PCA,principal-component analysis,passive cutaneous anaphylaxis,False
+18717341,PCA,passive cutaneous anaphylaxis,posterior cerebral artery,True
+20017167,PCA,principal-component analysis,patient controlled analgesia,True
+20153225,PCA,principal-component analysis,para-chloroamphetamine,False
+20056465,PCA,principal-component analysis,passive cutaneous anaphylaxis,True
+20199987,PCA,principal-component analysis,patient controlled analgesia,True
+18541691,PCA,patient controlled analgesia,principal-component analysis,True
+20403632,PCA,principal-component analysis,patient controlled analgesia,False
+20397396,PCA,principal-component analysis,passive cutaneous anaphylaxis,False
+16452525,PCA,para-chloroamphetamine,principal-component analysis,False
+19060653,PCA,patient controlled analgesia,principal-component analysis,False
+18497348,PCA,posterior cerebral artery,para-chloroamphetamine,True
+18997527,PCA,patient controlled analgesia,principal-component analysis,False
+19016572,PCA,patient controlled analgesia,principal-component analysis,True
+20012109,PCA,principal-component analysis,para-chloroamphetamine,False
+20351978,PCA,patient controlled analgesia,principal-component analysis,True
+20506827,PCA,principal-component analysis,para-chloroamphetamine,True
+20184035,PCA,principal-component analysis,passive cutaneous anaphylaxis,True
+20104493,PCA,principal-component analysis,patient controlled analgesia,True
+9730244,PCA,passive cutaneous anaphylaxis,principal-component analysis,True
+20051153,PCA,patient controlled analgesia,principal-component analysis,True
+20146779,PCA,principal-component analysis,patient controlled analgesia,False
+20220583,PCA,principal-component analysis,patient controlled analgesia,False
+20122146,PCA,principal-component analysis,patient controlled analgesia,False
+20185654,PCA,patient controlled analgesia,principal-component analysis,True
+11211923,PCA,passive cutaneous anaphylaxis,para-chloroamphetamine,True
+7001223,PCB,Procarbazine,polychlorinated biphenyls,False
+16317293,PCB,Procarbazine,polychlorinated biphenyls,False
+10735896,PCB,Procarbazine,polychlorinated biphenyls,True
+20019899,PCB,polychlorinated biphenyls,Procarbazine,True
+20037868,PCD,programmed cell death,Primary ciliary dyskinesia,False
+19183964,PCP,psychotomimetic phencyclidine,pentachlorophenate,True
+19697013,PCP,psychotomimetic phencyclidine,pentachlorophenate,True
+18486366,PCP,pentachlorophenate,psychotomimetic phencyclidine,True
+19805570,PCP,Pneumocystis pneumonia,pentachlorophenate,True
+19410655,PCP,pentachlorophenate,psychotomimetic phencyclidine,True
+18582491,PCP,psychotomimetic phencyclidine,pentachlorophenate,False
+19152355,PCP,pentachlorophenate,psychotomimetic phencyclidine,False
+18720672,PCP,psychotomimetic phencyclidine,Pneumocystis pneumonia,False
+18991407,PCP,psychotomimetic phencyclidine,Pneumocystis pneumonia,True
+18442007,PCP,Pneumocystis pneumonia,psychotomimetic phencyclidine,True
+15170343,PEP,phosphoenolpyruvate,peplomycin,True
+1709630,PEP,peplomycin,phosphoenolpyruvate,True
+18491034,PEP,phosphoenolpyruvate,peplomycin,True
+8185331,PEP,peplomycin,phosphoenolpyruvate,True
+1723259,PEP,peplomycin,phosphoenolpyruvate,True
+1706170,PEP,peplomycin,phosphoenolpyruvate,False
+2473972,PEP,peplomycin,phosphoenolpyruvate,False
+8841505,PEP,peplomycin,phosphoenolpyruvate,True
+2415503,PEP,peplomycin,phosphoenolpyruvate,False
+2430525,PEP,peplomycin,phosphoenolpyruvate,True
+9254594,PEP,peplomycin,phosphoenolpyruvate,False
+12118250,PHA,Pelger-Huet anomaly,phytohemagglutinin,False
+19205021,PVC,polyvinyl chloride,Premature ventricular contractions,True
+19272942,PVC,Premature ventricular contractions,polyvinyl chloride,True
+19181755,PVC,polyvinyl chloride,Premature ventricular contractions,False
+19721133,PVC,Premature ventricular contractions,polyvinyl chloride,False
+19195768,PVC,Premature ventricular contractions,polyvinyl chloride,True
+18713919,PVC,polyvinyl chloride,Premature ventricular contractions,False
+18443859,PVC,polyvinyl chloride,Premature ventricular contractions,True
+19416005,PVC,polyvinyl chloride,Premature ventricular contractions,True
+14961790,PVC,Premature ventricular contractions,polyvinyl chloride,True
+11555690,PVC,Premature ventricular contractions,polyvinyl chloride,True
+20382605,RA,rheumatoid arthritis,refractory anemia,True
+17188353,RA,refractory anemia,rheumatoid arthritis,True
+20439289,RA,rheumatoid arthritis,refractory anemia,True
+20346234,RA,rheumatoid arthritis,refractory anemia,True
+20398020,RA,rheumatoid arthritis,refractory anemia,True
+20398002,RA,rheumatoid arthritis,refractory anemia,True
+20391513,RA,rheumatoid arthritis,refractory anemia,False
+20378011,RA,rheumatoid arthritis,refractory anemia,True
+20374348,RA,rheumatoid arthritis,refractory anemia,True
+18241656,RA,refractory anemia,rheumatoid arthritis,True
+20535785,RA,rheumatoid arthritis,refractory anemia,True
+20345981,RA,rheumatoid arthritis,refractory anemia,True
+11417482,RA,refractory anemia,rheumatoid arthritis,True
+20391482,RA,rheumatoid arthritis,refractory anemia,False
+18351340,RA,refractory anemia,rheumatoid arthritis,False
+20444754,RA,rheumatoid arthritis,refractory anemia,True
+20444755,RA,rheumatoid arthritis,refractory anemia,True
+20367977,RA,rheumatoid arthritis,refractory anemia,True
+20346242,RA,rheumatoid arthritis,refractory anemia,True
+20436077,RA,rheumatoid arthritis,refractory anemia,True
+12744749,RA,refractory anemia,rheumatoid arthritis,False
+19595407,RSV,respiratory syncytial virus,Rous sarcoma virus,True
+18206161,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+19444304,RSV,respiratory syncytial virus,Rous sarcoma virus,False
+19507066,RSV,respiratory syncytial virus,Rous sarcoma virus,True
+19446529,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+20102602,RSV,respiratory syncytial virus,Rous sarcoma virus,True
+18057258,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+19502390,RSV,respiratory syncytial virus,Rous sarcoma virus,True
+19544635,RSV,respiratory syncytial virus,Rous sarcoma virus,True
+18064718,RSV,Rous sarcoma virus,respiratory syncytial virus,False
+20098425,RSV,respiratory syncytial virus,Rous sarcoma virus,True
+19776123,RSV,respiratory syncytial virus,Rous sarcoma virus,True
+18768972,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+18468873,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+18401344,RSV,Rous sarcoma virus,respiratory syncytial virus,True
+19853694,SCD,Sudden cardiac death,sickle cell disease,True
+19912048,SCD,sickle cell disease,Sudden cardiac death,True
+19463119,SCD,Sudden cardiac death,sickle cell disease,False
+20417344,SCD,Sudden cardiac death,sickle cell disease,True
+19602160,SCD,Sudden cardiac death,sickle cell disease,True
+19602166,SCD,Sudden cardiac death,sickle cell disease,True
+19775299,SCD,sickle cell disease,Sudden cardiac death,True
+20089483,SCD,Sudden cardiac death,sickle cell disease,True
+20001619,SCD,sickle cell disease,Sudden cardiac death,False
+19880071,SCD,Sudden cardiac death,sickle cell disease,True
+19734497,SCD,Sudden cardiac death,sickle cell disease,True
+20196976,SCD,Sudden cardiac death,sickle cell disease,True
+20331960,SCD,sickle cell disease,Sudden cardiac death,True
+19144665,SCD,Sudden cardiac death,sickle cell disease,True
+20173269,SCD,sickle cell disease,Sudden cardiac death,True
+19359720,SCD,Sudden cardiac death,sickle cell disease,True
+20022343,SCD,sickle cell disease,Sudden cardiac death,True
+20135701,SCD,sickle cell disease,Sudden cardiac death,False
+20102864,SCD,Sudden cardiac death,sickle cell disease,True
+19822218,SCD,sickle cell disease,Sudden cardiac death,True
+20047134,SCD,Sudden cardiac death,sickle cell disease,True
+20099768,SCD,sickle cell disease,Sudden cardiac death,True
+20029950,SCD,sickle cell disease,Sudden cardiac death,False
+20116638,SCD,sickle cell disease,Sudden cardiac death,True
+19962576,SCD,sickle cell disease,Sudden cardiac death,True
+19617226,SCD,Sudden cardiac death,sickle cell disease,True
+19167272,SCD,Sudden cardiac death,sickle cell disease,True
+19602156,SCD,Sudden cardiac death,sickle cell disease,True
+19520557,SCD,Sudden cardiac death,sickle cell disease,True
+19903897,SCD,sickle cell disease,Sudden cardiac death,True
+20375931,SCD,Sudden cardiac death,sickle cell disease,True
+20158132,SCD,sickle cell disease,Sudden cardiac death,True
+19408839,SCD,Sudden cardiac death,sickle cell disease,True
+20331952,SCD,sickle cell disease,Sudden cardiac death,True
+19902523,SCD,sickle cell disease,Sudden cardiac death,True
+19687159,SCD,Sudden cardiac death,sickle cell disease,True
+19188705,SCD,Sudden cardiac death,sickle cell disease,False
+20194891,SCD,sickle cell disease,Sudden cardiac death,True
+19827138,SCD,sickle cell disease,Sudden cardiac death,True
+19425347,SCD,Sudden cardiac death,sickle cell disease,True
+20331958,SCD,sickle cell disease,Sudden cardiac death,True
+20331955,SCD,sickle cell disease,Sudden cardiac death,True
+20331957,SCD,sickle cell disease,Sudden cardiac death,True
+19734500,SCD,Sudden cardiac death,sickle cell disease,True
+20370779,SCD,sickle cell disease,Sudden cardiac death,True
+19901189,SCD,Sudden cardiac death,sickle cell disease,True
+20173433,SCD,sickle cell disease,Sudden cardiac death,True
+19787790,SCD,sickle cell disease,Sudden cardiac death,True
+20049931,SCD,sickle cell disease,Sudden cardiac death,True
+19819341,SCD,sickle cell disease,Sudden cardiac death,True
+19564966,SCD,Sudden cardiac death,sickle cell disease,True
+20100764,SCD,sickle cell disease,Sudden cardiac death,True
+19589116,SCD,Sudden cardiac death,sickle cell disease,True
+10543638,SLS,Sjogren-Larsson syndrome,sodium-lauryl-sulphate,True
+15110319,SLS,Sjogren-Larsson syndrome,sodium-lauryl-sulphate,True
+16927642,SLS,Sjogren-Larsson syndrome,sodium-lauryl-sulphate,True
+11378890,SLS,Sjogren-Larsson syndrome,sodium-lauryl-sulphate,True
+17576237,SLS,sodium-lauryl-sulphate,Sjogren-Larsson syndrome,True
+1283362,SPR,substance P receptor,Surface Plasmon Resonance,True
+20044245,SPR,Surface Plasmon Resonance,substance P receptor,False
+11292655,SPR,substance P receptor,Surface Plasmon Resonance,True
+19903492,SPR,Surface Plasmon Resonance,substance P receptor,True
+1281755,SPR,substance P receptor,Surface Plasmon Resonance,True
+10890254,SS,Synovial sarcoma,Sweet's syndrome,False
+19472813,SS,Synovial sarcoma,Sweet's syndrome,True
+18555039,SS,Synovial sarcoma,Sweet's syndrome,True
+15148101,SS,Sweet's syndrome,Synovial sarcoma,False
+17576331,SS,Sweet's syndrome,Synovial sarcoma,True
+18367418,SS,Synovial sarcoma,Sweet's syndrome,True
+17980783,SS,Synovial sarcoma,Sweet's syndrome,False
+9843005,SS,Sweet's syndrome,Synovial sarcoma,True
+18390387,SS,Synovial sarcoma,Sweet's syndrome,True
+16164716,SS,Sweet's syndrome,Synovial sarcoma,True
+9061658,SS,Sweet's syndrome,Synovial sarcoma,False
+17426076,SS,Sweet's syndrome,Synovial sarcoma,False
+19038320,TAT,Trans-Activation of Transcription,tyrosine aminotransferase,False
+18812201,TAT,Trans-Activation of Transcription,tyrosine aminotransferase,False
+18366791,TAT,Trans-Activation of Transcription,tyrosine aminotransferase,False
+19059290,TAT,Trans-Activation of Transcription,tyrosine aminotransferase,False
+20187576,TEM,transmission electron microscopy,triethylene melamine,True
+20352846,TEM,transmission electron microscopy,triethylene melamine,True
+20085569,TEM,transmission electron microscopy,triethylene melamine,False
+162283,TEM,triethylene melamine,transmission electron microscopy,True
+20398382,TEM,transmission electron microscopy,triethylene melamine,True
+895756,TEM,triethylene melamine,transmission electron microscopy,False
+20207730,TEM,transmission electron microscopy,triethylene melamine,True
+20355703,TEM,transmission electron microscopy,triethylene melamine,True
+20049986,TEM,transmission electron microscopy,triethylene melamine,True
+20055368,TEM,transmission electron microscopy,triethylene melamine,True
+13881598,TEM,triethylene melamine,transmission electron microscopy,False
+20206920,TEM,transmission electron microscopy,triethylene melamine,False
+14051500,TEM,triethylene melamine,transmission electron microscopy,False
+20361517,TEM,transmission electron microscopy,triethylene melamine,False
+8525468,TEM,triethylene melamine,transmission electron microscopy,True
+20355599,TEM,transmission electron microscopy,triethylene melamine,True
+20205275,TEM,transmission electron microscopy,triethylene melamine,False
+20149613,TEM,transmission electron microscopy,triethylene melamine,True
+14117587,TEM,triethylene melamine,transmission electron microscopy,True
+20409218,TEM,transmission electron microscopy,triethylene melamine,True
+20364237,TEM,transmission electron microscopy,triethylene melamine,True
+7371798,TEM,triethylene melamine,transmission electron microscopy,True
+20146511,TEM,transmission electron microscopy,triethylene melamine,True
+20133056,TEM,transmission electron microscopy,triethylene melamine,True
+20175145,TEM,transmission electron microscopy,triethylene melamine,False
+20367054,TEM,transmission electron microscopy,triethylene melamine,True
+14340162,TEM,triethylene melamine,transmission electron microscopy,True
+20097547,TEM,transmission electron microscopy,triethylene melamine,True
+20043934,TEM,transmission electron microscopy,triethylene melamine,False
+20356566,TEM,transmission electron microscopy,triethylene melamine,True
+440324,TEM,triethylene melamine,transmission electron microscopy,False
+20384335,TEM,transmission electron microscopy,triethylene melamine,True
+20047512,TLC,thin layer chromatography,total lung capacity,True
+19876858,TLC,thin layer chromatography,total lung capacity,True
+19609886,TLC,thin layer chromatography,total lung capacity,True
+19740471,TLC,thin layer chromatography,total lung capacity,False
+19762032,TLC,thin layer chromatography,total lung capacity,True
+20480894,TLC,thin layer chromatography,total lung capacity,True
+17690147,TLC,total lung capacity,thin layer chromatography,True
+15766905,TLC,total lung capacity,thin layer chromatography,True
+19565706,TLC,thin layer chromatography,total lung capacity,True
+12009782,TNC,tenascin-C,troponin C,True
+19181384,TNC,tenascin-C,troponin C,False
+18793269,TNC,tenascin-C,troponin C,False
+17703232,TNC,tenascin-C,troponin C,False
+19596991,TNC,tenascin-C,troponin C,True
+18481903,TNT,trinitrotoluene,troponin T,True
+18839246,TNT,trinitrotoluene,troponin T,True
+18419183,TNT,trinitrotoluene,troponin T,False
+18627355,TNT,trinitrotoluene,troponin T,False
+18755196,TNT,trinitrotoluene,troponin T,True
+19703349,TPA,12-O-tetradecanoylphorbol-13-acetate,Tissue plasminogen activator,True
+19243353,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+19317837,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,False
+20036902,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+18927530,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+18357391,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,True
+17709379,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+19952225,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,False
+18753991,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,False
+18685814,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+17547680,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,False
+19080142,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,False
+18819233,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,True
+19262084,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,False
+18203013,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,False
+20101889,TPO,thyroperoxidase,thrombocytopoiesis-stimulating factor,True
+19143871,TPO,thrombocytopoiesis-stimulating factor,thyroperoxidase,False
+6798119,TRF,T-replacing factor,thyrotropin-releasing factor,True
+405206,TRF,thyrotropin-releasing factor,T-replacing factor,True
+224551,TRF,thyrotropin-releasing factor,T-replacing factor,True
+112398,TRF,thyrotropin-releasing factor,T-replacing factor,True
+805741,TRF,thyrotropin-releasing factor,T-replacing factor,True
+6425400,TRF,T-replacing factor,thyrotropin-releasing factor,False
+4201417,TRF,thyrotropin-releasing factor,T-replacing factor,True
+3703869,TSF,thrombocytopoiesis-stimulating factor,T-cell-suppressor factor,True
+7227478,TSF,thrombocytopoiesis-stimulating factor,T-cell-suppressor factor,True
+6981521,TSF,thrombocytopoiesis-stimulating factor,T-cell-suppressor factor,True
+2199204,TSF,thrombocytopoiesis-stimulating factor,T-cell-suppressor factor,True
+10441203,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+2764022,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
+3987723,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+9781904,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
+3044795,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+8092184,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
+7909196,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
+18824871,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,False
+1356785,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+1356784,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+1897573,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+7625447,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+11190824,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+10425618,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome,True
+3376993,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+1609847,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+1609846,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
+11746041,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
+1642813,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
+7541608,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
+10710224,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
+1973721,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+9724341,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+8741870,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+3019515,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+2539717,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,True
+2389800,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome,False
