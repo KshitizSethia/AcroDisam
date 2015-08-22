@@ -1,0 +1,150 @@
+articleID,acronym,correct_expansion,wrong_expansion2
+8170349,ADH,antidiuretic hormone,alcohol dehydrogenase
+19824993,ADH,alcohol dehydrogenase,antidiuretic hormone
+19320452,ADH,alcohol dehydrogenase,antidiuretic hormone
+9333422,ALS,anti-lymphocyte serum,amyotrophic lateral sclerosis
+10302355,ALS,anti-lymphocyte serum,amyotrophic lateral sclerosis
+3672514,ALS,anti-lymphocyte serum,amyotrophic lateral sclerosis
+18923075,BLM,Bloom,bleomycin
+19863834,BPD,bronchopulmonary dysplasia,borderline personality disorder
+18241292,BSA,body surface area,bovine serum albumin
+20229898,CAD,coronary artery disease,Computer aided detection
+20124233,CAD,coronary artery disease,Computer aided detection
+19407978,CAM,Chorioallantoic Membrane,cell adhesion molecules
+19924294,CAM,Chorioallantoic Membrane,cell adhesion molecules
+17929513,CAM,cell adhesion molecules,Chorioallantoic Membrane
+20066899,CAM,Chorioallantoic Membrane,cell adhesion molecules
+18380472,CAM,Chorioallantoic Membrane,cell adhesion molecules
+12208234,CCD,Central Core Disease,Cleidocranial dysplasia
+14670767,CCD,Central Core Disease,Cleidocranial dysplasia
+17314073,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine
+16735466,CDR,complementarity-determining region,Deoxycytidine
+16455793,CDR,complementarity-determining region,Deoxycytidine
+17195803,CLS,Coffin-Lowry syndrome,capillary leak syndrome
+17211986,CP,cleft palate,Corynebacterium parvum
+15880679,CP,cleft palate,Corynebacterium parvum
+20368512,CRF,corticotrophin-releasing factor,chronic renal failure
+19537192,CRF,corticotrophin-releasing factor,chronic renal failure
+19619932,CRF,corticotrophin-releasing factor,chronic renal failure
+10024088,CTX,Cerebrotendinous xanthomatosis,cytoxan
+9080765,CTX,Cerebrotendinous xanthomatosis,cytoxan
+10066446,CTX,Cerebrotendinous xanthomatosis,cytoxan
+20083001,DAT,dopamine transporters,dementia of the Alzheimer's type
+20148872,DAT,dopamine transporters,dementia of the Alzheimer's type
+20157861,DAT,dopamine transporters,dementia of the Alzheimer's type
+16305479,DAT,dementia of the Alzheimer's type,dopamine transporters
+20061077,DAT,dopamine transporters,dementia of the Alzheimer's type
+20199208,DAT,dopamine transporters,dementia of the Alzheimer's type
+12850491,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti
+16458028,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti
+16537118,DBA,Diamond-Blackfan anemia,Dilute Brown Non-Agouti
+19539693,DBA,Dilute Brown Non-Agouti,Diamond-Blackfan anemia
+16226333,DDS,drug delivery system,diaminodiphenyl sulfone
+16354210,DDS,Denys-Drash syndrome,diaminodiphenyl sulfone
+17658251,DDS,drug delivery system,diaminodiphenyl sulfone
+18076855,DDS,Denys-Drash syndrome,diaminodiphenyl sulfone
+12165212,DDS,diaminodiphenyl sulfone,drug delivery system
+10066962,DDS,diaminodiphenyl sulfone,drug delivery system
+14671061,DDS,Denys-Drash syndrome,diaminodiphenyl sulfone
+16282964,DDS,drug delivery system,diaminodiphenyl sulfone
+11331330,EM,Estramustine,Electron microscopy
+10462727,EM,Estramustine,Electron microscopy
+3598276,EM,Estramustine,Electron microscopy
+19857794,EMS,ethyl methane sulfonate,emergency medical service
+19866516,EMS,ethyl methane sulfonate,emergency medical service
+15963565,EMS,ethyl methane sulfonate,emergency medical service
+20232746,ERP,Event-related potentials,endoscopic retrograde pancreatography
+18623197,FA,Fanconi anemia,folic acid
+18778356,FA,folic acid,Fanconi anemia
+19121630,FA,folic acid,Fanconi anemia
+17961254,FAS,fetal alcohol syndrome,fatty acid synthase
+18054075,FAS,fetal alcohol syndrome,fatty acid synthase
+18852517,FAS,fetal alcohol syndrome,fatty acid synthase
+8982552,HPS,hantavirus pulmonary syndrome,Hermansky-Pudlak syndrome
+18629000,HPS,Hermansky-Pudlak syndrome,hantavirus pulmonary syndrome
+9094462,ITP,inosine triphosphate,idiopathic thrombocytopenic purpura
+18989578,MBP,myelin basic protein,mannan-binding protein
+16982837,MBP,mannan-binding protein,myelin basic protein
+11196698,MBP,mannan-binding protein,myelin basic protein
+19517016,MBP,myelin basic protein,mannan-binding protein
+15467404,MBP,mannan-binding protein,myelin basic protein
+15060079,MBP,mannan-binding protein,myelin basic protein
+17883369,MBP,mannan-binding protein,myelin basic protein
+16595889,MBP,mannan-binding protein,myelin basic protein
+16273761,MBP,mannan-binding protein,myelin basic protein
+17415991,MBP,mannan-binding protein,myelin basic protein
+7515696,MBP,mannan-binding protein,myelin basic protein
+7812947,MCC,mutated in colorectal carcinomas,Merkel cell carcinoma
+19504066,MHC,myosin heavy chains,major histocompatibility complex
+19882756,MHC,major histocompatibility complex,myosin heavy chains
+20201828,MHC,myosin heavy chains,major histocompatibility complex
+18468460,MHC,myosin heavy chains,major histocompatibility complex
+15920752,NBS,Nijmegen breakage syndrome,neuroblastomas
+20089118,NBS,Nijmegen breakage syndrome,neuroblastomas
+18226555,OCD,osteochondritis dissecans,Obsessive-Compulsive Disorder
+10693966,PCA,para-chloroamphetamine,passive cutaneous anaphylaxis
+20129681,PCA,principal-component analysis,para-chloroamphetamine
+12641656,PCA,passive cutaneous anaphylaxis,para-chloroamphetamine
+11146385,PCA,passive cutaneous anaphylaxis,posterior cerebral artery
+8938620,PCA,para-chloroamphetamine,principal-component analysis
+3134124,PCB,Procarbazine,polychlorinated biphenyls
+321233,PCB,Procarbazine,polychlorinated biphenyls
+11000577,PCB,Procarbazine,polychlorinated biphenyls
+15315798,PCB,Procarbazine,polychlorinated biphenyls
+11313116,PCB,Procarbazine,polychlorinated biphenyls
+11868631,PCB,Procarbazine,polychlorinated biphenyls
+19442831,PCP,pentachlorophenate,psychotomimetic phencyclidine
+18065667,PCP,Pneumocystis pneumonia,pentachlorophenate
+12612443,PEP,phosphoenolpyruvate,peplomycin
+6690241,PHA,Pelger-Huet anomaly,phytohemagglutinin
+16724080,PHA,Pelger-Huet anomaly,phytohemagglutinin
+1951327,PHA,Pelger-Huet anomaly,phytohemagglutinin
+6244014,PHA,Pelger-Huet anomaly,phytohemagglutinin
+15122735,PVC,Premature ventricular contractions,polyvinyl chloride
+19338595,PVC,polyvinyl chloride,Premature ventricular contractions
+15168441,RA,refractory anemia,rheumatoid arthritis
+10762304,RA,refractory anemia,rheumatoid arthritis
+20412708,RA,rheumatoid arthritis,refractory anemia
+10629588,RA,refractory anemia,rheumatoid arthritis
+11380604,RA,refractory anemia,rheumatoid arthritis
+16445979,RA,refractory anemia,rheumatoid arthritis
+18691343,RA,refractory anemia,rheumatoid arthritis
+20374310,RA,rheumatoid arthritis,refractory anemia
+20398000,RA,rheumatoid arthritis,refractory anemia
+20332595,RA,rheumatoid arthritis,refractory anemia
+20346245,RA,rheumatoid arthritis,refractory anemia
+15860935,RA,refractory anemia,rheumatoid arthritis
+20545211,RA,rheumatoid arthritis,refractory anemia
+20391509,RA,rheumatoid arthritis,refractory anemia
+19499580,RA,refractory anemia,rheumatoid arthritis
+19368128,RSV,Rous sarcoma virus,respiratory syncytial virus
+18037405,RSV,Rous sarcoma virus,respiratory syncytial virus
+17913830,RSV,Rous sarcoma virus,respiratory syncytial virus
+19625398,RSV,respiratory syncytial virus,Rous sarcoma virus
+18283331,RSV,Rous sarcoma virus,respiratory syncytial virus
+19737308,SCD,sickle cell disease,Sudden cardiac death
+4913699,TEM,triethylene melamine,transmission electron microscopy
+6067443,TEM,triethylene melamine,transmission electron microscopy
+895756,TEM,triethylene melamine,transmission electron microscopy
+8525468,TEM,triethylene melamine,transmission electron microscopy
+14466717,TEM,triethylene melamine,transmission electron microscopy
+19893743,TLC,thin layer chromatography,total lung capacity
+19796182,TLC,thin layer chromatography,total lung capacity
+18073303,TPO,thyroperoxidase,thrombopoietin
+18064720,TPO,thyroperoxidase,thrombopoietin
+17963848,TPO,thyroperoxidase,thrombopoietin
+17400807,TPO,thyroperoxidase,thrombopoietin
+6420206,TRF,thyrotropin-releasing factor,T-replacing factor
+9004128,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+15150778,WBS,Wiedemann-Beckwith syndrome,Williams-Beuren syndrome
+11170076,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+16930009,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+15933846,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+16140988,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+10440826,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+15303821,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+17658187,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+11170085,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+15770126,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+15994861,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome
+8968740,WBS,Williams-Beuren syndrome,Wiedemann-Beckwith syndrome

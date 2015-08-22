@@ -1,0 +1,427 @@
+articleID,acronym,correct_expansion,wrong_expansion2
+2964643,ADH,antidiuretic hormone,and antidiuretic hormone
+17571056,ADH,antidiuretic hormone,an antidiuretic hormone
+2986486,ADH,antidiuretic hormone,an antidiuretic hormone
+15772501,ADH,antidiuretic hormone,and antidiuretic hormone
+2458093,ALS,anti-lymphocyte serum,antilymphocytic serum
+8489312,ALS,anti-lymphocyte serum,anti-rat lymphocyte serum
+8525521,ALS,anti-lymphocyte serum,anti-mouse lymphocyte serum
+3260183,ALS,anti-lymphocyte serum,anti-mouse lymphocyte sera
+9039923,ALS,anti-lymphocyte serum,an antilymphocyte serum
+12457363,ALS,anti-lymphocyte serum,and antilymphocyte serum
+1417190,ALS,anti-lymphocyte serum,anti-rat lymphocyte serum
+16042064,ALS,anti-lymphocyte serum,antilimphocitic serum
+8932289,ALS,anti-lymphocyte serum,antilymphocyte antiserum
+16201179,ALS,anti-lymphocyte serum,anti-rat lymphocyte serum
+7709451,ALS,anti-lymphocyte serum,anti-mouse lymphocyte serum
+12792521,ALS,anti-lymphocyte serum,anti-mouse lymphocyte serum
+18054789,BLM,Bloom,bleomycin
+19501970,BSA,body surface area,burned surface area
+19545393,BSA,body surface area,between body surface area
+18664845,CAD,Computer aided detection,computer-aided diagnosis
+18215501,CAD,Computer aided detection,computer-assisted diagnosis
+19114333,CAD,Computer aided detection,computer-aided diagnostic
+19963750,CAD,Computer aided detection,computer-aided diagnosis
+19697693,CAD,Computer aided detection,computer aided diagnostic
+18572123,CAD,Computer aided detection,Computer-aided diagnosis
+19163567,CAD,Computer aided detection,computer-aided diagnosis
+18383556,CAD,Computer aided detection,computer-aided diagnosis
+20033597,CAD,Computer aided detection,computer-assisted diagnosis
+19409753,CAD,Computer aided detection,computer-aided diagnosis
+18520568,CAD,Computer aided detection,computer-assisted diagnosis
+18520567,CAD,Computer aided detection,computer-aided diagnosis
+19906311,CAD,Computer aided detection,Computer-aided diagnosis
+19673208,CAD,Computer aided detection,computer-aided diagnosis
+18561648,CAD,Computer aided detection,computer-aided diagnostic
+20376799,CAD,coronary artery disease,coronary atherosclerotic disease
+19787727,CAD,Computer aided detection,computer-aided diagnosis
+18311000,CAD,Computer aided detection,computer-aided diagnosis
+18313899,CAD,Computer aided detection,computer-aided diagnosis
+19884071,CAD,Computer aided detection,Computer-aided diagnosis
+19562230,CAD,Computer aided detection,computer-assisted diagnosis
+18423313,CAD,Computer aided detection,computer-assisted detection
+18278213,CAD,Computer aided detection,computer-aided diagnosis
+18574139,CAD,Computer aided detection,computer-aided diagnosis
+19864511,CAD,Computer aided detection,computer-aided diagnosis
+19373538,CAD,Computer aided detection,computer-aided diagnosis
+19175137,CAD,Computer aided detection,computer-aided diagnosis
+19223423,CAD,Computer aided detection,computer-assisted diagnosis
+18328470,CAD,Computer aided detection,computer-aided diagnosis
+18253070,CAD,Computer aided detection,computer aided diagnosis
+18280927,CAD,Computer aided detection,computer-aided diagnosis
+18514362,CAD,Computer aided detection,computer-aided diagnosis
+19721831,CAD,Computer aided detection,computer-aided diagnostic
+18855300,CAD,Computer aided detection,computer-assisted detection
+18606749,CAD,Computer aided detection,computer-aided diagnosis
+19964999,CAD,Computer aided detection,computer-aided diagnosis
+19175108,CAD,Computer aided detection,computer-aided diagnosis
+19965010,CAD,Computer aided detection,computer aided diagnosis
+19661736,CAD,Computer aided detection,Computer-aided diagnosis
+19615468,CAD,Computer aided detection,computer-aided diagnostic
+19175088,CAD,Computer aided detection,computer-aided diagnosis
+20043591,CAD,Computer aided detection,computer aided diagnosis
+18206613,CAD,Computer aided detection,computer-aided diagnosis
+19171521,CAD,Computer aided detection,computer-aided diagnosis
+19163336,CAD,Computer aided detection,Computer-aided diagnosis
+19964707,CAD,Computer aided detection,Computer assisted diagnosis
+19444587,CAD,Computer aided detection,computer-assisted diagnosis
+18239963,CAD,Computer aided detection,computer-aided diagnosis
+18838848,CAD,Computer aided detection,computer-aided diagnosis
+19965015,CAD,Computer aided detection,computer-assisted diagnosis
+19020477,CAD,Computer aided detection,computer-aided diagnosis
+20443473,CAD,Computer aided detection,computer-assisted diagnostic
+17936269,CAM,cell adhesion molecules,containing cell adhesion molecule
+18637183,CAM,Chorioallantoic Membrane,Chorio Allontoic Membranes
+17202440,CAM,cell adhesion molecules,Chorioallantoic Membrane
+19469865,CAM,Chorioallantoic Membrane,chorioallantoic membrane model
+17397316,CAM,cell adhesion molecules,Circulating cell adhesion molecules
+17606991,CAM,cell adhesion molecules,cell-cell adhesion molecule
+14571277,CCD,Cleidocranial dysplasia,classical cleidocranial dysplasia
+11768584,CCD,Cleidocranial dysplasia,causes cleidocranial dysplasia
+16279370,CCD,Cleidocranial dysplasia,Cleidocranial dysostosis
+11367839,CCD,Cleidocranial dysplasia,Cleidocranial dysostosis
+17080780,CCD,Cleidocranial dysplasia,cleidocranial dysostosis
+10416150,CCD,Cleidocranial dysplasia,CBFA1 cause cleidocranial dysplasia
+11515602,CCD,Cleidocranial dysplasia,cleidocranial dysostosis
+8362902,CCD,Cleidocranial dysplasia,classic cleidocranial dysplasia
+12169464,CCD,Cleidocranial dysplasia,cerebellar cortical dysplasia
+20297700,CCD,Cleidocranial dysplasia,cleidocranial dysostosis
+18797104,CCD,Cleidocranial dysplasia,Cleidocranial dysostosis
+12742882,CDA,Congenital dyserythropoietic anemias,chlorodeoxyadenosine
+11309066,CP,Corynebacterium parvum,clindamycin phosphate
+7195137,CPDD,cis-platinum diammine dichloride,Cis-platinum dichloride
+7192425,CPDD,cis-platinum diammine dichloride,cisplatinumdiamminodichloride
+11254235,CPDD,calcium pyrophosphate deposition disease,calcium pyrophosphate dihydrate disease
+15140740,CPDD,calcium pyrophosphate deposition disease,Calcium pyrophosphate dihydrate deposition
+19090871,CRF,chronic renal failure,case-report form
+18249009,DAT,dementia of the Alzheimer's type,dementia of Alzheimer type
+20132487,DAT,dopamine transporters,DA transporter
+16472359,DAT,dementia of the Alzheimer's type,dementia of Alzheimer type
+17950510,DAT,dementia of the Alzheimer's type,Dementia of Alzheimer Type
+19906957,DAT,dopamine transporters,DA transporter
+19628755,DAT,dopamine transporters,DA transporter
+19855096,DAT,dopamine transporters,DA transporter
+19560533,DAT,dopamine transporters,DA transporter
+19748494,DAT,dopamine transporters,DA transporter
+16894106,DAT,dementia of the Alzheimer's type,dopamine transporters
+16375660,DAT,dementia of the Alzheimer's type,developing all dementias
+20102379,DAT,dementia of the Alzheimer's type,dementia of Alzheimer type
+19928382,DAT,dopamine transporters,DA transporter
+19473956,DAT,dementia of the Alzheimer's type,dementia of Alzheimer type
+17330392,DAT,dementia of the Alzheimer's type,Dementia of Alzheimer type
+16567037,DAT,dementia of the Alzheimer's type,dementia of Alzheimer type
+16538589,DAT,dementia of the Alzheimer's type,dementia of Alzheimer type
+19597092,DAT,dementia of the Alzheimer's type,dementia of Alzheimer type
+19560046,DAT,dopamine transporters,DA transporter
+19952519,DDS,drug delivery system,diaminodiphenyl sulfone
+8576606,DDS,diaminodiphenyl sulfone,drugs dapsone
+1976775,DDS,diaminodiphenyl sulfone,disposition of dapsone
+15208923,DDS,diaminodiphenyl sulfone,diaminodiphenylsulphone
+11710542,DDS,diaminodiphenyl sulfone,drug dapsone
+7640448,DI,DNA index,DNA indices
+7729134,DI,DNA index,DNA indices
+9917132,DI,DNA index,diploid
+8917354,DI,DNA index,DNA indices
+7731942,DI,DNA index,DNA indices
+15178102,EMS,ethyl methane sulfonate,ethylmethanesulphonate
+18641944,EMS,ethyl methane sulfonate,especially ethyl methanesulfonate
+19766376,EMS,emergency medical service,Emergency Medical System
+16043389,EMS,ethyl methane sulfonate,ethyl methanesulphonate
+19103426,EMS,ethyl methane sulfonate,ethylene methylsulfonate
+15576360,EMS,ethyl methane sulfonate,either ethylmethanesulfonate
+17482447,EMS,ethyl methane sulfonate,ethyl methanesulphonate
+16777474,EMS,ethyl methane sulfonate,ethylmethanesulphonate
+17164206,EMS,ethyl methane sulfonate,Ethylmethane sulphonate
+19955331,EMS,ethyl methane sulfonate,ethyl methanesulphonate
+20003424,EMS,ethyl methane sulfonate,ethyl methanesulphonate
+20394876,EMS,emergency medical service,emergency medical system
+17683471,EMS,ethyl methane sulfonate,Ethyl methanesulphonate
+17428339,EMS,ethyl methane sulfonate,ethyl methanesulphonate
+19883257,EMS,ethyl methane sulfonate,ethyl methanesulphonate
+17284775,EMS,ethyl methane sulfonate,ethyl methanesulphonate
+20304031,ERP,Event-related potentials,early event-related potential
+20045677,ERP,Event-related potentials,event-related brain potential
+20136734,ERP,Event-related potentials,event-related brain potential
+20026179,ERP,Event-related potentials,event-related brain potential
+20206253,FA,folic acid,folate
+18661990,FA,folic acid,folate derivative
+18201560,FA,folic acid,folate
+20066475,HR,heart rate,hazard ratio
+20404751,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19954101,ITP,idiopathic thrombocytopenic purpura,Immune Thrombocytopenic Purpura
+20113906,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenic purpura
+19845743,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenia
+19816666,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenic purpura
+19932434,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+19932436,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+19932430,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenic purpura
+19932433,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+19932432,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+20000868,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenic purpura
+19731307,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19846889,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+19852693,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+15655502,ITP,inosine triphosphate,intratracheal pressure
+19897578,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+20007808,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenia
+19925495,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+20130241,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+19758220,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19824872,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenia
+20100009,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19767509,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia purpura
+19955713,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+20043468,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19968458,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19900049,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19932431,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+19878056,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenic purpura
+19932426,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+19932428,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19852803,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19740094,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+20350664,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+19200301,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19740448,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19705429,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenic purpura
+20031296,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+20096011,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19932429,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+19843480,ITP,idiopathic thrombocytopenic purpura,Immune thrombocytopenic purpura
+19794139,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+20131303,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+20405685,ITP,idiopathic thrombocytopenic purpura,inosine triphosphate
+19858712,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+20100010,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+19765475,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenic purpura
+20088841,ITP,idiopathic thrombocytopenic purpura,immune thrombocytopenia
+20046527,ITP,idiopathic thrombocytopenic purpura,idiopathic thrombocytopenia
+15063720,MAF,macrophage activating factor,microglia activation factor
+16342171,MAF,macrophage activating factor,microglia activation factor
+12796737,MBP,mannan-binding protein,myelin basic protein
+9188718,MBP,mannan-binding protein,myelin basic protein
+9250932,MCC,mutated in colorectal carcinomas,mutated in colon cancer
+20005143,MCC,Merkel cell carcinoma,Merkel cell carcinoma carcinoma
+8032525,MCC,mutated in colorectal carcinomas,mutated in colorectal cancer
+12901725,MCC,mutated in colorectal carcinomas,mutated in colon cancer
+20012395,MHC,major histocompatibility complex,mouse major histocompatibility complex
+19755422,MHC,major histocompatibility complex,major histocompatibility
+19808674,MHC,major histocompatibility complex,murine major histocompatibility complex
+20122519,MRS,magnetic resonance spectroscopy,MR spectroscopy
+20389267,MRS,magnetic resonance spectroscopy,MR spectroscopy
+15068454,MRS,Melkersson-Rosenthal Syndrome,Melkersson-Rosenthal
+20109726,MRS,magnetic resonance spectroscopy,MR spectroscopy
+20028894,MRS,magnetic resonance spectroscopy,MR spectroscopy
+20092374,MRS,magnetic resonance spectroscopy,MR spectroscopy
+20100055,MRS,magnetic resonance spectroscopy,MR spectroscopy
+16199695,NBS,neuroblastomas,newborn screening
+18681838,NPC,Niemann-Pick C1,Niemann-Pick
+19036591,OCD,osteochondritis dissecans,of osteochondritis dissecans
+20104156,OCD,osteochondritis dissecans,of osteochondritis dissecans
+11503979,OCD,osteochondritis dissecans,osteochondral defect
+11227349,OCD,osteochondritis dissecans,osteochondral defects
+15525932,OCD,osteochondritis dissecans,of osteochondritis dissecans
+20032735,OCD,osteochondritis dissecans,of osteochondritis dissecans
+11172259,OCD,osteochondritis dissecans,of osteochondritis dissecans
+18038231,OCD,osteochondritis dissecans,of osteochondritis dissecans
+11951196,OCD,osteochondritis dissecans,of osteochondritis dissecans
+12043980,OCD,osteochondritis dissecans,osteochondral defect
+15253076,OCD,osteochondritis dissecans,of osteochondritis dissecans
+12355306,OCD,osteochondritis dissecans,of osteochondritis dissecans
+11922369,OCD,osteochondritis dissecans,of osteochondritis dissecans
+18256095,OCD,osteochondritis dissecans,of osteochondritis dissecans
+18929205,OCD,osteochondritis dissecans,of osteochondritis dissecans
+10694023,OCD,osteochondritis dissecans,osteochondral defects
+12911238,OCD,osteochondritis dissecans,osteochondral defects
+17205560,OCD,osteochondritis dissecans,of osteochondritis dissecans
+12659674,PAC,P1 artificial chromosomes,plasmid artificial chromosome
+15072210,PAC,premature atrial contraction,premature atrial complexes
+16635992,PAC,premature atrial contraction,premature atrial complex
+16627441,PAC,premature atrial contraction,premature atrial complex
+3435079,PAF,pure autonomic failure,progressive autonomic failure
+12757475,PCA,posterior cerebral artery,posterior cerebral
+19224364,PCA,para-chloroamphetamine,passive cutaneous anaphylaxis
+19446688,PCA,patient controlled analgesia,patient-controlled anesthesia
+15476460,PCA,posterior cerebral artery,posterior cerebral
+18997527,PCA,patient controlled analgesia,principal-component analysis
+20122686,PCB,polychlorinated biphenyls,polychlorobiphenyl
+7001223,PCB,Procarbazine,polychlorinated biphenyl
+20106937,PCB,polychlorinated biphenyls,prenatal polychlorinated biphenyl
+19183964,PCP,psychotomimetic phencyclidine,produce phencyclidine
+18573247,PCP,psychotomimetic phencyclidine,psychotomimetic drug phencyclidine
+18039569,PCP,pentachlorophenate,potential pentachlorophenol
+20080124,PCP,psychotomimetic phencyclidine,psychotomimetic drug phencyclidine
+19035050,PCP,Pneumocystis pneumonia,Pneumocystis carinii pneumonia
+18544202,PCP,Pneumocystis pneumonia,Pneumocystis carinii pneumonia
+20126455,PCP,Pneumocystis pneumonia,Pneumocystis cause pneumonia
+18038800,PCP,Pneumocystis pneumonia,Pneumocystis carinii pneumonia
+18442007,PCP,Pneumocystis pneumonia,Pneumocystis carinii pneumonia
+19631093,PCP,Pneumocystis pneumonia,Pneumocystis carinii pneumonia
+18782858,PCP,Pneumocystis pneumonia,pneumocystis carinii pneumonia
+19822174,PCP,psychotomimetic phencyclidine,psychotomimetic drug phencyclidine
+19828210,PCP,Pneumocystis pneumonia,Pneumocystis carinii pneumonia
+18482201,PCP,Pneumocystis pneumonia,pathogen that causes pneumonia
+18177224,PCP,Pneumocystis pneumonia,Pneumocystis carinii pneumonia
+18751889,PEP,phosphoenolpyruvate,presence of phosphoenolpyruvate
+12057975,PEP,phosphoenolpyruvate,prefer phosphoenolpyruvate
+9254594,PEP,peplomycin,phosphoenolpyruvate
+14596832,PEP,phosphoenolpyruvate,prepare phosphoenolpyruvate
+16780261,PVC,Premature ventricular contractions,Premature ventricular complexes
+19553746,PVC,Premature ventricular contractions,premature ventricular complexes
+19879531,PVC,Premature ventricular contractions,premature ventricular complexes
+19272942,PVC,Premature ventricular contractions,premature ventricular complex
+16441725,PVC,Premature ventricular contractions,premature ventricular complex
+18339610,PVC,Premature ventricular contractions,Premature ventricular complex
+20042236,PVC,polyvinyl chloride,plasticized polyvinyl chloride
+11386509,PVC,Premature ventricular contractions,premature ventricular complex
+17004338,PVC,Premature ventricular contractions,premature ventricular complexes
+14566296,PVC,Premature ventricular contractions,premature ventricular complex
+11341081,PVC,Premature ventricular contractions,premature ventricular complexes
+18783581,PVC,polyvinyl chloride,plasticized polyvinyl chloride
+18294486,PVC,Premature ventricular contractions,premature ventricular complex
+10642129,PVC,Premature ventricular contractions,premature ventricular complex
+17946766,PVC,Premature ventricular contractions,premature ventricular complex
+19793944,SCD,sickle cell disease,sickle cell disorder
+20385437,SCD,sickle cell disease,sickle cell disorder
+15754181,SPR,substance P receptor,SP receptors
+7532508,SS,Sweet's syndrome,Synovial sarcoma
+19334077,TAT,Trans-Activation of Transcription,the transactivator of transcription
+19038320,TAT,Trans-Activation of Transcription,transcriptional activator
+19573019,TAT,Trans-Activation of Transcription,transactivator of transcription
+18595131,TAT,Trans-Activation of Transcription,Transactivating Transcription
+6527218,TAT,Thematic Apperception Test,the achievement motive
+18978042,TAT,Trans-Activation of Transcription,twin arginine translocation
+18760470,TAT,Trans-Activation of Transcription,trans-activating transcriptor
+19047062,TAT,Trans-Activation of Transcription,transactivator of transcription
+3110615,TEM,triethylene melamine,to triethylenemelamine
+7686626,TEM,triethylene melamine,to triethylenemelamine
+14408233,TEM,triethylene melamine,triethanomelamine
+20133870,TEM,transmission electron microscopy,triethylene melamine
+7374659,TEM,triethylene melamine,the chemical mutagen
+7686625,TEM,triethylene melamine,to triethylenemelamine
+4000146,TEM,triethylene melamine,to treatment with MH
+15316211,TLC,total lung capacity,than total lung capacity
+20006052,TLC,thin layer chromatography,thin-layer liquid chromatography
+17875993,TMP,trimethoprim,to trimethoprim
+18670770,TMP,trimethoprim,to trimethoprim
+15561838,TMP,trimethoprim,to trimethoprim
+10760841,TMP,trimethoprim,the trimethoprim
+11442781,TMP,trimethoprim,trimethoprim-sulphadiazine
+7751001,TMP,trimethylpsoralen,to thymidine monophosphate
+10714438,TMP,trimethylpsoralen,thymidine monophosphate
+11919550,TMP,trimethylpsoralen,thymidine monophosphate
+3521740,TMP,trimethylpsoralen,thymidine monophosphate
+19950924,TMP,trimethoprim,the trimethoprim
+11961053,TMP,trimethylpsoralen,threo-methylphenidate
+15120732,TMP,trimethoprim,trimethoprim-sulphamethoxazole
+11454990,TNC,tenascin-C,the healing process
+19476386,TNT,trinitrotoluene,techniques against trinitrotoluene
+19756280,TNT,trinitrotoluene,to trinitrotoluene
+19215963,TNT,trinitrotoluene,Tritonal particles
+20038158,TNT,trinitrotoluene,to trinitrotoluene
+19200649,TNT,trinitrotoluene,the nitroaromatics
+19768635,TPA,topical application,tetradecanoylphorbol-13-acetate
+20237492,TPA,topical application,tetradecanoylphorbol-13-acetate
+19715751,TPA,topical application,tetradecanoyl phorbol-13-acetate
+20045496,TPA,topical application,tetradecanoyl-phorbol-13-acetate
+19420332,TPA,topical application,tetradecanoyl-phorbol-13-acetate
+19470390,TPA,topical application,tetradecanoylphorbol-13-acetate
+19657354,TPA,topical application,tetradecanoylphorbol-13-acetate
+20138977,TPA,topical application,tetradecanoylphorbol-13-acetate
+20026373,TPA,topical application,tetradecanoylphorbol-13-acetate
+19414503,TPA,topical application,tetradecanoylphorbol-13-acetate
+19335688,TPA,topical application,tetradecanoylphorbol-13-acetate
+20016498,TPA,topical application,tetradecanoyl phorbol-13-acetate
+20121949,TPA,topical application,tetradecanoyl phorbol acetate
+19623559,TPA,topical application,tetradecanoylphorbol-13-acetate
+20172950,TPA,topical application,tetradecanoylphorbol 13-acetate
+19526458,TPA,topical application,tetradecanoyl phorbol-13-acetate
+20155627,TPA,topical application,tetradecanoylphorbol-13-acetate
+19840844,TPA,topical application,tetradecanoylphorbol-13-acetate
+19154436,TPA,topical application,tetradecanoylphorbol-13-acetate
+20047593,TPA,topical application,tetradecanoyl phorbol-13-acetate
+19633291,TPA,topical application,tetradecanoylphorbol-13-acetate
+19519169,TPA,topical application,tetradecanoylphorbol 13-acetate
+20206692,TPA,topical application,tetradecanoylphorbol-13-acetate
+19626033,TPA,topical application,tetradecanoylphorbol-13-acetate
+20132810,TPA,topical application,tetradecanoylphorbol-13-acetate
+19189300,TPA,topical application,tetradecanoyl-13-phorbol acetate
+19409374,TPA,topical application,tetradecanoylphorbol-13-acetate
+20390770,TPA,topical application,tetradecanoylphorbol-13-acetate
+19577446,TPA,topical application,tetradecanoylphorbol-acetate
+19164581,TPA,topical application,tetradecanoylphorbol-13-acetate
+19168130,TPA,topical application,tetradecanoylphorbol-13-acetate
+19919952,TPA,topical application,tetradecanoylphorbol 13-acetate
+19379723,TPA,topical application,tetradecanoylphorbol-13-acetate
+19703349,TPA,topical application,tetradecanoylphorbol-13-acetate
+19755658,TPA,topical application,tetradecanoyl phorbol-13-acetate
+19181503,TPA,topical application,tetradecanoyl phorbol-13-acetate
+19759192,TPA,topical application,tetradecanoylphorbol-13-acetate
+19910455,TPA,topical application,tetradecanoyl phorbol-13-acetate
+19808857,TPA,topical application,tetradecanoylphorbol-13-acetate
+20179211,TPA,topical application,tetradecanoylphorbol-13-acetate
+19707983,TPA,Tissue plasminogen activator,Tissue-type plasminogen activator
+19755418,TPA,topical application,tetradecanoylphorbol-13-acetate
+19760383,TPA,topical application,tetradecanoylphorbol-13-acetate
+19458037,TPA,topical application,tetradecanoyl-phorbor-13-acetate
+20004183,TPA,topical application,tetradecanoylphorbol-13-acetate
+19587094,TPA,topical application,tetradecanoylphorbol-13-acetate
+19161993,TPA,topical application,tetradecanoylphorbol-13-acetate
+19244111,TPA,topical application,tetradecanoylphorbol-13-acetate
+19639210,TPA,topical application,tetradecanoyl phorbol-13 acetate
+20308057,TPA,topical application,tetradecanoylphorbol-13-acetate
+19521986,TPA,topical application,tetradecanoyl-phorbol-13-acetate
+19888641,TPA,topical application,tetradecanoyl-phorbol-13-acetate
+19631552,TPA,topical application,tetradecanoylphorbol-13-acetate
+19609061,TPA,topical application,tetradecanoylphorbol 13-acetate
+19481937,TPA,topical application,tetradecanoylphorbol-13-acetate
+20423347,TPA,topical application,tetradecanoylphorbol-13-acetate
+19945525,TPA,topical application,tetradecanoylphorbol 13-acetate
+19429354,TPA,topical application,tetradecanoyl-phorbol-13-acetate
+19366707,TPA,topical application,tetradecanoylphorbol 13-acetate
+20406988,TPA,topical application,tetradecanoyl-phorbol-13-acetate
+19158151,TPA,topical application,tetradecanoylphorbol-13-acetate
+19176525,TPA,topical application,tetradecanoylphorbol-13-acetate
+19693770,TPA,topical application,tetradecanoylphorbol 13-acetate
+19168148,TPA,topical application,tetradecanoylphorbol-13-acetate
+20146433,TPA,topical application,tetradecanoylphorbol-13-acetate
+19414336,TPA,topical application,tetradecanoylphorbol-13-acetate
+20384317,TPA,topical application,tetradecanoylphorbol-13-acetate
+19432991,TPA,topical application,tetradecanoylphorbol-13-acetate
+19787145,TPA,topical application,tetradecanoylphorbol-13-acetate
+19414379,TPA,topical application,tetradecanoylphorbol-13-acetate
+19746919,TPA,topical application,tetradecanoylphorbol-13-acetate
+19447859,TPA,topical application,tetradecanoylphorbol 13-acetate
+19243353,TPO,thyroperoxidase,thyroid peroxidase
+19092289,TPO,thyroperoxidase,thyroid peroxidase
+19194833,TPO,thyroperoxidase,thyroid peroxidase
+19731774,TPO,thyroperoxidase,Thyroid peroxidase
+17482640,TPO,thyroperoxidase,thyroid peroxidase
+18238739,TPO,thyroperoxidase,thyroperoxidase antibody
+18695079,TPO,thyroperoxidase,thyroid peroxidase
+19106271,TPO,thyroperoxidase,thyroid-peroxidase antibody
+17504869,TPO,thyroperoxidase,thyroid peroxidase
+18357551,TPO,thyroperoxidase,thyroid peroxidase
+18070829,TPO,thyroperoxidase,thyroid peroxidase
+19141579,TPO,thyroperoxidase,thyroid peroxidase
+18538668,TPO,thyroperoxidase,thyroid peroxidase antibodies
+18031322,TPO,thyroperoxidase,thyroid peroxidase
+18852925,TPO,thyroperoxidase,thyroid peroxidase antibodies
+18685814,TPO,thyroperoxidase,thyroid peroxidase
+17547680,TPO,thyroperoxidase,thyroid peroxidase
+18299471,TPO,thyroperoxidase,thyroid peroxidase antibody
+19092255,TPO,thyroperoxidase,thyroid peroxidase antibodies
+19549735,TPO,thyroperoxidase,thyroid peroxidase
+17696828,TPO,thyroperoxidase,thyroid peroxidase
+17584828,TPO,thyroperoxidase,thyroid peroxidase
+17651886,TPO,thyroperoxidase,thyroid peroxidase
+19066738,TPO,thyroperoxidase,thyroid peroxidase
+19726232,TPO,thyroperoxidase,thyroid peroxidase
+18466208,TPO,thyroperoxidase,thyroid peroxidase
+20101889,TPO,thyroperoxidase,thyroid peroxidase
+19738362,TPO,thyroperoxidase,thyroid peroxidase
+18212751,TPO,thyroperoxidase,thyroid peroxidase
+19189706,TPO,thyroperoxidase,thyroid peroxidase
+19045937,TPO,thyroperoxidase,thyroid peroxidase
+2551657,TRF,thyrotropin-releasing factor,TSH-releasing factor
+6605406,TRF,T-replacing factor,This supernatant factor

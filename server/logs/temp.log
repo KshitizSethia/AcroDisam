@@ -1,0 +1,4 @@
+Correct: 9921, Incorrect: 2376 (0.868266 are invalid)
+148 flukes
+2063 on minimum confidence
+['DDS', 'NBS', 'CDR', 'PCA', 'SPR', 'Orf', 'TAT', 'Ice', 'DI', 'EM', 'MCC', 'TEM', 'MAF', 'SLS', 'CCD', 'eCG', 'TMP', 'CP', 'TNC', 'Epi', 'CDA', 'PAC', 'BLM', 'CCl4', 'HR', 'MBP', 'PCD', 'ADH', 'DAT', 'CAM', 'FAS', 'Ala', 'TNT', 'BSA', 'TPO', 'PCP', 'TPA', 'TSF']

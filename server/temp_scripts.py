@@ -1,8 +1,337 @@
 """
 **************************************************************************************************
-Check what's the role of PMID in MSH Corpus
+Figure out the reason for "expansion not predicted"
+
+"""
+from __future__ import division
+import cPickle
+from string_constants import folder_logs, min_confidence
+from os.path import sep
+
+correct_confidence = []
+incorrect_confidence = []
+min_conf_count = 0
+count_flukes = 0
+erroneous_acronyms=[]
+report = cPickle.load(
+    open(folder_logs + "benchmark"+sep+"report_benchmark_MSH_algo7.pickle", "rb"))
+for articleID, expansion_details in report:
+    for expansion_detail in expansion_details:
+        confidence = expansion_detail[4]
+        if(expansion_detail[1]):
+            if(confidence != min_confidence):
+                correct_confidence.append(confidence)
+            else:
+                count_flukes+=1
+        else:
+            if(confidence != min_confidence):
+                incorrect_confidence.append(confidence)
+            else:
+                min_conf_count += 1
+                if(expansion_detail[0] not in erroneous_acronyms):
+                    erroneous_acronyms.append(expansion_detail[0])
+
+print("Correct: %d, Incorrect: %d (%f are invalid)" % (len(correct_confidence), len(
+    incorrect_confidence) + min_conf_count, min_conf_count / (len(incorrect_confidence) + min_conf_count)))
+print("%d flukes" %count_flukes)
+print("%d on minimum confidence" % min_conf_count)
+print(sorted(erroneous_acronyms, key=lambda acronym: acronym.lower))
+
+
+def showPlot(correct_confidence, incorrect_confidence):
+    from matplotlib import pyplot as plt
+    plt.subplot(211)
+    plt.title("correct")
+    plt.hist(correct_confidence, bins=100)
+    plt.subplot(212)
+    plt.title("incorrect")
+    plt.hist(incorrect_confidence, bins=100)
+    plt.show()
+
+#showPlot(correct_confidence, incorrect_confidence)
+
+"""
+**************************************************************************************************
+Simulate an ensemble of LDA and SVC (based on who is more confident (without normalization)
+
+Ensemble not giving statistically significant gain. Need to look for improvements other places.
+Gain: 40 out of 12445 predictions, not statistically significant
+"""
+"""
+import os
+import cPickle
+from string_constants import folder_logs, file_lda_model
+from matplotlib import pyplot as plt
+import numpy
+
+def simulateEnsemble(report_lda, report_svc, gap):
+    simulatedEnsemble = []
+    corrected_in_lda = 0
+    lost_from_lda = 0
+    corrected_in_svc = 0
+    lost_from_svc = 0
+    for articleID in report_lda:
+        expansion_details_lda = report_lda[articleID]
+        expansion_details_svc = report_svc[articleID]
+        for expansion_detail_lda in expansion_details_lda:
+            acronym1 = expansion_detail_lda[0]
+            expansion_detail_svc = [element for element in expansion_details_svc if element[0] == acronym1][0]
+            confidence_lda = expansion_detail_lda[4]
+            confidence_svc = expansion_detail_svc[4]
+            if (confidence_lda - confidence_svc >= gap):
+                simulatedEnsemble.append([articleID, acronym1, expansion_detail_lda[1]])
+                if (expansion_detail_lda[1] and not expansion_detail_svc[1]):
+                    corrected_in_svc += 1
+                if (expansion_detail_svc[1] and not expansion_detail_lda[1]):
+                    lost_from_svc += 1
+            else:
+                simulatedEnsemble.append([articleID, acronym1, expansion_detail_svc[1]])
+                if (expansion_detail_svc[1] and not expansion_detail_lda[1]):
+                    corrected_in_lda += 1
+                if (expansion_detail_lda[1] and not expansion_detail_svc[1]):
+                    lost_from_lda += 1
+    
+    #print("SVC: corrected: %d, lost: %d" % (corrected_in_svc, lost_from_svc))
+    #print("LDA: corrected: %d, lost: %d" % (corrected_in_lda, lost_from_lda))
+    correct_in_ensemble = 0
+    wrong_in_ensemble = 0
+    for entry in simulatedEnsemble:
+        if (entry[2]):
+            correct_in_ensemble += 1
+        else:
+            wrong_in_ensemble += 1
+    
+    #print("Ensemble: correct: %d, wrong: %d" % (correct_in_ensemble, wrong_in_ensemble))
+    return correct_in_ensemble
+
+
+report_lda = cPickle.load(open(folder_logs+"benchmark"+os.sep+"report_benchmark_MSH_algo10.pickle", "rb"))
+report_svc = cPickle.load(open(folder_logs+"benchmark"+os.sep+"report_benchmark_MSH_algo7.pickle", "rb"))
+report_lda = dict(report_lda)
+report_svc = dict(report_svc)
+
+ensemble_successes=[]
+for gap in numpy.arange(-1.0,3.0,0.01):
+    ensemble_successes.append(simulateEnsemble(report_lda, report_svc, gap))
+    
+plt.plot(ensemble_successes, label="ensemble")
+plt.plot([10069]*len(ensemble_successes), label="SVC")
+ensemble_successes.append(10069)
+plt.yticks(ensemble_successes)
+plt.legend()
+plt.show()
+print max(ensemble_successes)
 """
 
+"""
+**************************************************************************************************
+Evaluate confidence scores for predictions on success and failure
+"""
+"""
+from __future__ import division
+import cPickle
+from matplotlib import pyplot as plt
+from string_constants import folder_logs, min_confidence
+from os.path import sep
+
+correct_confidence = []
+incorrect_confidence = []
+min_conf_count = 0
+count_flukes = 0
+report = cPickle.load(
+    open(folder_logs + "benchmark"+sep+"report_benchmark_MSH_algo7.pickle", "rb"))
+for articleID, expansion_details in report:
+    for expansion_detail in expansion_details:
+        confidence = expansion_detail[4]
+        if(expansion_detail[1]):
+            if(confidence != min_confidence):
+                correct_confidence.append(confidence)
+            else:
+                count_flukes+=1
+        else:
+            if(confidence != min_confidence):
+                incorrect_confidence.append(confidence)
+            else:
+                min_conf_count += 1
+
+print("Correct: %d, Incorrect: %d (%f are invalid)" % (len(correct_confidence), len(
+    incorrect_confidence) + min_conf_count, min_conf_count / (len(incorrect_confidence) + min_conf_count)))
+print("%d flukes" %count_flukes)
+
+plt.subplot(211)
+plt.title("correct")
+plt.hist(correct_confidence, bins=100)
+
+plt.subplot(212)
+plt.title("incorrect")
+plt.hist(incorrect_confidence, bins=100)
+
+plt.show()
+"""
+
+"""
+**************************************************************************************************
+Shuffle articleDBs (take care to import OrderedDict into the program where this is loaded)
+"""
+"""
+from collections import OrderedDict
+import random
+
+from DataCreators import ArticleDB
+from string_constants import file_msh_articleDB,\
+    file_msh_articleDB_shuffled, file_articledb, file_articledb_shuffled
+
+
+articleDB = ArticleDB.load(path=file_articledb)
+items = articleDB.items()
+random.shuffle(items)
+shuffledArticleDB = OrderedDict(items)
+ArticleDB.dump(shuffledArticleDB, path = file_articledb_shuffled)
+"""
+
+"""
+**************************************************************************************************
+Package LDA model into one piece
+"""
+"""
+from DataCreators.LDAModel import SavedLDAModel
+from string_constants import file_lda_model, file_lda_gensim_dictionary,\
+    file_lda_articleIDToLDA, file_msh_articleDB, file_lda_model_all
+import cPickle
+from gensim.models.ldamodel import LdaModel
+from gensim.corpora.dictionary import Dictionary
+
+def loadFromPath(path):
+    return cPickle.load(open(path, "rb"))
+ldaModel = LdaModel.load(file_lda_model)
+dictionary = Dictionary.load(file_lda_gensim_dictionary)
+articleIDToLDADict = loadFromPath(file_lda_articleIDToLDA)
+articleDBused = file_msh_articleDB
+stem_words = False
+numPasses=1
+path = file_lda_model_all
+
+SavedLDAModel.save(ldaModel, dictionary, articleIDToLDADict, articleDBused, stem_words, numPasses, path)
+"""
+"""
+**************************************************************************************************
+See effect of article length on algo performance
+"""
+
+"""
+import cPickle
+
+from string_constants import folder_logs, file_msh_articleDB
+from DataCreators import ArticleDB
+from matplotlib import pyplot as plt
+
+
+report = cPickle.load(open(folder_logs+"report_benchmark_MSH_algo9.pickle", "rb"))
+articleDB = ArticleDB.load(file_msh_articleDB)
+
+lengths_forCorrect = []
+lengths_forWrong = []
+
+for articleID, expansion_details in report:
+    for expansion_detail in expansion_details:
+        if(expansion_detail[1]):
+            lengths_forCorrect.append(len(articleDB[articleID]))
+        else:
+            lengths_forWrong.append(len(articleDB[articleID]))
+
+plt.subplot(121)
+plt.hist(lengths_forCorrect, bins=50)
+plt.yticks(range(0,851,50))
+plt.xticks(range(0,6001, 500))
+plt.grid()
+plt.title("Histogram of lengths for Correct prediction")
+
+plt.subplot(122)
+plt.hist(lengths_forWrong, bins=50)
+plt.yticks(range(0,850,50))
+plt.xticks(range(0,6000, 500))
+plt.grid()
+plt.title("Histogram of lengths for Wrong prediction")
+
+plt.show()
+"""
+
+"""
+**************************************************************************************************
+Compare reports on MSH from two algos
+"""
+"""
+import os
+import cPickle
+from string_constants import folder_logs, file_lda_model
+
+report_lda = cPickle.load(open(folder_logs+"benchmark"+os.sep+"report_benchmark_MSH_algo7.pickle", "rb"))
+report2 = cPickle.load(open(folder_logs+"benchmark"+os.sep+"report_benchmark_MSH_algo10.pickle", "rb"))
+report_lda = dict(report_lda)
+report2 = dict(report2)
+
+#print where 1 is correct 2 is wrong
+print("articleID,acronym,correct_expansion,wrong_expansion2,isOneMoreConfident")
+oneCorrectTwoWrong = []
+for articleID in report_lda:
+    expansion_details_lda = report_lda[articleID]
+    expansion_details2 = report2[articleID]
+    for expansion_detail_lda in expansion_details_lda:
+        acronym1 = expansion_detail_lda[0]
+         
+        expansion_detail2 = [element for element in expansion_details2 if element[0]==acronym1][0]
+        
+        if(expansion_detail_lda[1]==True and expansion_detail2[1]==False):
+            isOneMoreConfident = expansion_detail_lda[4]>=expansion_detail2[4]
+            oneCorrectTwoWrong.append([articleID,acronym1,expansion_detail_lda[2],expansion_detail2[3],isOneMoreConfident])      
+
+for entry in sorted(oneCorrectTwoWrong, key=lambda entry: entry[1].lower()):
+    print("%s,%s,%s,%s,%s" %(entry[0],entry[1],entry[2],entry[3],entry[4]))
+"""
+
+"""
+**************************************************************************************************
+Print the expansions along with article ID of the following acronyms:
+"DI", "Ice", "CCl4", "DAT", "TSF", "Orf", "ADP", "DBA", "MCC", "SS", "CDR"
+"""
+"""
+from DataCreators import AcronymDB
+from string_constants import file_msh_acronymDB
+
+acronymDB = AcronymDB.load(file_msh_acronymDB)
+
+for acronym in ["DI", "Ice", "CCl4", "DAT", "TSF", "Orf", "ADP", "DBA", "MCC", "SS", "CDR"]:
+    expansions = []
+    for expansion, articleID, defCount in acronymDB[acronym]: 
+        if expansion not in expansions:
+            expansions.append(expansion)
+            print(acronym, expansion, articleID)
+"""
+"""
+**************************************************************************************************
+Verify all MSH true expansions by visual expansion
+"""
+"""
+from DataCreators import AcronymDB
+from string_constants import file_msh_acronymDB
+
+acronymDB = AcronymDB.load(file_msh_acronymDB)
+
+for acronym in sorted(acronymDB.keys(), key=lambda entry:entry.lower()):
+    expansions_set = []
+    expansions = []
+    for expansion, articleID, defcount in acronymDB[acronym]:
+        if expansion not in expansions_set:
+            expansions_set.append(expansion)
+            expansions.append([expansion, articleID])
+    print "%s: %s" %(acronym, expansions)
+"""
+
+"""
+**************************************************************************************************
+Check what's the role of PMID in MSH Corpus
+"""
+"""
 from arff import load
 import os
 
@@ -20,12 +349,12 @@ for pmid in pmids:
     if len(pmids[pmid])>1:
         print("PMID %s is repeated" %str(pmid))
 print(len(pmids.keys()))
-
+"""
 """
 PMID is a unique identifier of citation text in the MSH corpus
 """
 
-#print(pmids)
+# print(pmids)
 
 """
 **************************************************************************************************
