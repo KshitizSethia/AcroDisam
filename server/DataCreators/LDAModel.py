@@ -14,7 +14,7 @@ import cPickle as pickle
 from helper import SavedLDAModel
 from string_constants import file_lda_word_corpus,\
     file_lda_bow_corpus, file_articledb,\
-    file_msh_articleDB, file_lda_model_all, file_lda_model,\
+    file_lda_model_all, file_lda_model,\
     file_lda_articleIDToLDA, file_lda_gensim_dictionary
 
 
@@ -95,7 +95,7 @@ def parallelGetBoWCorpus(dictionary, word_corpus_values, process_pool):
 
 def getWordCorpus(articleDB, process_pool, useSavedTill):
     if(useSavedTill >= USESAVED.word_corpus):
-        common_logger.info("Loading word_corpus from file")
+        common_logger.info("Loading word_corpus from out_file")
         word_corpus = pickle.load(open(file_lda_word_corpus, "rb"))
         return word_corpus, None
     else:
@@ -105,9 +105,9 @@ def getWordCorpus(articleDB, process_pool, useSavedTill):
 
         common_logger.info(
             "Saving word_corpus asynchronously, in case the script ahead fails")
-        file = open(file_lda_word_corpus, "wb")
+        out_file = open(file_lda_word_corpus, "wb")
         word_corpus_dumper = Thread(
-            target=pickle.dump, args=(word_corpus, file), kwargs={"protocol": 2})
+            target=pickle.dump, args=(word_corpus, out_file), kwargs={"protocol": 2})
         word_corpus_dumper.start()
 
         return word_corpus, word_corpus_dumper
@@ -128,7 +128,7 @@ def getDictionary(word_corpus, useSavedTill):
 
 def getBoWCorpus(word_corpus, dictionary, process_pool, useSavedTill):
     if(useSavedTill >= USESAVED.bow_corpus):
-        common_logger.info("loading bow_corpus from file")
+        common_logger.info("loading bow_corpus from out_file")
         bow_corpus = pickle.load(open(file_lda_bow_corpus, "rb"))
         return bow_corpus, None
     else:
@@ -136,9 +136,9 @@ def getBoWCorpus(word_corpus, dictionary, process_pool, useSavedTill):
         bow_corpus = parallelGetBoWCorpus(dictionary, word_corpus.values(
         ), process_pool) if process_pool != None else serialGetBoWCorpus(dictionary, word_corpus.values())
 
-        file = open(file_lda_bow_corpus, "wb")
+        out_file = open(file_lda_bow_corpus, "wb")
         bow_corpus_dumper = Thread(
-            target=pickle.dump, args=(bow_corpus, file), kwargs={"protocol": 2})
+            target=pickle.dump, args=(bow_corpus, out_file), kwargs={"protocol": 2})
         bow_corpus_dumper.start()
         return bow_corpus, bow_corpus_dumper
 
@@ -150,11 +150,8 @@ def getLdaModel(bow_corpus, dictionary, useSavedTill):
     else:
         common_logger.info("Training LDA model")
         num_topics = int(math.log(len(bow_corpus)) + 1)  # assumption:
-        # todo: LdaMulticore is not working on windows, change before running on
-        # compute node
         lda_model = LdaModel(
             bow_corpus, num_topics=num_topics, id2word=dictionary, passes=numPasses)
-
         common_logger.info("Saving LDA model")
         lda_model.save(file_lda_model)
         common_logger.info("Done creating LDA model")

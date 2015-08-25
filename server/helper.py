@@ -1,9 +1,5 @@
 from nltk.metrics.distance import edit_distance
 
-from Logger import common_logger
-import cPickle as pickle
-from string_constants import file_lda_model_all
-
 
 class AcronymExpansion:
 
@@ -19,7 +15,6 @@ class AcronymExpansion:
     def areDistinctChoices(choices):
         """
         Tell whether the choices are distinct
-        #todo: This should be done at DB build time
         """
         count = len(choices)
         if(count <= 1):
@@ -61,7 +56,6 @@ class AcronymExpansion:
 
 
 class ExpansionChoice:
-    #todo: removed expansion from here, float changes
     def __init__(self, article_id, article_text):
         #self.expansion = expansion
         self.article_id = article_id

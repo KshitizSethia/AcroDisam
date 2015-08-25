@@ -42,10 +42,10 @@ class Extract_PdfMiner(TextExtractor):
             interpreter.process_page(page)
         fp.close()
         device.close()
-        str = toUnicode(retstr.getvalue())
+        result = toUnicode(retstr.getvalue())
         retstr.close()
 
-        return str
+        return result
 
     def get_font_filtered_text(self, path):
         txt_path = path
@@ -57,7 +57,7 @@ class Extract_PdfMiner(TextExtractor):
             txt_path = path + '.txt'
     #    if (os.path.isfile(txt_path)):
     #        return open(txt_path).read()
-        # TODO: This needs to be optimized eventually
+        # todo: This needs to be optimized eventually
         htmltext = self.get_html(path)
         return self.html_to_text(htmltext, path, fontfilter=True)
 
@@ -79,9 +79,9 @@ class Extract_PdfMiner(TextExtractor):
             interpreter.process_page(page)
         fp.close()
         device.close()
-        str = retstr.getvalue()
+        result = retstr.getvalue()
         retstr.close()
-        return str
+        return result
 
     def html_to_text(self, htmltext, path, fontfilter=True):
         def repl_fs(m):  # Munging to create font size tags
@@ -112,6 +112,6 @@ class Extract_PdfMiner(TextExtractor):
         return txt
 
     def write_text(self, path, text):
-        file = open(path, "w")
-        file.write(text)
-        file.close()
+        out_file = open(path, "w")
+        out_file.write(text)
+        out_file.close()

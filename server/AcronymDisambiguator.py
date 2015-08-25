@@ -12,7 +12,7 @@ from string_constants import min_confidence, folder_upload,\
     string_error_no_results_to_show
 
 
-class Controller():  # todo: find better name
+class AcronymDisambiguator():
     """
     Class to process (text/pdf files) and expand the acronyms in it
     """
@@ -61,7 +61,7 @@ class Controller():  # todo: find better name
         Returns: True/False
         """
         extension = filename.rsplit(".", 1)[1]
-        return extension in Controller.supported_extensions
+        return extension in AcronymDisambiguator.supported_extensions
 
     def processText(self, text):
         """
@@ -131,15 +131,15 @@ class Controller():  # todo: find better name
             return Expander_fromText_v2()
         elif(expander_type == AcronymExpanderEnum.LDA_cossim):
             if(not self.ldaModelAll):
-                raise ValueError("LDA model not given to controller")
+                raise ValueError("LDA model not provided")
             return Expander_LDA_cossim(self.ldaModelAll)
         elif(expander_type == AcronymExpanderEnum.LDA_multiclass):
             if(not self.ldaModelAll):
-                raise ValueError("LDA model not given to controller")
+                raise ValueError("LDA model not provided")
             return Expander_LDA_multiclass(self.ldaModelAll)
         elif(expander_type == AcronymExpanderEnum.Tfidf_multiclass):
             if(not self.vectorizer):
-                raise ValueError("vectorizer not given to controller")
+                raise ValueError("vectorizer not provided")
             return Expander_Tfidf_multiclass(self.vectorizer)
 
     def _chooseAmongstExpansions(self, expansions):
@@ -164,7 +164,6 @@ class Controller():  # todo: find better name
         """
         # get matches from acronymDB
         matches = []
-        # todo: get acronymDB in self
         if(acronym in self.acronymDB):
             matches += self.acronymDB[acronym]
         if(acronym[-1] == "s" and acronym[:-1] in self.acronymDB):
@@ -172,7 +171,7 @@ class Controller():  # todo: find better name
 
         # create training data
         X_train, y_train = [], []
-        for definition, articleID, def_count in matches:
+        for definition, articleID, ignored_var in matches:
             text = self.articleDB[articleID]
             X_train.append(
                 ExpansionChoice(article_id=articleID, article_text=text))

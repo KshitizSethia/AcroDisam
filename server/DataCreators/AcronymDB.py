@@ -44,7 +44,7 @@ def createFromScrapedDefinitions():
     common_logger.info("adding def_count values to acronymDB")
     defs_per_acronym = [0] * 1000
     insts_per_def = [0] * 1000
-    num_acronyms = len(acronymDB)
+    #num_acronyms = len(acronymDB)
     for acronym, values_for_this_acronym in acronymDB.items():
         values_for_this_acronym = sorted(
             values_for_this_acronym, key=lambda x: x[0])

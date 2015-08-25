@@ -7,15 +7,12 @@ from uuid import uuid4
 
 from flask import Flask, render_template, request, redirect, url_for
 from flask.helpers import send_from_directory
-from werkzeug.utils import secure_filename
 
-from AcronymExpanders.Expander_SVC import Expander_SVC
-from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
 from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
 from DataCreators import ArticleDB, AcronymDB
 from Logger import common_logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
-from controller import Controller
+from AcronymDisambiguator import AcronymDisambiguator
 import string_constants
 from AcronymExpanders import AcronymExpanderEnum
 from sklearn.externals import joblib
@@ -26,10 +23,10 @@ common_logger.info("Starting server")
 app = Flask(__name__)
 
 
-common_logger.info("Initializing Controller")
+common_logger.info("Initializing AcronymDisambiguator")
 articleDB = ArticleDB.load()
 acronymDB = AcronymDB.load()
-controlr = Controller(text_extractor=Extract_PdfMiner(),
+disambiguator = AcronymDisambiguator(text_extractor=Extract_PdfMiner(),
                       acronym_extractor=AcronymExtractor_v1,
                       expanders=[AcronymExpanderEnum.fromText_v2,
                                  AcronymExpanderEnum.Tfidf_multiclass],
@@ -60,33 +57,33 @@ def internal_server_error(e):
 @app.route("/upload", methods=['POST'])
 def upload():
 
-    file = request.files['file']
+    uploaded_file = request.files['uploaded_file']
 
-    if controlr.supportsFile(file.filename):
+    if disambiguator.supportsFile(uploaded_file.filename):
         # Make the filename safe, remove unsupported chars
-        #safe_filename = secure_filename(file.filename)
+        #safe_filename = secure_filename(uploaded_file.filename)
 
         # save filename as guid, helps parallel sessions and accessing info for
         # error analysis
-        extension = file.filename.rsplit(".", 1)[1]
+        extension = uploaded_file.filename.rsplit(".", 1)[1]
         safe_filename = str(uuid4()) + "." + extension
         server_file_path = os.path.join(
             string_constants.folder_upload, safe_filename)
 
-        # Move the file form the temp folder to the upload folder
-        file.save(server_file_path)
+        # Move the uploaded_file form the temp folder to the upload folder
+        uploaded_file.save(server_file_path)
 
-        text = controlr.extractText(safe_filename)
-        expanded_acronyms = controlr.processText(text)
+        text = disambiguator.extractText(safe_filename)
+        expanded_acronyms = disambiguator.processText(text)
 
         output_file_path = os.path.join(
-            string_constants.folder_output, controlr.getOutputFilename(safe_filename))
-        controlr.writeOutputToFile(expanded_acronyms, output_file_path)
+            string_constants.folder_output, disambiguator.getOutputFilename(safe_filename))
+        disambiguator.writeOutputToFile(expanded_acronyms, output_file_path)
 
-        return redirect(url_for('output_file', filename=controlr.getOutputFilename(safe_filename)))
+        return redirect(url_for('output_file', filename=disambiguator.getOutputFilename(safe_filename)))
 
 # This route is expecting a parameter containing the name
-# of a file. Then it will locate that file on the upload
+# of a uploaded_file. Then it will locate that uploaded_file on the upload
 # directory and show it on the browser, so if the user uploads
 # an image, that image is going to be show after the upload
 

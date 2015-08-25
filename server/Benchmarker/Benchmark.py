@@ -2,12 +2,9 @@ from itertools import izip_longest
 
 from numpy import mean, std
 
-from AcronymExpanders.Expander_fromText import Expander_fromText
-from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
 from DataCreators import AcronymDB, ArticleDB
 from Logger import common_logger
-from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
-from controller import Controller
+from AcronymDisambiguator import AcronymDisambiguator
 from helper import AcronymExpansion
 import random
 import cPickle
@@ -29,27 +26,11 @@ class Benchmarker:
 
         return acronymDb
 
-    # def __makeExpanders(self, articleDB, acronymDB):
-    #    expanders = []
-    #    for expanderType in self.expandersToUse:
-    #        if (expanderType == AcronymExpanderEnum.fromText):
-    #            expanders.append(Expander_fromText())
-    #        elif (expanderType == AcronymExpanderEnum.fromText_v2):
-    #            expanders.append(Expander_fromText_v2())
-    #        elif (expanderType == AcronymExpanderEnum.LDA_cossim):
-    #            expanders.append(Expander_LDA(articleDB, acronymDB))
-    #        elif (expanderType == AcronymExpanderEnum.LDA_multiclass):
-    #            expanders.append(Expander_LDA_multiclass(articleDB, acronymDB))
-    #        elif (expanderType == AcronymExpanderEnum.SVC):
-    #            expanders.append(Expander_SVC(articleDB, acronymDB))
-    #
-    #    return expanders
-
-    def __createController(self, articleDB, acronymDB):
+    def __createAcronymDisambiguator(self, articleDB, acronymDB):
         #text_expander = Expander_fromText()
         #expanders = self.__makeExpanders(articleDB, acronymDB)
 
-        return Controller(text_extractor=self.textExtractor,
+        return AcronymDisambiguator(text_extractor=self.textExtractor,
                           acronym_extractor=self.acronymExtractor,
                           expanders=self.expandersToUse,
                           articleDB=articleDB,
@@ -62,7 +43,7 @@ class Benchmarker:
             if(articleId in testArticleIDs):
                 return False
         for acronym in acronymDB:
-            for expansion, articleId, ignored_field in acronymDB[acronym]:
+            for ignored_field1, articleId, ignored_field2 in acronymDB[acronym]:
                 if articleId in testArticleIDs:
                     return False
         return True
@@ -141,9 +122,6 @@ class Benchmarker:
 
         articleDB = ArticleDB.load(path=self.articleDBPath)
 
-        # todo: temp hack, remove!!!
-        testArticles["2957215"] = articleDB["2957215"]
-
         common_logger.info("removing test articles from articleDB")
         for articleID in testArticles.keys():
             del articleDB[articleID]
@@ -153,7 +131,7 @@ class Benchmarker:
 
         common_logger.info("verifying training dataset")
         if self.__verifyTrainSet(articleDB, acronymDB, testArticles.keys()):
-            controller = self.__createController(articleDB, acronymDB)
+            disambiguator = self.__createAcronymDisambiguator(articleDB, acronymDB)
 
             common_logger.info("evaluating test performance")
             results = {"correct_expansions": 0.0, "incorrect_expansions": 0.0}
@@ -169,7 +147,7 @@ class Benchmarker:
                     article_for_testing = self._removeInTextExpansions(
                         article, actual_expansions)
 
-                    predicted_expansions = controller.processText(
+                    predicted_expansions = disambiguator.processText(
                         article_for_testing)
 
                     correct, incorrect, detailed_results = self.__getResults(
@@ -238,15 +216,15 @@ class Benchmarker:
 
     def extractScores(self, inputs):
         result = []
-        for input in inputs:
-            result.append(input[0])
+        for item in inputs:
+            result.append(item[0])
 
         return result
 
     def extractReports(self, inputs):
         result = []
-        for input in inputs:
-            result.append(input[1])
+        for item in inputs:
+            result.append(item[1])
         return result
 
     def saveAndPrintReport(self, reports):
