@@ -54,7 +54,8 @@ def _createArticleAndAcronymDB():
         # initialized
         lines = list(file_reader)
         cuids = file_reader.relation.strip().split("_")
-        acronym = _fileNameToAcronym(fileName)
+        # storing all acronyms as uppercase values
+        acronym = _fileNameToAcronym(fileName).upper()
         cuid_and_pmid = []
         for line in lines:
             pmid = unicode(line.PMID)

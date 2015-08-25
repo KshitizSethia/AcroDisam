@@ -3,18 +3,21 @@
 Figure out the reason for "expansion not predicted"
 
 """
+"""
 from __future__ import division
 import cPickle
-from string_constants import folder_logs, min_confidence
+from string_constants import folder_logs, min_confidence, file_msh_articleDB
 from os.path import sep
+from DataCreators import ArticleDB
+import TextTools
 
 correct_confidence = []
 incorrect_confidence = []
 min_conf_count = 0
 count_flukes = 0
-erroneous_acronyms=[]
+erroneous_acronyms = {}
 report = cPickle.load(
-    open(folder_logs + "benchmark"+sep+"report_benchmark_MSH_algo7.pickle", "rb"))
+    open(folder_logs + "benchmark" + sep + "report_benchmark_MSH_algo18.pickle", "rb"))
 for articleID, expansion_details in report:
     for expansion_detail in expansion_details:
         confidence = expansion_detail[4]
@@ -22,20 +25,31 @@ for articleID, expansion_details in report:
             if(confidence != min_confidence):
                 correct_confidence.append(confidence)
             else:
-                count_flukes+=1
+                count_flukes += 1
         else:
             if(confidence != min_confidence):
                 incorrect_confidence.append(confidence)
             else:
                 min_conf_count += 1
                 if(expansion_detail[0] not in erroneous_acronyms):
-                    erroneous_acronyms.append(expansion_detail[0])
+                    erroneous_acronyms[expansion_detail[0]] = []
+                erroneous_acronyms[expansion_detail[0]].append(articleID)
 
 print("Correct: %d, Incorrect: %d (%f are invalid)" % (len(correct_confidence), len(
     incorrect_confidence) + min_conf_count, min_conf_count / (len(incorrect_confidence) + min_conf_count)))
-print("%d flukes" %count_flukes)
+print("%d flukes" % count_flukes)
 print("%d on minimum confidence" % min_conf_count)
-print(sorted(erroneous_acronyms, key=lambda acronym: acronym.lower))
+print(sorted(erroneous_acronyms, key=lambda line: line[0].lower))
+for acronym in erroneous_acronyms:
+    print("%s,%d" %(acronym, len(erroneous_acronyms[acronym])))
+
+mshArticleDB = ArticleDB.load(file_msh_articleDB)
+
+for acronym in erroneous_acronyms:
+    print(acronym)
+    for articleID in erroneous_acronyms[acronym]:
+        print("\t%s, %s\n" %
+              (TextTools.toAscii(articleID), TextTools.toAscii(mshArticleDB[articleID])))
 
 
 def showPlot(correct_confidence, incorrect_confidence):
@@ -49,6 +63,7 @@ def showPlot(correct_confidence, incorrect_confidence):
     plt.show()
 
 #showPlot(correct_confidence, incorrect_confidence)
+"""
 
 """
 **************************************************************************************************

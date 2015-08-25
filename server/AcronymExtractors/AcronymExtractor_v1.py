@@ -19,5 +19,5 @@ class AcronymExtractor_v1(AcronymExtractor):
             acronym for acronym in acronyms if acronym.lower() not in english_words]
         result = {}
         for acronym in set(acronyms):
-            result[acronym] = []
+            result[acronym.upper()] = []
         return result
