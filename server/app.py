@@ -17,6 +17,9 @@ from Logger import common_logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 from controller import Controller
 import string_constants
+from AcronymExpanders import AcronymExpanderEnum
+from sklearn.externals import joblib
+from string_constants import file_vectorizer
 
 
 common_logger.info("Starting server")
@@ -28,7 +31,12 @@ articleDB = ArticleDB.load()
 acronymDB = AcronymDB.load()
 controlr = Controller(text_extractor=Extract_PdfMiner(),
                       acronym_extractor=AcronymExtractor_v1,
-                      expanders=[Expander_fromText_v2(), Expander_SVC(articleDB, acronymDB)])
+                      expanders=[AcronymExpanderEnum.fromText_v2,
+                                 AcronymExpanderEnum.Tfidf_multiclass],
+                      articleDB=articleDB,
+                      acronymDB=acronymDB,
+                      vectorizer=joblib.load(file_vectorizer))
+
 
 # This route will show a form to perform an AJAX request
 # jQuery is loaded to execute the request and update the

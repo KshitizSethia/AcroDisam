@@ -3,12 +3,14 @@ import functools
 from multiprocessing import Pool
 
 from AcronymExpanders import AcronymExpanderEnum
-from AcronymExtractors.AcronymExtractor_v1 import AcronymExtractor_v1
-from AcronymExtractors.AcronymExtractor_v2 import AcronymExtractor_v2
-from AcronymExtractors.AcronymExtractor_v2_small import AcronymExtractor_v2_small
+from AcronymExtractors.AcronymExtractor_v3_small import AcronymExtractor_v3_small
 from Benchmarker.Benchmark import Benchmarker
 from string_constants import file_msh_articleDB, file_msh_acronymDB,\
-    file_msh_articleIDToAcronymExpansions, file_msh_articleDB_shuffled
+    file_msh_articleIDToAcronymExpansions, file_msh_articleDB_shuffled,\
+    folder_lda, file_vectorizer
+from sklearn.externals import joblib
+from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
+from DataCreators import LDAModel
 
 
 class Benchmarker_MSH(Benchmarker):
@@ -16,11 +18,21 @@ class Benchmarker_MSH(Benchmarker):
     def __init__(self):
         self.numProcesses = 1
         self.numRounds = 10
+
         self.articleDBPath = file_msh_articleDB
         self.shuffledArticleDBPath = file_msh_articleDB_shuffled
         self.acronymDBPath = file_msh_acronymDB
-        self.expandersToUse = [AcronymExpanderEnum.SVC]
-        self.acronymExtractor = AcronymExtractor_v2_small()
+
+        self.expandersToUse = [AcronymExpanderEnum.Tfidf_multiclass]
+
+        self.ldaModelAll = None
+        #self.ldaModelAll = LDAModel.load(
+        #    path=folder_lda + "lda_model_type2_MSH.pickle")
+        self.vectorizer = joblib.load(file_vectorizer)
+
+        self.acronymExtractor = AcronymExtractor_v3_small()
+        self.textExtractor = Extract_PdfMiner()
+
         self.articleIDToAcronymExpansions = cPickle.load(
             open(file_msh_articleIDToAcronymExpansions, "rb"))
 

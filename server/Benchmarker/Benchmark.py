@@ -2,9 +2,6 @@ from itertools import izip_longest
 
 from numpy import mean, std
 
-from AcronymExpanders import AcronymExpanderEnum
-from AcronymExpanders.Expander_LDA import Expander_LDA
-from AcronymExpanders.Expander_SVC import Expander_SVC
 from AcronymExpanders.Expander_fromText import Expander_fromText
 from AcronymExpanders.Expander_fromText_v2 import Expander_fromText_v2
 from DataCreators import AcronymDB, ArticleDB
@@ -12,7 +9,6 @@ from Logger import common_logger
 from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 from controller import Controller
 from helper import AcronymExpansion
-from AcronymExpanders.Expander_LDA_multiclass import Expander_LDA_multiclass
 import random
 import cPickle
 from string_constants import file_benchmark_report, file_benchmark_report_pickle,\
@@ -33,27 +29,33 @@ class Benchmarker:
 
         return acronymDb
 
-    def __makeExpanders(self, articleDB, acronymDB):
-        expanders = []
-        for expanderType in self.expandersToUse:
-            if (expanderType == AcronymExpanderEnum.fromText):
-                expanders.append(Expander_fromText())
-            elif (expanderType == AcronymExpanderEnum.fromText_v2):
-                expanders.append(Expander_fromText_v2())
-            elif (expanderType == AcronymExpanderEnum.LDA_cossim):
-                expanders.append(Expander_LDA(articleDB, acronymDB))
-            elif (expanderType == AcronymExpanderEnum.LDA_multiclass):
-                expanders.append(Expander_LDA_multiclass(articleDB, acronymDB))
-            elif (expanderType == AcronymExpanderEnum.SVC):
-                expanders.append(Expander_SVC(articleDB, acronymDB))
-
-        return expanders
+    # def __makeExpanders(self, articleDB, acronymDB):
+    #    expanders = []
+    #    for expanderType in self.expandersToUse:
+    #        if (expanderType == AcronymExpanderEnum.fromText):
+    #            expanders.append(Expander_fromText())
+    #        elif (expanderType == AcronymExpanderEnum.fromText_v2):
+    #            expanders.append(Expander_fromText_v2())
+    #        elif (expanderType == AcronymExpanderEnum.LDA_cossim):
+    #            expanders.append(Expander_LDA(articleDB, acronymDB))
+    #        elif (expanderType == AcronymExpanderEnum.LDA_multiclass):
+    #            expanders.append(Expander_LDA_multiclass(articleDB, acronymDB))
+    #        elif (expanderType == AcronymExpanderEnum.SVC):
+    #            expanders.append(Expander_SVC(articleDB, acronymDB))
+    #
+    #    return expanders
 
     def __createController(self, articleDB, acronymDB):
         #text_expander = Expander_fromText()
-        expanders = self.__makeExpanders(articleDB, acronymDB)
+        #expanders = self.__makeExpanders(articleDB, acronymDB)
 
-        return Controller(text_extractor=Extract_PdfMiner(), acronym_extractor=self.acronymExtractor, expanders=expanders)
+        return Controller(text_extractor=self.textExtractor,
+                          acronym_extractor=self.acronymExtractor,
+                          expanders=self.expandersToUse,
+                          articleDB=articleDB,
+                          acronymDB=acronymDB,
+                          ldaModelAll=self.ldaModelAll,
+                          vectorizer=self.vectorizer)
 
     def __verifyTrainSet(self, articleDB, acronymDB, testArticleIDs):
         for articleId in articleDB:
@@ -93,7 +95,9 @@ class Benchmarker:
                 and AcronymExpansion.
                     areExpansionsSimilar(actual_expansion, predicted_expansions[acronym][0].expansion)):
                 common_logger.debug("Expansion matching succeeded (%s): %s, %s, confidence: %f" % (
-                    acronym, actual_expansion, predicted_expansions[acronym][0].expansion, predicted_expansions[acronym][0].confidence))
+                    acronym, actual_expansion, predicted_expansions[
+                        acronym][0].expansion,
+                    predicted_expansions[acronym][0].confidence))
                 correct_expansions += 1
                 detailed_results.append(
                     [acronym, True, actual_expansion, predicted_expansions[acronym][0].expansion, predicted_expansions[acronym][0].confidence])
@@ -106,7 +110,8 @@ class Benchmarker:
                     confidence = predicted_expansions[
                         acronym][0].confidence
                 else:
-                    common_logger.warning("Expansion not predicted for %s" %acronym)
+                    common_logger.warning(
+                        "Expansion not predicted for %s" % acronym)
                 common_logger.debug(
                     "Expansion matching failed (%s): %s, %s, confidence: %f" % (acronym, actual_expansion, predicted_expansion, confidence))
                 incorrect_expansions += 1
@@ -135,6 +140,9 @@ class Benchmarker:
             [article for article in testArticles if article != None])
 
         articleDB = ArticleDB.load(path=self.articleDBPath)
+
+        # todo: temp hack, remove!!!
+        testArticles["2957215"] = articleDB["2957215"]
 
         common_logger.info("removing test articles from articleDB")
         for articleID in testArticles.keys():
@@ -232,7 +240,7 @@ class Benchmarker:
         result = []
         for input in inputs:
             result.append(input[0])
-            
+
         return result
 
     def extractReports(self, inputs):
@@ -248,13 +256,14 @@ class Benchmarker:
         for report in reports:
             flattened_reports.extend(report)
 
-        #sort reports by articleID
+        # sort reports by articleID
         sorted_reports = sorted(flattened_reports, key=lambda item: item[0])
 
-        cPickle.dump(sorted_reports, open(file_benchmark_report_pickle,"wb"), protocol=-1)
-        
+        cPickle.dump(
+            sorted_reports, open(file_benchmark_report_pickle, "wb"), protocol=-1)
+
         report_file = open(file_benchmark_report, "wb")
         for report in sorted_reports:
-            report_file.write(report[0] +"\n")
+            report_file.write(report[0] + "\n")
             for detailed_result in report[1]:
-                report_file.write("\t" +str(detailed_result) +"\n")
+                report_file.write("\t" + str(detailed_result) + "\n")

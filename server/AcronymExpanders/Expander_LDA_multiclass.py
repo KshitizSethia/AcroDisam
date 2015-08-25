@@ -1,83 +1,37 @@
-from gensim.matutils import sparse2full
-from sklearn.multiclass import OneVsRestClassifier
 from sklearn.svm.classes import LinearSVC
 
-from AcronymExpanders import AcronymExpanderEnum
-from AcronymExpanders.Expander_LDA import Expander_LDA
-from helper import AcronymExpansion
-from Logger import common_logger
 from string_constants import min_confidence
+from AcronymExpanders.Expander_LDA_cossim import Expander_LDA_cossim
+from AcronymExpanders import AcronymExpanderEnum
+from gensim.matutils import sparse2full
 
 
-class Expander_LDA_multiclass(Expander_LDA):
+class Expander_LDA_multiclass(Expander_LDA_cossim):
     """
     take LDA vectors of labelled articles and do a multi-class
     classification for deciding where the LDA of the test text belongs
     """
 
-    def __init__(self, articleDB, acronymDB):
-        Expander_LDA.__init__(self, articleDB, acronymDB)
-        self.expander_type = AcronymExpanderEnum.LDA_multiclass
+    def __init__(self, ldaModelAll, expander_type=AcronymExpanderEnum.LDA_multiclass):
+        Expander_LDA_cossim.__init__(self, ldaModelAll, expander_type)
+        self.classifier = LinearSVC()
 
-    def getChosenExpansion(self, choices, target_lda):
-        chosenExpansion = ""
-        if(len(choices)==0):
-            return chosenExpansion, min_confidence
-        
-        train_x = [self.getDenseVector(self.articleIDToLDADict[choice.article_id])
-                   for choice in choices]
-        train_y, labelToExpansion = self.processChoices(choices)
-        test_x = [self.getDenseVector(target_lda)]
+    def transform(self, X):
+        results = Expander_LDA_cossim.transform(self, X)
+        return [self._getDenseVector(item) for item in results]
 
-        confidence = min_confidence
-        #check if only one label in training, then return that label
-        if(len(labelToExpansion)>1):
-        
-            model = OneVsRestClassifier(LinearSVC()).fit(train_x, train_y)
-            predicted_label = model.predict(test_x)[0]
-            
-            decisions = model.decision_function(test_x)
-            
-            if(len(labelToExpansion)==2):
-                confidence = abs(decisions[0][0])
-            else:
-                confidence = decisions[0][predicted_label]
-        else:
-            common_logger.warning("training data has just one label, predicting the only training label present")
-            predicted_label=0
-            confidence = min_confidence
-        
-        chosenExpansion = labelToExpansion[predicted_label]
-        return chosenExpansion, confidence
+    def _getDenseVector(self, sparse_vec):
+        return sparse2full(sparse_vec, self.ldaModel.num_topics)
 
-    def getDenseVector(self, lda_vec):
-        return sparse2full(lda_vec,self.ldamodel.num_topics)
-    
-    @staticmethod
-    def processChoices(choices):
+    def fit(self, X_train, y_train):
+        self.classifier.fit(X_train, y_train)
 
-        indexToClass = []
-        labelToExpansion = {}
+    def predict(self, X_test, acronym):
+        labels = self.classifier.predict(X_test)
 
-        if(len(choices) == 0):
-            return indexToClass, labelToExpansion
+        decisions = self.classifier.decision_function(X_test)
 
-        indexToClass = [index for index in range(len(choices))]
-        labelToExpansion[0] = choices[0].expansion
+        confidences = self._getConfidencesFromDecisionFunction(
+            labels, decisions)
 
-        for indexAhead in range(1, len(choices)):
-            new_exp = choices[indexAhead].expansion
-            newIsUnique = True
-
-            for label, expansion in labelToExpansion.items():
-                if AcronymExpansion.areExpansionsSimilar(expansion, new_exp):
-                    newIsUnique = False
-                    indexToClass[indexAhead] = label
-                    break
-
-            if(newIsUnique):
-                new_class_label = len(labelToExpansion.keys())
-                labelToExpansion[new_class_label] = new_exp
-                indexToClass[indexAhead] = new_class_label
-
-        return indexToClass, labelToExpansion
+        return labels, confidences

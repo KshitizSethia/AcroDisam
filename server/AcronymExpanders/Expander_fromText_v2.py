@@ -1,11 +1,11 @@
 import re
 
 from AcronymExpanders import AcronymExpanderEnum
-from AcronymExpanders.AcronymExpander import AcronymExpander
-from helper import AcronymExpansion
+from string_constants import max_confidence, min_confidence
+from AcronymExpanders.Expander_fromText import Expander_fromText
 
 
-class Expander_fromText_v2(AcronymExpander):
+class Expander_fromText_v2(Expander_fromText):
     """
     Changes over Expander_fromText:
     multiline regex
@@ -15,27 +15,21 @@ class Expander_fromText_v2(AcronymExpander):
     """
 
     def __init__(self):
-        # less confidence than fromText
-        self.confidence = 0.9  
+        Expander_fromText.__init__(self, AcronymExpanderEnum.fromText_v2)
 
-    def expand(self, acronym, acronymExpansions, text):
+        # less confidence than fromText
+        self.confidence = (
+            (max_confidence - min_confidence) * 0.9) + min_confidence
+
+    def _expandInText(self, input, acronym):
         patterns = self.definition_patterns(acronym)
 
-        #common_logger.debug("Text:\n%s", text)
-
         for pattern in patterns:
-            pattern_result = re.findall(pattern, text)
-            if pattern_result and pattern_result[0] != acronym:
-                                # todo: this assumption might be wrong
-                # what if there's a document with different senses of an acronym
-                # and disambiguation nearby
-                expansion = " ".join(
-                    [word for word in pattern_result[0].split()])
-                acronymExpansions.append(
-                    AcronymExpansion(expansion=expansion, expander=AcronymExpanderEnum.fromText_v2, confidence=self.confidence))
-                return acronymExpansions
+            pattern_results = re.findall(pattern, input)
+            if(pattern_results and pattern_results[0] != acronym):
+                return pattern_results[0]
 
-        return acronymExpansions
+        return None
 
     def definition_patterns(self, acronym):
         def_pattern = r''

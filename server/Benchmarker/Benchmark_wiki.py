@@ -9,8 +9,11 @@ from AcronymExtractors.AcronymExtractor_v2 import AcronymExtractor_v2
 from Benchmarker.Benchmark import Benchmarker
 from Logger import common_logger
 from string_constants import file_articledb, file_acronymdb,\
-    file_articledb_shuffled
+    file_articledb_shuffled, file_lda_model_all, folder_lda, file_vectorizer
 from AcronymExtractors.AcronymExtractor_v2_small import AcronymExtractor_v2_small
+from DataCreators import LDAModel
+from sklearn.externals import joblib
+from TextExtractors.Extract_PdfMiner import Extract_PdfMiner
 
 
 class Benchmarker_wiki(Benchmarker):
@@ -60,12 +63,17 @@ class Benchmarker_wiki(Benchmarker):
     def __init__(self):
         self.numRounds = 3
         self.numProcesses = 1
+        
         self.articleDBPath = file_articledb
         self.shuffledArticleDBPath = file_articledb_shuffled
         self.acronymDBPath = file_acronymdb
+        
         self.expandersToUse = [AcronymExpanderEnum.LDA_multiclass]
-        self.acronymExtractor = AcronymExtractor_v2()
+        self.ldaModelAll = LDAModel.load(path=folder_lda+"lda_model_noStem_noNums_3Pass.pickle")
+        self.vectorizer = joblib.load(file_vectorizer)
+        
         self.acronymExtractor = AcronymExtractor_v2_small()
+        self.textExtractor = Extract_PdfMiner()
 
 
 def _proxyFunction(benchmarker, testArticles):

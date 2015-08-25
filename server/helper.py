@@ -61,9 +61,9 @@ class AcronymExpansion:
 
 
 class ExpansionChoice:
-
-    def __init__(self, expansion, article_id, article_text):
-        self.expansion = expansion
+    #todo: removed expansion from here, float changes
+    def __init__(self, article_id, article_text):
+        #self.expansion = expansion
         self.article_id = article_id
         self.article_text = article_text
 

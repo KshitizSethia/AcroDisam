@@ -8,6 +8,6 @@ class AcronymExpanderEnum():
     none = "None"
     fromText = "Text"
     fromText_v2 = "Text v2"
-    SVC = "SVC"
+    Tfidf_multiclass = "TFIDF multiclass"
     LDA_cossim = "LDA cossim"
     LDA_multiclass = "LDA multiclass"
