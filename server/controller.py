@@ -25,13 +25,22 @@ class Controller():  # todo: find better name
                  articleDB,
                  acronymDB,
                  ldaModelAll=None,
-                 vectorizer=None):
+                 vectorizer=None,
+                 expansionChooser=None):
         """
         Args:
         text_extractor (TextExtractors.TextExtractor)
         acronym_extractor (AcronymExtractors.AcronymExtractor)
         expanders (list): list of AcronymExpanderEnum to indicate which expanders to use
+        articleDB: DataCreators.ArticleDB
+        acronymDB: DataCreators.AcronymDB
+        ldaModelAll: SavedLDAModel loaded from DataCreators.LDAModel. Needed only when an LDA algo is used
+        vectorizer: TfidfVectorizer (mostly loaded by joblib.load(file_vectorizer) ). Needed only when Tfidf_multiclass algo is used
+        expansionChooser (lambda): function which takes in a list of AcronymExpansion 
+                                    and returns a list of AcronymExpansion with only chosen expansions. 
+                                    If not supplied, _chooseAmongstExpansions will be used
         """
+        
         self.acronymExpanders = expanders
         self.textExtractor = text_extractor
         self.acronymExtractor = acronym_extractor
@@ -39,6 +48,10 @@ class Controller():  # todo: find better name
         self.acronymDB = acronymDB
         self.ldaModelAll = ldaModelAll
         self.vectorizer = vectorizer
+
+        self.expansionChooser = expansionChooser
+        if(not expansionChooser):
+            self.expansionChooser = self._chooseAmongstExpansions
 
     def supportsFile(self, filename):
         """
@@ -107,7 +120,7 @@ class Controller():  # todo: find better name
                                              expander=expander.getType(),
                                              confidence=confidence))
 
-            acronyms[acronym] = self._chooseAmongstExpansions(expansions)
+            acronyms[acronym] = self.expansionChooser(expansions)
 
         return acronyms
 
