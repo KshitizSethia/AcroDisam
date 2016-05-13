@@ -2,8 +2,16 @@ from nltk.metrics.distance import edit_distance
 
 
 class AcronymExpansion:
+    """
+    Class containing an acronym's expansion
+    """
 
     def __init__(self, expansion, expander, confidence):
+        """
+        expansion: str of expansion
+        expander: str (Enum) of expander
+        confidence: float value of confidence in this expansion (ideally within [0,1])
+        """
         self.expansion = expansion
         self.expander = expander
         self.confidence = confidence
@@ -29,27 +37,27 @@ class AcronymExpansion:
             return False
 
     @staticmethod
-    def startsSameWay(true_exp, pred_exp):
-        true_exp = true_exp.strip().lower().replace("-", " ")
-        pred_exp = " ".join([word[:4] for word in pred_exp.split()])
-        true_exp = " ".join([word[:4] for word in true_exp.split()])
-        if(pred_exp == true_exp):
+    def startsSameWay(expansion_1, expansion_2):
+        expansion_1 = expansion_1.strip().lower().replace("-", " ")
+        expansion_2 = " ".join([word[:4] for word in expansion_2.split()])
+        expansion_1 = " ".join([word[:4] for word in expansion_1.split()])
+        if(expansion_2 == expansion_1):
             return True
-        #    ed = distance.edit_distance(pred_exp, true_exp)
+        #    ed = distance.edit_distance(expansion_2, expansion_1)
         #    if ed < 3:
         #        return True
         return False
 
     @staticmethod
-    def areExpansionsSimilar(actual_expansion, predicted_expansion):
-        actual_expansion = actual_expansion.lower().replace(u"-", u" ")
-        predicted_expansion = predicted_expansion.lower().replace(u"-", u" ")
-        #numActualWords = len(actual_expansion)
-        #numPredictedWords = len(predicted_expansion)
+    def areExpansionsSimilar(expansion_1, expansion_2):
+        expansion_1 = expansion_1.lower().replace(u"-", u" ")
+        expansion_2 = expansion_2.lower().replace(u"-", u" ")
+        #numActualWords = len(expansion_1)
+        #numPredictedWords = len(expansion_2)
 
-        if(actual_expansion == predicted_expansion
-           or AcronymExpansion.startsSameWay(actual_expansion, predicted_expansion)
-           or edit_distance(actual_expansion, predicted_expansion) <= 2):  # max(numActualWords, numPredictedWords)):
+        if(expansion_1 == expansion_2
+           or AcronymExpansion.startsSameWay(expansion_1, expansion_2)
+           or edit_distance(expansion_1, expansion_2) <= 2):  # max(numActualWords, numPredictedWords)):
             return True
 
         return False

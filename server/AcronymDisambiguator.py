@@ -40,7 +40,7 @@ class AcronymDisambiguator():
                                     and returns a list of AcronymExpansion with only chosen expansions. 
                                     If not supplied, _chooseAmongstExpansions will be used
         """
-        
+
         self.acronymExpanders = expanders
         self.textExtractor = text_extractor
         self.acronymExtractor = acronym_extractor
@@ -236,10 +236,16 @@ class AcronymDisambiguator():
         if expanded_acronyms:
             for acronym in sorted(expanded_acronyms.keys()):
                 output_file.write(
-                    acronym + "," + str(expanded_acronyms[acronym]) + "\n")
+                    acronym + "," + str(self._getExpansion(expanded_acronyms[acronym])) + "\n")
         else:
             output_file.close(string_error_no_results_to_show)
         output_file.close()
+
+    def _getExpansion(self, acronym):
+        if not acronym:
+            return ""
+        else:
+            return acronym[0].expansion
 
     def getOutputFilename(self, filename):
         """append .txt to the filename, that is the format results are stored"""

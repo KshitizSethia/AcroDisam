@@ -27,7 +27,7 @@ common_logger.info("Initializing AcronymDisambiguator")
 articleDB = ArticleDB.load()
 acronymDB = AcronymDB.load()
 disambiguator = AcronymDisambiguator(text_extractor=Extract_PdfMiner(),
-                      acronym_extractor=AcronymExtractor_v1,
+                      acronym_extractor=AcronymExtractor_v1(),
                       expanders=[AcronymExpanderEnum.fromText_v2,
                                  AcronymExpanderEnum.Tfidf_multiclass],
                       articleDB=articleDB,
@@ -57,7 +57,7 @@ def internal_server_error(e):
 @app.route("/upload", methods=['POST'])
 def upload():
 
-    uploaded_file = request.files['uploaded_file']
+    uploaded_file = request.files["file"]
 
     if disambiguator.supportsFile(uploaded_file.filename):
         # Make the filename safe, remove unsupported chars
